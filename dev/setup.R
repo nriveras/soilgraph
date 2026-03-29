@@ -13,19 +13,33 @@ missing <- dev_pkgs[!vapply(dev_pkgs, requireNamespace, logical(1), quietly = TR
 
 if (length(missing) > 0L) {
   cat("Installing missing dev packages:", paste(missing, collapse = ", "), "\n")
-  install.packages(missing)
+  install.packages(missing, repos = "https://cloud.r-project.org")
 } else {
   cat("All dev packages already installed.\n")
 }
 
 # Install pre-commit git hook
-if (requireNamespace("precommit", quietly = TRUE)) {
-  cat("\nInstalling pre-commit git hook...\n")
-  precommit::install_precommit()
-  precommit::use_precommit()
-  cat("Pre-commit hook installed successfully.\n")
+# Use pip directly instead of reticulate to avoid extra dependencies
+cat("\nInstalling pre-commit (Python)...\n")
+pre_commit_found <- nzchar(Sys.which("pre-commit"))
+
+if (!pre_commit_found) {
+  cat("Installing pre-commit via pip...\n")
+  pip_exit <- system2("pip", c("install", "pre-commit"))
+  if (pip_exit != 0L) {
+    stop("Could not install pre-commit via pip. Install it manually: pip install pre-commit")
+  }
 } else {
-  warning("precommit package not available. Install it manually and re-run this script.")
+  cat("pre-commit already installed.\n")
+}
+
+# Activate pre-commit hooks in this repo
+cat("Activating pre-commit hooks...\n")
+hook_exit <- system2("pre-commit", c("install"))
+if (hook_exit != 0L) {
+  warning("Could not activate pre-commit hooks. Run manually: pre-commit install")
+} else {
+  cat("Pre-commit hooks activated successfully.\n")
 }
 
 cat("\n=== Setup complete ===\n")

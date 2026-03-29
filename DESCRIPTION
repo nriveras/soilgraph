@@ -14,8 +14,9 @@ Description: Parse free-text soil field descriptions into structured data,
     powered by 'ggplot2'. Follows Soil Taxonomy (USDA) vocabulary for texture,
     moisture, colour, boundary grade and shape, and coarse fragment properties.
 License: GPL (>= 3)
-URL: https://nriveras.github.io/soilgraph
-BugReports: https://github.com/nriveras/soilgraph/-/issues
+URL: https://nriveras.github.io/soilgraph,
+    https://github.com/nriveras/soilgraph
+BugReports: https://github.com/nriveras/soilgraph/issues
 Depends:
     R (>= 4.1.0)
 Imports:

@@ -76,6 +76,28 @@ When reviewing or planning, explicitly look for:
 4. Run focused verification when feasible, using package-appropriate checks.
 5. Report residual CRAN risks, testing gaps, or assumptions explicitly.
 
+## Git Workflow
+
+- Never commit directly to `main`. Always work in a branch created from an issue.
+- Name branches `{type}/{issue-number}-short-description` (types: `feature/`, `fix/`, `docs/`, `test/`, `chore/`).
+- Use Conventional Commits: `feat:`, `fix:`, `docs:`, `test:`, `chore:`, `refactor:`.
+- Include the issue number in commit messages when applicable.
+- Update `NEWS.md` under the current development version heading for every user-facing change.
+- Run `devtools::document()` whenever roxygen comments change.
+- Add or update `testthat` tests for every code change.
+- Bump the version in `DESCRIPTION` only at release time, not per commit. During development use the `.9000` suffix.
+
+## Pre-Merge Checklist
+
+Before any code is merged to `main`, verify all of the following:
+
+- `R CMD check` passes cleanly (no errors, no warnings). Run: `make check`
+- `lintr::lint_package()` passes. Run: `make lint`
+- All `testthat` tests pass. Run: `make test`
+- Roxygen docs are regenerated. Run: `make document`
+- `NEWS.md` has a bullet for each user-facing change.
+- New exported functions have `@examples` in their roxygen docs.
+
 ## Response Style
 
 - Be direct and technical.

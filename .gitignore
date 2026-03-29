@@ -20,3 +20,6 @@ src/*.dll
 # IDE
 .vscode/
 *.Rproj
+
+# Pre-commit
+.precommit/

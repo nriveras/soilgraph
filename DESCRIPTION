@@ -1,6 +1,6 @@
 Package: soilgraph
 Title: Soil Profile Visualization from Field Descriptions
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: c(
     person(
         given = "Nicolás",
@@ -27,7 +27,9 @@ Imports:
     stats
 Suggests:
     knitr,
+    lintr,
     rmarkdown,
+    styler,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8

@@ -1,0 +1,52 @@
+# See https://pre-commit.com for more information
+# See https://lorenzwalthert.github.io/precommit/ for R-specific hooks
+#
+# Install once with:
+#   Rscript dev/setup.R
+# Or manually:
+#   install.packages("precommit")
+#   precommit::use_precommit()
+
+repos:
+  - repo: https://github.com/lorenzwalthert/precommit
+    rev: v0.4.3
+    hooks:
+      # Verify R files are parsable (syntax check)
+      - id: parsable-R
+
+      # Block browser() statements from being committed
+      - id: no-browser-statement
+
+      # Ensure all packages used are listed in DESCRIPTION
+      - id: deps-in-desc
+
+      # Tidy the DESCRIPTION file (consistent formatting)
+      - id: use-tidy-description
+
+      # Auto-style R files with styler
+      - id: style-files
+        args: [--style_pkg=styler, --style_fun=tidyverse_style]
+
+      # Run lintr on staged R files
+      - id: lintr
+
+      # Regenerate roxygen documentation if needed
+      - id: roxygenize
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # Prevent large files from being committed
+      - id: check-added-large-files
+        args: [--maxkb=500]
+
+      # Fix trailing whitespace
+      - id: trailing-whitespace
+        types_or: [r, yaml, markdown]
+
+      # Ensure files end with a newline
+      - id: end-of-file-fixer
+        types_or: [r, yaml, markdown]
+
+      # Check YAML syntax
+      - id: check-yaml

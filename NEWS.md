@@ -1,6 +1,9 @@
+# soilgraph (development version)
+
+* Developer workflow: added pre-commit hooks, lintr, Makefile, and CONTRIBUTING guide.
+
 # soilgraph 0.1.0
 
-* Initial CRAN release.
 * Structured soil objects (`new_soil_horizon()`, `new_soil_profile()`).
 * Field description parser (`derive_soil_horizons()`, `soil_profile_from_table()`).
 * Coarse fragment graphical engine with irregular polygon rendering.

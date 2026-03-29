@@ -16,3 +16,8 @@
 ^\.Rcheck$
 ^\.\.Rcheck$
 ^tests/testthat-advanced$
+^\.pre-commit-config\.yaml$
+^\.lintr$
+^Makefile$
+^dev$
+^CONTRIBUTING\.md$

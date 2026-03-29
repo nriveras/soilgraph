@@ -1,0 +1,194 @@
+---
+title: "Getting Started with soilgraph"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with soilgraph}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 5,
+  fig.height = 7,
+  dpi = 150,
+  out.width = "70%",
+  fig.align = "center"
+)
+```
+
+## Overview
+
+**soilgraph** provides tools for structuring soil profile descriptions, exporting
+them to JSON, and generating profile visualizations. A typical workflow is:
+
+1. Prepare a two-column field description table (**Depth** + **description**).
+2. Parse descriptions into a structured soil profile.
+3. Visualize the profile.
+4. Export to the `.soil.json` format for archival and exchange.
+
+```{r load-library}
+library(soilgraph)
+```
+
+## Creating a field description table
+
+Field notes are represented as a data frame with a `Depth` column containing depth
+ranges (e.g. `"0-18 cm"`) and a `description` column with natural language
+descriptions:
+
+```{r field-notes}
+field_notes <- data.frame(
+  Depth = c("0-18 cm", "18-52 cm", "52-95 cm"),
+  description = c(
+    "Ap dark brown silt loam moist clear smooth few subangular weak fragments with granular structure",
+    "Bt1 reddish brown clay loam slightly moist gradual wavy common rounded moderate fragments with clay films",
+    "Bt2 brown clay dry diffuse irregular many subrounded strong fragments with strong blocky structure"
+  )
+)
+field_notes
+```
+
+## Parsing descriptions
+
+`derive_soil_horizons()` extracts horizon properties (texture, color, moisture,
+boundary, coarse fragments) from the description text and returns a tidy table:
+
+```{r derive}
+horizons <- derive_soil_horizons(field_notes)
+horizons
+```
+
+The parser recognizes two input modes:
+
+- **Depth ranges**: `"0-18 cm"`, `"18-52 cm"`, `"52-95 cm"`
+- **Top depths only**: `"0"`, `"18"`, `"52"` — requires a `profile_bottom` argument.
+
+```{r top-depth-mode}
+top_depth_notes <- data.frame(
+  Depth = c("0", "18", "52"),
+  description = c(
+    "Ap dark brown silt loam moist clear smooth",
+    "Bt1 reddish brown clay loam gradual wavy",
+    "Bt2 brown clay dry diffuse irregular"
+  )
+)
+
+horizons_top <- derive_soil_horizons(top_depth_notes, profile_bottom = 95)
+horizons_top[, c("Horizon", "Top", "Bottom", "Texture", "Color")]
+```
+
+## Building a soil profile object
+
+`soil_profile_from_table()` converts a field notes table into a `soil_profile`
+object, which is the primary data structure used by all plotting and export
+functions:
+
+```{r build-profile}
+profile <- soil_profile_from_table(
+  field_notes,
+  site_id = "pedon-001",
+  classification = list(
+    system = "Soil Taxonomy",
+    taxon  = "Typic Hapludalf"
+  ),
+  metadata = list(country = "Chile", land_use = "cropland")
+)
+```
+
+You can also build profiles manually from individual horizons:
+
+```{r manual-profile}
+h1 <- new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
+  texture = "silt loam", boundary_grade = "clear", boundary_shape = "smooth")
+h2 <- new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
+  texture = "clay loam", boundary_grade = "gradual", boundary_shape = "wavy")
+h3 <- new_soil_horizon(52, 95, label = "Bt2", color = "#A66A4C",
+  texture = "clay", boundary_grade = "diffuse", boundary_shape = "irregular")
+
+profile_manual <- new_soil_profile(
+  site_id = "pedon-001",
+  horizons = list(h1, h2, h3),
+  classification = list(system = "Soil Taxonomy", taxon = "Typic Hapludalf")
+)
+```
+
+Use `validate_soil_profile()` to check depth ordering and overlap constraints:
+
+```{r validate}
+validate_soil_profile(profile_manual)
+```
+
+## Plotting
+
+### Basic profile
+
+```{r plot-basic, fig.cap = "Basic soil profile visualization."}
+plot_soil_profile(profile)
+```
+
+### Profile with coarse fragment markers
+
+Point-based markers encode fragment type (shape), size (point size), and
+cementation grade (alpha):
+
+```{r plot-fragments, fig.cap = "Profile with coarse fragment point markers."}
+plot_soil_profile_fragments(profile, seed = 42)
+```
+
+### Advanced visualization
+
+The advanced renderer uses polygon-based fragments and irregular boundary lines:
+
+```{r plot-advanced, fig.cap = "Advanced profile with polygon fragments, boundaries, and transition zones."}
+plot_soil_profile_advanced(profile, seed = 42)
+```
+
+### Plotting directly from field notes
+
+For quick visualization without creating objects manually:
+
+```{r plot-description, fig.cap = "Plot directly from field description table."}
+plot_soil_description(field_notes, site_id = "pedon-001")
+```
+
+## Exporting and importing JSON
+
+The `.soil.json` format stores profiles with all metadata in a standardized
+schema:
+
+```{r json-roundtrip}
+# Write to a temporary file
+tmp <- tempfile(fileext = ".soil.json")
+write_soil_json(profile, tmp)
+
+# Inspect the JSON structure
+cat(readLines(tmp, n = 15), sep = "\n")
+```
+
+Read it back:
+
+```{r json-read}
+profile_reloaded <- read_soil_json(tmp)
+profile_reloaded$site_id
+profile_reloaded$classification$taxon
+length(profile_reloaded$horizons)
+```
+
+## Reading bundled example data
+
+The package ships with example files in `inst/extdata/`:
+
+```{r bundled-data}
+json_path <- system.file("extdata", "example.soil.json", package = "soilgraph")
+example_profile <- read_soil_json(json_path)
+plot_soil_profile(example_profile)
+```
+
+## Next steps
+
+- Learn about the advanced graphical engines in `vignette("graphical-engines")`.
+- Explore the soil data model and supported vocabulary in `vignette("soil-data-model")`.
+- Browse a gallery of rendering examples in `vignette("rendering-examples")`.

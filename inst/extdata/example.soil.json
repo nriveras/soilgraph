@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "site_id": "pedon-001",
+  "classification": {
+    "system": "Soil Taxonomy",
+    "taxon": "Typic Hapludalf"
+  },
+  "metadata": {
+    "country": "Chile",
+    "land_use": "cropland",
+    "slope_percent": 4
+  },
+  "horizons": [
+    {
+      "top": 0,
+      "bottom": 18,
+      "label": "Ap",
+      "texture": "silt loam",
+      "color": "#5C4033",
+      "moisture": "moist",
+      "boundary_grade": "clear",
+      "boundary_shape": "smooth",
+      "coarse_abundance": "few",
+      "coarse_shape": "subangular",
+      "coarse_grade": "weak",
+      "notes": "Granular structure and abundant roots."
+    },
+    {
+      "top": 18,
+      "bottom": 52,
+      "label": "Bt1",
+      "texture": "clay loam",
+      "color": "#8A5A44",
+      "moisture": "moist",
+      "boundary_grade": "gradual",
+      "boundary_shape": "wavy",
+      "coarse_abundance": "common",
+      "coarse_shape": "rounded",
+      "coarse_grade": "moderate",
+      "notes": "Clay films visible on ped faces."
+    },
+    {
+      "top": 52,
+      "bottom": 95,
+      "label": "Bt2",
+      "texture": "clay",
+      "color": "#A66A4C",
+      "moisture": "slightly moist",
+      "boundary_grade": "diffuse",
+      "boundary_shape": "irregular",
+      "coarse_abundance": "many",
+      "coarse_shape": "subrounded",
+      "coarse_grade": "strong",
+      "notes": "Stronger blocky structure with fewer roots."
+    }
+  ]
+}

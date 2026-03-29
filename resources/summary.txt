@@ -1,0 +1,1846 @@
+A Summary of the Contributions of the
+International Committees for
+Revising Soil Taxonomy
+Compiled by Craig Ditzler
+April 2017
+
+Table of Contents
+Introduction ……………………………………………………………………………………………………… 1
+Low Activity Clays (ICOMLAC) ……………………………………………………………………………….. 4
+Oxisols (ICOMOX) ……………………………………………………………………………………………… 8
+Andisols (ICOMAND) ………………………………………………………………………………………….. 12
+Vertisols (ICOMERT) ……………………………………………………………………………...…………… 15
+Spodosols (ICOMOD) ……………………………………………………………………………………..…… 18
+Aquic Moisture Regime (ICOMAQ) …………………………………………………………………………… 20
+Aridisols (ICOMID) ………………………………………………………………………………………..…… 23
+Families (ICOMFAM) ………………………………………………………………………………………..… 26
+Permafrost-Affected Soils (ICOMPAS) ………………………………………………………………………… 28
+Anthropogenic Soils (ICOMANTH) ……………………………………………………………………….…… 31
+Moisture and Temperature Regimes (ICOMMOTR) …………………………………………………………… 34
+
+Introduction
+A decision was made in 1951 by the USDA Soil Conservation Service, Soil Survey Division Staff to develop a new
+system of soil classification. Dr. Guy Smith, Director of Soil Survey Investigations, was assigned the task. After the
+release of seven “approximations” for testing, his efforts culminated in 1975 with the publication of “Soil
+Taxonomy: A Basic System of Soil Classification for Making and Interpreting Soil Surveys” (Soil Survey Staff,
+1975). While this represented a major achievement, it was recognized from the start that the job was far from
+complete. In the foreword to the 1975 publication it was stated that work was still needed to improve the
+classification of soils in tropical regions, organic soils (Histosols), and soils with permafrost. It was acknowledged
+that the definitions of soil moisture regimes needed to be improved. It was anticipated that many of the details of the
+system would require revision as it was used to classify soils and more knowledge and experience was gained. Soil
+Taxonomy has always been considered a dynamic classification system, one that is constantly being tested and
+improved.
+A hallmark of the efforts to revise Soil Taxonomy over the years was the establishment of international committees
+(ICOMS) to address specific problems and shortcomings of the system. In each case a chairperson was appointed
+who was recognized as an expert in the particular topic. Pedologists from around the world with particular
+knowledge and expertise were extended invitations to participate as committee members. Additional individuals
+having an interest in the effort were also welcomed to participate. In addition to the ICOMs themselves, an
+important contributor to the effort during the 1970s to early 1990s was the Soil Management Support Services
+(SMSS) within the United States Agency for International Development (USAID). This organization had the
+necessary legislative authority to work outside the United States as part of their mandate to assist development in
+other countries. SMSS also provided some financial and logistical support to the efforts, including sponsoring field
+tours, conferences, and workshops around the world to study and discuss soils. SMSS also facilitated the publication
+of several editions of the “Keys to Soil Taxonomy,” which reflected the changes that resulted from ICOM work.
+This approach had several benefits. First, it managed to harness the collective experience and ideas of very highly
+qualified individuals from around the world to work on the problems. Second, it garnered significant international
+support for Soil Taxonomy as a global system for soil classification. Some countries adopted it directly while others
+integrated many of the basic concepts into their systems, such as the use of diagnostic horizons and characteristics as
+criteria to define taxonomic classes. Additional comments about the purpose and function of the ICOMs are in
+Smith (1986).
+The committees had significant leeway to carry out their work within the bounds of a few guiding principles. First,
+they had a charge defining the scope of their work in terms of the problem(s) to be addressed. This served to focus
+the group’s efforts to specific aspects of Soil Taxonomy. Second, it was important to formulate proposed revisions
+in such a way that they maintained the basic attributes of the system as described in chapter 2 of “Soil Taxonomy”
+(Soil Survey Staff, 1975 and 1999). Finally, proposed changes, while solving the problem, should ideally do so in a
+way that minimizes disruption to the current practical use of the system. The structure of Soil Taxonomy as a
+hierarchical system allows changes to be targeted to specific parts of the system without disrupting other parts. Even
+so, the effort required to implement changes (such as reclassifying soils, updating databases, etc.) can be large and
+some consideration (admittedly subjective in nature) needs to be given to weighing the benefits of revision with the
+cost of implementation. By and large the recommendations for change from the committees followed these
+principles. While significant effort was required to implement the changes, it was generally accepted that the
+benefits outweighed the costs.
+Over the years 11 ICOMS were established (table 1). All but one (ICOMMOTR) completed its task and submitted
+proposals resulting in major contributions to the improvement of Soil Taxonomy. The general operating procedures
+followed by all of the ICOMS were established by Dr. Frank Moorman as chair of the first committee – ICOMLAC.
+The use of circular letters to provide background information, pose questions, test proposals, and receive feedback
+proved to be a slow but effective way to work through the issues. All of the subsequent committees followed this
+approach. The circular letters are available online (Soil Science Division Staff, 2017). They were reviewed by this
+author and summarized for this report. They are presented in chronological order by date of completion. The
+following general topics are included for each committee: chairman, purpose, dates of activity, number of circular
+1
+
+letters, edition of the “Keys to Soil Taxonomy” reflecting the approved changes, a summary of the major changes
+that were adopted, proposals not approved (if any), and a few interesting ideas discussed but not proposed by the
+committee.
+As time goes on, the National Cooperative Soil Survey, like many organizations, finds that its institutional memory
+is fading. This summary of the work of the ICOMS will help to preserve some of that memory. It is important to
+understand what went on in the past to bring us to where we are today. By doing so we may be able to see more
+clearly how we should move forward. Also, it sometimes becomes clear that “new” ideas are actually the return of
+older ones. For example, ICOMID circular letters indicate a debate took place for dropping the Aridisols order.
+ICOMFAM circular letters indicate an interest in standardizing the particle-size control section to 25-100 cm for all
+soils, thus de-emphasizing the importance of the clay accumulation of argillic, natric, and kandic horizons.
+According to Smith (1986) there were early discussions for the establishment of a soil order for all soils with aquic
+moisture regimes. All of these are ideas are being discussed today. Perhaps one or more will be adopted, but the
+debate should be informed by past discussions.
+References
+Smith, G.D. 1986. The Guy Smith interviews: Rationale for concepts in Soil Taxonomy. T.R. Forbes, editor.
+Available at: https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/class/taxonomy/?cid=nrcs142p2_053582
+[verified 29 March 2017].
+Soil Science Division Staff. 2017. Historical international committee recommendations. Available at:
+https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/class/?cid=stelprdb1262263 [verified 29 March 2017].
+Soil Survey Staff. 1975. Soil Taxonomy: A basic system of soil classification for making and interpreting soil
+surveys. Soil Conservation Service. U.S. Department of Agriculture Handbook 436.
+Soil Survey Staff. 1999. Soil Taxonomy: A basic system of soil classification for making and interpreting soil
+surveys. 2nd edition. Natural Resources Conservation Service. U.S. Department of Agriculture Handbook 436.
+
+2
+
+Table 1. Summary of the International Soil Taxonomy Committees
+ICOM
+
+Chair
+
+Activity
+
+Keys Version
+
+ICOMLAC
+
+Dr. Frank
+Moorman
+
+1975-1986
+
+3rd ed., 1987
+
+ICOMOX
+
+Dr. Stanley
+Buol
+
+1977-1986
+
+3rd ed., 1987
+
+ICOMAND
+
+Dr. Michael
+Leamy
+
+1978-1988
+
+4th ed., 1990
+
+ICOMERT
+
+Dr. Juan
+Comera
+
+1980-1991
+
+5th ed., 1992
+
+ICOMOD
+
+Dr. Robert
+Rourke
+
+1984-1991
+
+5th ed., 1992
+
+ICOMAQ
+
+Dr. Johan
+Bouma
+
+1985-1991
+
+5th ed., 1992
+
+ICOMID
+
+Dr. Ahmed
+Osman
+
+1980-1993
+
+6th ed., 1994
+
+1988-1995
+
+7th ed., 1996
+
+1994-1997
+
+8th ed., 1998
+
+1995-2013
+
+12th ed., 2014
+
+ICOMFAM
+ICOMPAS
+ICOMANTH
+
+ICOMMOTR
+
+Dr.
+Benjamin
+Hajek
+Dr. James
+Bockheim
+Dr. Ray
+Bryant and
+Dr. John
+Galbraith
+Dr. Ron
+Paetzold
+and Dr.
+Wayne
+Hudnall
+
+1990-(not
+completed)
+
+NA
+
+Major Contribution
+
+Improved the classification of Alfisols and
+Ultisols that are dominated by low activity
+clays. Lack of clay films in argillic horizons
+with low activity clay was a particular problem.
+Expanded the base of knowledge about Oxisols
+beyond U.S. States and Territories and
+improved the structure of the Oxisols order to
+provide better taxonomic classes for highly
+weathered soils of tropical areas around the
+world.
+Established Andisols as the 11th soil order for
+soils in which the exchange complex is
+dominated by short-range order (amorphous)
+minerals such as allophane, imogolite, and
+ferrihydrite.
+Identified deficiencies with the existing criteria
+and classes of the Vertisols order and proposed
+new classes and criteria that better reflect
+genetic processes and that provide for enhanced
+interpretations.
+Better coordination of the morphological
+characteristics of soil horizons formed by the
+podzolization process (spodic horizons) with
+the chemical criteria used in Soil Taxonomy to
+support their classification.
+Diminished the use of the aquic moisture
+regime by introducing the concept of aquic
+conditions. Improved our ability to use
+morphology to document soil wetness in pedon
+descriptions and better integrate this
+morphology into soil classification.
+Improved the Aridisols order by replacing
+Orthids with 6 new suborders based primarily
+on the presence of key diagnostic horizons to
+better reflect genetic and interpretive
+differences.
+Made overall improvements to the family
+category of Soil Taxonomy.
+Established Gelisols as the 12th soil order for
+permafrost-affected soils.
+Improved the technical standards used to
+describe anthropogenic soils and defined the
+taxa to classify them.
+Developed draft proposals to simplify the
+definitions for moisture regimes, revamped the
+moisture control section concept, and proposed
+additional classes for temperature and moisture
+regimes designed to better portray seasonal
+variation.
+
+3
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on Low Activity Clays (ICOMLAC)
+Committee Chair: Dr. Frank Moorman, International Institute of Tropical Agriculture, Nigeria
+Period of Major Activity: 1975-1986 1
+Purpose: To improve the classification of Alfisols and Ultisols that are dominated by low activity clays. Note that a
+separate committee (ICOMOX) was addressing the Oxisols. Particular emphasis was on soils which were classified
+in Oxic subgroups (intergrades to Oxisols), especially those in intertropical areas. It was generally believed that the
+low activity nature of the clays should be recognized at a taxonomic category higher than subgroup (i.e., great
+group). The “low activity clay soils” (LAC soils) are those with clay minerals having low CEC, low permanent
+charge, and relatively high pH-dependent charge.
+LAC soils are unique and therefore require special attention in Soil Taxonomy. Due to their pH-dependent charge,
+base saturation measures have little meaning. ECEC is a more useful chemical measure of the soil’s ability to retain
+cations (or in some cases, anions). Plant nutrient leaching and adsorption of P, Ca, and heavy metals are potential
+concerns with LAC soils. Soils dominated by LAC tend to have low plasticity indices, low potential for shrinking
+and swelling, relatively low water held at field capacity, small, stable structural aggregates, and relatively high Ksat.
+Because of these important accessary properties, it is desirable to use LAC as a diagnostic property at a high level in
+the classification system. ICOMLAC achieved this by recognizing these properties primarily at the great group level
+and, in cases where other features take presence over LAC, with subgroups.
+Circular Letters: 14 2
+Adoption by Soil Taxonomy: 1987, Keys to Soil Taxonomy (3rd edition)
+Significant Contributions
+1. Formation, support, and operational procedures for ICOMS
+a. Under the leadership of Dr. Moorman, the concept of using circular letters to carry out most
+deliberations of the committee members was established. In addition, the Soil Management
+Support Services (SMSS, established in 1979 through a cooperative effort of SCS and USAID)
+was instrumental in supporting efforts to improve Soil Taxonomy by sponsoring international soil
+correlation workshops and by funding the printing of new versions of the “Keys to Soil
+Taxonomy.” These procedures became ongoing practices as new ICOMS were formed.
+2. Order
+a. The criteria given in the key to orders for Alfisols and Ultisols were revised to allow for the
+presence of a kandic horizon as a qualifying feature. In addition, the kandic horizon was also
+mentioned as allowable under certain conditions for the Oxisols and Mollisols.
+3. Suborders
+a. No changes to existing suborders of Alfisols or Ultisols were proposed by ICOMLAC. It was
+widely accepted that the moisture regimes should serve as the primary concepts for the suborders
+(with exceptions for Boralfs, which became present-day Cryalfs, and Humults).
+4. Great groups
+a. The recognition of low activity clays was introduced with Kandi great groups for soils with the
+newly defined kandic horizon.
+
+Dr. Moorman began the work of evaluating Soil Taxonomy with respect to low activity clays in 1975.
+ICOMLAC was formalized as the first International Committee in 1978.
+2
+In addition to 14 circular letters, the committee conducted international soil correlation workshops in Brazil in
+1976, Malaysia and Thailand in 1978, and Rwanda in 1981. In addition, in 1984 a symposium was held in
+conjunction with the SSSA meeting in Las Vegas, Nevada, to present the ICOMLAC proposal. ICOMLAC
+deliberations took place at roughly the same time as ICOMOX. Coordination between the committees was essential
+since their work overlapped. Of special importance was ICOMLAC’s introduction of the kandic horizon. About 40
+individuals around the world actively participated in the deliberations of ICOMLAC.
+1
+
+4
+
+5.
+
+6.
+7.
+
+8.
+
+i. Kandi for profiles with clay distribution that remains fairly constant with depth (like Pale
+great groups).
+ii. Kanhapl for clay distribution with depth that decreases within 150 cm.
+• Not used in Aqualfs, but used in Aquults. Low activity Aqualfs were considered
+rare, so it was felt there was not a need to have both great groups. A more
+broadly defined Kandic subgroup is used in Aqualfs.
+iii. In the southeast U.S. the Kandi great groups fit well with the LAC soils of the coastal
+plain while the Kanhapl great groups fit well with the LAC soils of the piedmont. Review
+and testing of the proposed criteria in the U.S. focused significantly on the geographic
+impact, thus favoring this outcome.
+b. Trop great groups of Alfisols and Ultisols (isomesic or warmer iso regime) were dropped. These
+were originally proposed by European soil scientists working in tropical regions of Africa. It was
+generally agreed that these great groups proved to be ineffective at grouping unique soils
+taxonomically and they did not provide a consistently meaningful geographic grouping because
+they are side-by-side with other non-Trop great groups in the landscape. It was also generally
+agreed that having temperature at both the great group and family levels was redundant and caused
+a loss of useful information at the great group level.
+Subgroups
+a. Numerous subgroups were introduced as needed for the new Kandi and Kanhapl great groups.
+They generally consisted of formative elements and definitions similar to the same concepts used
+elsewhere in other taxa.
+b. New subgroups
+i. Kandic subgroups were introduced in some taxa for intergrades to Kandic great groups.
+ii. Acric subgroups were introduced within some Kandic great groups for soils with very
+low ECEC.
+Family changes. No changes made to families.
+ECEC (effective cation-exchange capacity - defined as the sum of extractable bases plus 1N KCl
+extractable Al at the pH of the soil) was introduced as a more reliable measure to identify LAC and the
+soil’s ability to retain cations.
+a. Originally, the proposed criteria for the kandic was for CEC7 <16 or ECEC<12 (both on a clayonly basis). In the end, “or” was changed to “and.” Data available at the time suggest that if CEC7
+is <16, then ECEC will almost always be <12. Possibly just one of the criteria would suffice, but
+both are required by the key as it exists today.
+The kandic horizon was introduced as a new diagnostic horizon. (It was originally proposed in circular
+letter 11 as a “finer textured subsurface horizon or FTSH”.) In addition to having properties reflective of
+low activity clays, the kandic horizon was defined in a way that does not require the identification of clay
+films and it does not state that the increase in clay content is necessarily due to illuviation. Potential
+processes resulting in coarser texture in the surface layer compared to the subsoil include: selective erosion
+of fines, illuviation of clay, destruction of clay particles in the surface layers by weathering, or formation of
+clay particles in the subsoil from weathering products, as well as other possibilities. In addition, biological
+activity that outpaces clay illuviation in these highly weathered soils may obliterate any clay film
+formation. The lack of identifiable clay films (needed for identification of an argillic horizon) was an
+ongoing problem with LAC-dominated Alfisols and Ultisols and so this solved a significant problem by
+including soils with a kandic horizon (rather than argillic) as Alfisols or Ultisols.
+a. With circular letter 14 the chemical criteria for the proposed Kandi great group were combined
+with the criteria for the finer textured subsurface horizon, to form the criteria for the newly
+proposed kandic horizon. The name was suggested by Hari Eswaran.
+b. Originally, the kandic definition for minimum thickness of the overlying coarser textured surface
+layer required one to mix the upper 18 cm of the surface before verifying the required clay
+increase in the kandic. At the request of the Australians this was modified to require just a 5 cm
+coarser textured surface layer if there is an abrupt textural transition to the kandic. This seems just
+a little outside normal protocol for Soil Taxonomy because it only really works if you have not
+already plowed the soil. Once plowed, how could this exception really be applied? One would
+need prior knowledge to avoid reclassification due to management practices (cultivation).
+c. The criteria given for the required clay increase for the kandic horizon are slightly different than
+those for an argillic horizon. However, they are coordinated with the criteria for the oxic horizon
+5
+
+d.
+
+in such a way that there is a clear distinction in the allowable clay increase between these two
+otherwise similar horizons.
+For much of the time that ICOMLAC considered criteria for the kandic horizon, the draft
+proposals stated that the required minimum clay increase would occur over a distance of 12 cm or
+less. This was later revised to 15 cm for the practical reason that this is the break between the
+gradual and diffuse classes for horizon distinctness. If 12 cm was used, the evaluation of pedons
+described with a gradual (5-15 cm) boundary between the A to B horizons would always be in
+doubt as to whether they met the criteria or not. This revision demonstrates the desirability of
+integrating standard observable field morphology into the classification system whenever possible.
+
+Proposed But Not Adopted
+1. No proposed items were identified in this review as being rejected. However, it is likely that there were
+some revisions made to the final proposal before final approval. For example, no evidence remains showing
+the proposed subgroups and their keying order, but such records would be a common place to see final
+revisions and may be the case here.
+Interesting Ideas Discussed But Not Proposed
+1. There was a discussion of separating Alfisols and Ultisols based on CEC rather than base saturation. The
+majority of the committee opposed this idea because base saturation is a very important consideration in
+agricultural management and should be maintained as the dominant property separating the two orders. It
+was generally felt that such a change would drastically change the classification of many soils with
+uncertain benefit from a practical standpoint of application.
+2. Early discussions for the recognition of LAC great groups included debate about restricting their
+recognition to intertropical areas by including a temperature criterion that would eliminate the possibility of
+LAC recognition in mesic or cooler temperature regimes. There was significant opposition to including a
+temperature restriction. However, one of the early proponents of this was Guy Smith, who initially felt that
+not restricting the Kandi great groups to thermic and warmer areas would prove to be overly disruptive to
+present U.S. soil series and would likely cause the rejection of the final ICOMLAC proposal. So it appears
+his position was not so much scientific but rather influenced by the internal workings of the National
+Cooperative Soil Survey (NCSS) as it pertained to approving changes to Soil Taxonomy. Ongoing work to
+refine the criteria for CEC and weatherable mineral content eased his concerns and he no longer saw a need
+for the temperature criteria. That part of the proposal was withdrawn.
+3. Before the concept of the kandic horizon was conceived, ideas for revising the definition of the argillic
+horizon for LAC soils that have few or no evident clay films, but which (from the plant root perspective)
+behave like a soil with an argillic horizon, were debated. Although not unanimous, most committee
+members seemed to agree that the pedological significance of the argillic as an illuvial horizon with
+observable clay films should be recognized as an important soil-forming process because it is very common
+and has practical significance in soil use and management due to important accessory properties. At one
+point, some members of the committee proposed the adoption of a lixic horizon as a diagnostic subsoil
+horizon intermediate in properties between the argillic and oxic horizons. The introduction of the kandic
+horizon eliminated the need to revise the argillic definition.
+4. Other names considered during deliberations as a replacement for the term fine textured subsoil horizon
+(FTSH) included bulgic, lixic, pelotic, and lutic. Eventually the term kandic was accepted and proposed.
+5. For part of the committee’s deliberations different apparent CEC limits were considered for Kandi great
+groups in Ultisols (<16) and Alfisols (<24).
+6. There was some consideration given to establishing Vadic subgroups for soils that are wet above 1 m and
+contain “rusty mottling” but are not wet enough for an Aquic subgroup. (It is unclear now how the two
+really differ.)
+7. The committee explored the possibility of establishing subgroups to recognize “high” vs. “low”
+weatherable mineral content of the sand fraction based on total elemental analysis (rather than grain count).
+Since this fraction is not used for mineralogy in clayey families, it cannot be expressed at the family level,
+so there was a suggestion to recognize this at the subgroup level. “Low” would be understood as typic, and
+caric would denote “high.”
+8. Soils with “active” iron oxides (derived from basic/ultra-basic parent materials) are known to impart soil
+properties quite different from “inactive” iron oxides (derived from acid materials). This is partly accounted
+for with Rhodic great groups, but indirectly and with exceptions. In order to pursue this idea, it was
+6
+
+recognized that more study was needed to develop a more practical lab procedure and to determine what
+the limit between “high” and “low” active iron content might be. Although discussed in several circular
+letters, no solution was found that could be proposed.
+
+7
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on the Oxisols (ICOMOX)
+Committee Chair: Dr. Stanley Buol, North Carolina State University 1
+Period of Major Activity: 1977-1986 2
+Purpose: To improve the Oxisols order definition to better reflect these important, highly weathered soils with very
+low CEC. Specific problems to be addressed included: 1) a need to expand our knowledge about these soils beyond
+Hawaii and Puerto Rico, where most of the original supporting information was from, and 2) to elevate the
+importance of the dominance of low activity clays and lessen the importance of argillic horizons in the definition of
+the Oxisols order.
+Circular Letters: 17
+Adoption by Soil Taxonomy: 1987, Keys to Soil Taxonomy (3rd edition)
+Significant Contributions to the Structure and Application of Taxonomic Keys
+1. Change to the structure of the taxonomic keys
+a. Beginning with the Oxisols, the format for the keys to subgroups was revised significantly. Before
+this revision, the Typic subgroup was defined to represent the central concept for soils in the great
+group (presented in outline form). The definition included a mixture of statements describing
+properties that are always present (positively worded statements) as well as statements listing
+properties that are not present (negatively worded statements) because they are diagnostic for one
+of the other subgroups. All other subgroups within the great group were then differentiated from
+the Typic subgroup with statements such as “are like the Typic subgroup except for b and d, with
+or without c.” This style of intermingling positive statements with negative statements, and the
+need to refer back to items listed in the Typic subgroup definition, was very confusing, especially
+to readers not having English as their primary language. Beginning with the 3rd edition of the
+“Keys to Soil Taxonomy,” the key to the subgroups was revised to present subgroup definitions
+written in a positive style. This allowed the classifier to focus on the properties of the soil being
+classified rather than on an idealized concept for the great group as expressed by the Typic
+subgroup. Only the Oxisols had this change in the 3rd edition, but all of the keys to subgroups were
+revised to this format with the 4th edition of the Keys. (The first example of this style of key to
+subgroups was included in ICOMOX circular letter 12.)
+b. This change to the format of the keys to subgroups had an additional significant impact. With the
+previous way of defining the subgroups, it was possible to have a soil that fit no listed subgroup
+and therefore could not be classified to the subgroup level. The new style no longer begins with a
+definition for the Typic subgroup. Rather, the Typic subgroup is now in the last position in the
+keys with the criterion of “all other soils” belonging to the great group. This effectively changed
+the concept of the Typic subgroup from being the central concept of soils within the great group to
+one of being the catchall for all of the soils not meeting any other subgroup definition, regardless
+of whether they reflect the central concept or not.
+2. Order
+a. The concept of Oxisols was broadened to include soils with clayey surface layers and increasing
+clay content into a subsoil that is dominated by low CEC and minerals that are highly resistant to
+weathering (now recognized as kandic horizons). Previously these layers were considered argillic
+horizons, which placed these soils in Ultisols or Alfisols. Now these soils are Oxisols, but with a
+Dr. Buol became chairman in 1981, beginning with circular letter 8. Prior to this, Dr. Hari Eswaran was the
+chairman. Dr. Eswaran became the head of Soil Management Support Services (SMSS), overseeing and
+coordinating work of the various ICOMs.
+2
+In addition to 17 circular letters, the committee conducted workshops in Malaysia and Thailand in 1978,
+Rwanda in 1981, and Brazil in 1986. ICOMOX deliberations took place at roughly the same time as those of
+ICOMLAC. Coordination between the committees was essential since their work overlapped, especially
+ICOMLAC’s introduction of the kandic horizon.
+1
+
+8
+
+3.
+
+4.
+
+5.
+
+kandic horizon (classified as Kandi great groups). This was a major conceptual change allowing
+for better groupings of highly weathered soils of the tropics. (Soils with <40 clay in the surface
+layer, but having a significant clay increase into a subsoil dominated by low CEC and highly
+resistant minerals, are not included in Oxisols but are rather Kandi great groups of Ultisols or
+Alfisols.)
+b. Plinthite was dropped as a criterion for wet soils (aquic moisture regime) to be classified as
+Oxisols.
+c. The maximum depth allowed to the top of the oxic horizon was decreased from 2 m (as required in
+the 1st edition of “Soil Taxonomy”) to 150 cm. There were varying opinions expressed on this;
+some members wanted it to be required within as little as 50 cm.
+Suborders
+a. The perudic moisture regime was introduced as a criterion at the suborder level with the
+establishment of Perox. The first suggested name was Umox, with the formative element derived
+from humid. However, the term seems to have been changed because some thought it might be
+confused with the existing Humox.) The Perox are comprised primarily of Oxisols of cool, wet,
+high-elevation areas where precipitation regularly exceeds evapotranspiration. Similar conditions
+undoubtedly exist in other soil orders, but parallel perudic suborders have not been proposed
+(Perepts, Perods, etc.); this could be done if considered useful. Where these conditions exist in
+other orders, they are likely recognized today with series level criteria.
+b. Although moisture regimes are used to form the suborders, no Xerox suborder was proposed.
+However, the Ustox criteria were written to include either an ustic or xeric soil moisture regime.
+The request to allow the Ustox to have a xeric regime came from Australia, where they are known
+to occur but are of small extent. It is interesting to note that Guy Smith says in The Guy Smith
+Interviews that he felt the xeric moisture regime definition was written in a way that would
+exclude the possibility of its occurrence with Oxisols and he felt this was good because the name
+“Xerox” is patented and considered a trademark.
+c. The name Orthox previously used in Soil Taxonomy was dropped and renamed Udox in line with
+the other orders.
+d. The Humox suborder (indicative of thermic or cooler temperature regimes along with high OM
+content in Oxisols) was dropped. High OM (not coupled with temperature) was recognized now at
+the subgroup level (humic).
+Great groups. The proposed great group concepts and terms went through a few iterations before the
+committee settled on a set of great groups that were applied uniformly throughout the Oxisol suborders.
+a. The proposed keys included Kur great groups which were changed to Kandi in the 3rd edition of
+the Keys.
+b. A great group unique to the Oxisols for low pH and low apparent ECEC was included as Acr (i.e.,
+Acrudox, Acrustox, etc.).
+c. Sombri great groups (having a sombric horizon) were dropped by ICOMOX and not proposed for
+the revised order. However, they were added back and included in the 3rd edition of the “Keys to
+Soil Taxonomy” (Sombriustox, Sombriperox, and Sombriudox), presumably as a result of belated
+support during review of the ICOMOX final proposal.
+Subgroups
+a. Several subgroups common to other orders are used, such as Aeric, Aquic, Histic, Humic,
+Petroferric, Plinthic, etc.
+b. Lithic subgroups are defined as having a lithic contact within 125 cm rather than 50 cm, as in other
+orders (except Histosols).
+c. Recognition of a color continuum from yellow to red. Subgroups based on color were recognized
+to reflect the general color of the soils where other more important properties do not take
+precedence (such as Aquic, Lithic, Humic, etc.). As a result, classes commonly included at the end
+of the key to subgroups in Oxisols include Rhodic (for dark red colors, also used in Alfisols and
+Ultisols), Xanthic for yellow colors (7.5YR or yellower), and by default, Typic for red.
+i. There was a general consensus that color should continue to be separated, although there
+was limited evidence presented by anyone to demonstrate useful accessory properties that
+are reliably associated with the color differences. There undoubtedly is some inference
+regarding iron oxide mineral species (e.g., hematite and goethite) and also likely
+implications related to P-adsorption. Brazil, which has many Oxisols, used color at a high
+9
+
+6.
+
+7.
+
+level in their classification system. In the Ultisols, similar opinions are held, but the redyellow color differences (except for Rhodic) are handled as series criteria rather than
+subgroups, as in Oxisols.
+d. Anionic subgroups are recognized for soils with a delta pH of zero or slightly positive, thus
+resulting in anionic exchange capacity.
+Family changes
+a. The allic reaction class was introduced for use in Oxisols to recognize soils with significant
+extractable aluminum within the (particle-size) control section.
+b. Mineralogy classes for Oxisols were given their own section in the family keys.
+i. Two levels of extractable iron oxide are recognized with the ferruginous (18-40% Fe2O3)
+and ferritic (>40% Fe2O3) classes.
+ii. Two levels of gibbsite content are recognized with the allitic (18-40%) and gibbsitic
+(>40%) classes.
+iii. The sesquic class recognizes moderate levels of both iron oxide and gibbsite combined.
+iv. The previously used oxidic mineralogy class was dropped as it was considered to be
+somewhat redundant and not needed in Oxisols. There was a brief suggestion of keeping
+the term and using it rather than mixed for the last position in the key (“all others”). The
+thought was that mixed mineralogy is quite different in concept for Oxisols than for other
+orders. In the end, however, mixed remained for use in Oxisols.
+c. The particle-size classes for Oxisols was expanded to include fine and very fine (rather than just
+clayey). Although the fine/very fine distinction has marginal impact on CEC, it was shown to
+provide a useful separation with regard to P-adsorption.
+d. Sloping was introduced as a family class term for Aquox with >8% slope. (Slope was later
+removed entirely for use as a family class with the 5th edition of the Keys.)
+Oxic horizon definition
+a. The definition established 10% as the maximum allowable weatherable mineral content and also
+specified the grain size to be evaluated, thus paralleling the siliceous mineralogy class. This
+replaced the qualitative “Does not have more than traces of …” criterion used previously. The
+10% weatherable mineral limit approximates a reserve of only about 25 cmol (+)/kg as Na, K, Ca,
+Mg.
+b. The previously required minimum clay content of 15% for the oxic horizon was dropped in order
+to allow somewhat coarser horizons to qualify. Also, requiring at least 15% clay had the effect of
+allowing only a very narrow range for the coarse-loamy particle-size class (15-18% clay) and this
+was considered undesirable from a practical standpoint. The oxic horizon must still have texture of
+sandy loam or finer, but this would introduce a new problem by allowing very low (approaching
+0) percent clay if there is appreciable silt. As a result, for oxic horizons with rather low clay, the
+calculations of CEC and ECEC on a clay fraction basis may be a bit unreliable. There was
+discussion of requiring clay to be at least 8% and exceed silt by various factors, but this was not
+proposed in the end.
+c. ICOMOX adopted the same combined limits for apparent CEC and apparent ECEC criteria as
+those adopted for the kandic horizon by ICOMLAC. By using apparent (clay only basis) CEC and
+ECEC, the potential problem of included exchange capacity of the organic fraction was avoided.
+d. Criterion for maximum allowable clay increase with distance (i.e., within 15 cm) was written to
+keep oxic and kandic horizons mutually exclusive.
+
+Proposed But Not Adopted
+1. An Umbraquox great group was proposed but not included in the published keys.
+2. Exclusion of layers with >85% rock fragments from the oxic horizon. This criteria was proposed but not
+included in the published keys.
+Interesting Ideas Discussed But Not Proposed
+1. There was some dissatisfaction with the use of weatherable mineral percentage by optical count as a
+criterion for the oxic horizon. It was felt it would be better if a procedure could be used to express the
+weathering stage itself of the minerals present. A hot 6N HCL extract procedure for determination of total
+bases (as used in Malaysia for fertility determination) was investigated for possible use. This procedure was
+not pursued further. Similarly, there was discussion of using total elemental analysis of the < 2mm fraction
+10
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+(Ca + Mg + K + Na / 100g soil < [some value, 25 meq maybe]) rather than optical count of weatherable
+minerals. This apparently did not work out.
+There is an interesting discussion in circular letter 7 about sombric horizons that were observed in Rwanda.
+Included are descriptions of their physiographic and geomorphic occurrence, theories about their genesis,
+and their importance to soil classification and management. Even so, little change was made to the
+definition of this diagnostic horizon, which continues to be relatively unknown, little understood in terms of
+its genesis, and mostly defined qualitatively in Soil Taxonomy. Mid-way through the committee’s
+deliberations the Sombri great groups were deleted and there seemed to be little or no disagreement since
+they were not discussed in any more circular letters. However, when the 3rd edition of the Keys was
+published, Sombri great groups were included for the Ustox, Perox, and Udox. It is not clear how the
+decision was made to reintroduce them. Presumably, belated support was expressed after the final proposal
+was tested.
+Circular letter 7 contained a proposed definition for akric soil materials. These materials would be defined
+to represent highly weathered, clayey materials that are essentially at an advanced stage of weathering in
+the oxic horizon, containing mostly iron-oxides or oxyhydrates, and little in the way of silicate clays such
+as kaolinite and as having a delta pH of 0 or slightly positive. They are extremely nutrient poor and illsuited to cultivation. Oxisols having akric soil materials were proposed for a suborder Akrox. However,
+since the proposed akric soil materials fall within the definition of the oxic horizon itself, it was determined
+that a unique diagnostic category was not really needed. The general concept was handled at the subgroup
+and suborder levels with Anionic subgroups and Acr great groups (e.g., Anionic Acrudox).
+Great groups and subgroups using the formative element Kur (e.g., Kurustox, or Kuric Eutrustox) were
+considered as a way to recognize soils that have clayey surface layers (and kandic horizons) and therefore a
+large total surface area for particles in the surface layer and that exhibit a significant potential for Padsorption. These were proposed by ICOMOX, but replaced with Kandi in the final version for the 3rd
+edition of the Keys.
+In circular letter 10, Chairman Buol shared a computer program he wrote in BASIC with his home
+computer to test the latest draft version of the Oxisol keys. It used a series of yes/no questions to evaluate a
+pedon and classify it to the family level. He considered it an effective tool for teaching students how to use
+Soil Taxonomy.
+Use of apparent CEC and ECEC values at higher taxa (i.e., converting to a clay only basis) was questioned
+in circular letter 14. There was some debate about the value of using these calculated values for three
+reasons. First, in the higher taxa, one should be classifying the whole soil, not just the clay fraction.
+Second, compounded error is introduced when combining results from two lab procedures (each with their
+own source of error) to calculate a new value. And third, when one gets to family categories, the difference
+in clay type and overall texture are recognized in mineralogy and particle-size classes, thus helping to sort
+out the information contained in the “apparent” concept. Having similar criteria at more than one
+taxonomic level was argued to be “self-defeating” for a classification system.
+While ICOMOX was working, there was a separate National Cooperative Soil Survey (NCSS)
+investigation to see if the clay increase requirements for the argillic horizon could be revised to be the same
+as the kandic (i.e., clay increase occurs within a zone of 15 cm or less). If the requirements were agreed to,
+more soils would qualify as Oxisols. However, they were not agreed to after the impact to other Alfisols
+and Ultisols was assessed.
+
+11
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on the Andisols (ICOMAND)
+Committee Chair: Michael Leamy, Director, New Zealand Soil Bureau 1
+Period of Major Activity: 1978-1988 2
+Purpose: To evaluate the proposal developed by Dr. Guy Smith for the Andisols order to include at least the soils
+previously classified as Andepts, and to consider other terms and definitions for particle-size classes of soils with an
+exchange complex dominated by amorphous minerals with variable charge.
+Circular Letters: 10
+Adoption by Soil Taxonomy: 1990, Keys to Soil Taxonomy (4th edition)
+Significant Contributions to Soil Taxonomy
+1. Order
+a. Established the Andisols soil order. This term was used rather than the similar Andosols because:
+1) the term was already in use elsewhere with a different definition, and 2) Soil Taxonomy
+generally uses the vowel “o” to link the ending sol with Greek formative elements. The vowel “i”
+was preferred here with the formative element (“And”) of Japanese origin. The general concept of
+the Andisols order is one of soils in which weathering of the primary alumino-silicate minerals has
+resulted in the formation of short-range order (amorphous) minerals such as allophane, imogolite,
+and ferrihydrite. Translocation of these minerals within the profile is minimal, an important
+contrast with Spodosols. Most, but not all, Andisols formed in parent materials of volcanic origin.
+b. After much study, the committee recognized that there are some soils that did not form in volcanic
+parent materials that nevertheless have andic soil properties and fit the proposed criteria for the
+Andisols order. In these soils, primary alumino-silicates have weathered to form short-range order
+minerals. These include some soils of limited extent in Spain, southern Chile, Germany, and New
+Zealand. Similar soils have also been observed at high elevations in the Appalachian Mountains in
+the U.S. Since: 1) Soil Taxonomy uses soil properties as criteria (not parent material or theories of
+genesis directly), 2) these soils of non-volcanic origin exhibit the properties recognized for
+Andisols, and 3) they appear to be not very extensive and have no obvious important properties to
+exclude them from Andisols, the consensus was that these soils should be noted and included in
+the Andisols order unless and until a strong case can be made to modify the criteria for Andisols in
+a way that excludes them. Although debated in subsequent years, this case has not been made.
+2. Suborders
+a. The use of “Trop” suborders and great groups was initially discussed for use in Andisols as in
+some other orders. Committee members in general did not favor them since they are based on isotype temperature regimes; they were (correctly) seen as being redundant with the same kind of
+terms being used in the family classification. The initial thought was to keep the “trop” classes and
+exclude temperature from the family name for these soils. Most favored keeping temperature at
+the family level for these mostly intertropical soils, so the Andisol proposal did not include a Trop
+suborder or great groups. This was eventually carried through to the other orders, and by the 8th
+edition of the “Keys to Soil Taxonomy” (1998) the Trop formative element was no longer used for
+any taxa.
+
+Chairman Leamy passed away on January 1, 1990, and therefore did not see the published 4th edition of the
+“Keys to Soil Taxonomy,” which contained the newly created Andisol soil order.
+2
+Prior to the formation of ICOMAND, Dr. Guy Smith visited New Zealand (from late 1976 to 1978) to prepare
+a report for the reclassification of the Andepts suborder. During this time he developed the initial proposal for the
+Andisol soil order, which was tested extensively and revised by ICOMAND. In addition to the circular letters,
+activities included numerous conferences and field investigations in New Zealand, Rwanda, Chile, Ecuador, the
+Canary Islands, U.S., and Japan.
+1
+
+12
+
+b.
+
+3.
+
+4.
+
+5.
+
+6.
+
+Vitrands were established for Andisols with relatively low water retention (generally young,
+coarse textured tephra, high in glass). Other suborders are based on soil climate as is common in
+the other orders.
+Great groups
+a. The great groups proposed are generally similar to those in other orders (i.e., based on cold
+temperature, patterns of saturation, presence of subordinate pedogenic controlling diagnostic
+horizons or features, etc.).
+Subgroups
+a. Defined Thaptic subgroups for Andisols having layers with dark color and relatively high organic
+matter between depths of 25 and 100 cm. These layers are likely former surface layers within
+stratified tephra deposits.
+b. Andic and Vitrandic subgroups were defined for use in other orders as intergrades to Andisols.
+The Andic intergrades are those grading toward the finer textured, moderately weathered Andisols
+high in amorphous minerals. The Vitrandic intergrades are those grading toward the coarser
+textured, slightly weathered Andisols high in volcanic glass content.
+c. A set of rules used for assigning subgroups for Andisols was recorded in appendix 5 of circular
+letter 10. It provides guidance for which subgroups are used/excluded from various great groups as
+well as general naming conventions for subgroups consisting of double names. Written records
+such as these, although not part of Soil Taxonomy, are valuable references that are not commonly
+available for later consideration.
+Diagnostic characteristics
+a. Added andic soil properties as a new diagnostic feature arising from the weathering of tephra and
+other volcanic parent materials with significant glass content. This evolved from an earlier concept
+that was proposed called exchange complex dominated by amorphous material (ECDAM). Later,
+there were two separate diagnostic features discussed – andic soil properties (for soils formed in
+moderately weathered tephra, rich in short-range order minerals) and vitric soil properties (for
+more weakly weathered soils rich in glass). These were subsequently combined into the single
+diagnostic feature of andic soil properties. The presence of andic soil properties dominating the
+upper part of the soil is the key feature of the Andisols order.
+i. The laboratory test ODOE (optical density of acid oxalate extracts) was introduced from
+New Zealand as a method for identifying the illuvial accumulation of amorphic materials
+(spodic horizons) and differentiating them from a layer with andic soil properties formed
+more or less in place. This distinction is sometimes difficult to discern in the field.
+ODOE is used to confirm the illuvial nature of the spodic. This was not included in the
+Andisols proposal, but was later introduced by ICOMOD as one criterion for defining
+spodic materials.
+b. Added the melanic epipedon as a new diagnostic horizon (concept originating in Japan) that is rich
+in organic matter, very dark in color, and having andic soil properties. The origin of the organic
+matter is believed to be graminaceous vegetation (in Japan notably, pampas grass and bush
+bamboo).
+i. Introduced the melanic index as a laboratory test to distinguish humic vs. fulvic acid
+dominance in the organic matter fraction. The test result (a ratio of wavelength
+absorbance of an extraction solution) is used as a criterion for the melanic epipedon.
+Family
+a. Expanded and revised family particle-size class terms to better recognize volcanic materials.
+i.
+Recognized pumice as a kind of rock fragment due to its unique light weight and porous
+character, which significantly enhances water-holding ability and also poses a challenge
+for engineering due to the ease of crushing under a load. Because the term pumice has an
+established geological definition (i.e., rhyolitic composition), the term pumice-like was
+also included in the concept for fragments of pyroclasic origin with an apparent specific
+gravity, inclusive of vesicles, of < 1.0, but not rhyolitic in composition.
+ii.
+Replaced the subjectively defined term thixotropic with the more precisely defined term
+hydrous and provided new quantitative definitions for ashy and medial.
+iii.
+Added ashy-pumiceous and medial-pumiceous as substitute particle class terms.
+
+13
+
+iv.
+
+Pumiceous and cindery substitute particle-size classes were added for soils with < 10%,
+by volume, fine earth in the voids between larger fragments of volcanic origin. Prior to
+this, all these soils were included as fragmental.
+
+Proposed But Not Adopted
+1. A Perands suborder (Andisols with a perudic moisture regime) was proposed but not adopted. These soils
+remain in Udands. It is not entirely clear why the Perox proposed by ICOMOX was adopted while the
+Perands was not.
+2. Several proposals regarding mineralogy classes were included in the ICOMAND report. These included the
+amorphic mineralogy class (to recognize short-range-order minerals) as well as two new mineralogy
+classes, whole soil-mineralic (with a mineral name appended) for soils with < 10% clay (e.g., whole soil
+mineralic (volcanic glass)) and a companion clay soil mineralic class for soils with > 10% clay (e.g., clay
+mineralic (kaolinite)). These and other suggestions were passed on to ICOMFAM for consideration. The
+amorphic class (after modification) was included in the 7th edition of the “Keys to Soil Taxonomy” (1996).
+The mineralic classes were not adopted.
+3. Proposed use of an aniso class as a modifier of the particle-class term for soils with more than one pair of
+strongly contrasting particle-size classes in the control section. For some reason this was not included in the
+“Keys to Soil Taxonomy” until the 8th edition.
+Interesting Ideas Discussed But Not Proposed
+1. There was some discussion of defining a new epipedon (andic epipedon) that forms due to the process of
+“andosolization.” It would be defined in a way that includes all the criteria being considered for the
+Andisols order. The keys to the orders would simply state “has an andic epipedon.” This idea was merged
+with the concept of andic soil properties, and the idea of creating a new epipedon was dropped.
+2. The term air-dry was defined in the ICOMAND discussion as drying a sample in air at 30-35 degrees C
+(around 90 degrees F). It was not proposed formally. This phrase, while used frequently in Soil Taxonomy,
+is not defined anywhere. Terms used include air-dry, air-dried, air-dried slowly in shade, and simply dry.
+It is left to the reader to decide what is actually meant.
+3. Some new subgroup terms were debated but not adopted for the final proposal. They include:
+a. Supra-andic and Supra-vitric. These were considered for soils with layers of tephra representing
+contrasting substitute particle-size classes. It was determined that the use of contrasting families,
+including the proposed iso prefix, were sufficient and the subgroups were not needed.
+b. A series of “Thapto-” subgroups. These were considered to recognize volcanic deposits over
+various types of buried diagnostic horizons (e.g., Thapto-spodic, Thapto-oxic, Thapto-natric, and
+more). Some were dropped completely, and some were revised to the more commonly named
+subgroup names such as Alfic, Oxic, Ultic, etc.
+
+14
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on the Vertisols (ICOMERT)
+Committee Chair: Dr. Juan Comera, CENIAP-FONAIAP, Maracay, Venezuela 1
+Period of Major Activity: 1980-1991 2
+Purpose: To identify deficiencies with the existing criteria and classes of the Vertisols order and to propose new
+classes and criteria that better reflect genetic processes and provide for enhanced interpretations. Early perceived
+deficiencies included the inadequate classification of wet Vertisols, the need to more effectively separate acid, nonacid, and calcareous classes, and the restriction that prohibited Vertisols from being recognized with a frigid or cryic
+temperature regime.
+Circular Letters: 5
+Adoption by Soil Taxonomy: 1992, Keys to Soil Taxonomy (5th edition)
+Significant Contributions to Soil Taxonomy
+1. Order
+a. Gilgai was removed as one of the criteria explicitly used to identify Vertisols. While gilgai is
+present in many Vertisols, it is not a universal feature. Also, where present it is subject to
+obliteration by soil management (e.g., cultivation or land leveling). It can be confused with other
+forms of patterned ground, such as mima mounds and the associated vernal pools in some Xeralfs
+(e.g., the Redding series). Gilgai remains a useful field clue to recognizing Vertisols but is no
+longer listed as a criterion in the taxonomic keys.
+b. The thickness requirement for Vertisols was relaxed to allow soils less than 50 cm thick. The soils
+must simply have a layer at least 25 cm thick that meets the criteria for clay content and
+morphology indicative of shrink-swell processes, and have certain root-limiting layers at depths
+above 50 cm. No minimum thickness is stated explicitly. This allows for soils with thinner profiles
+due to shallow bedrock, duripans, etc., that are in association with deeper Vertisols on the
+landscape to remain together in the same order. Their interpretive differences (due to depth) are
+handled at lower categories (great group or subgroup). This change was originally argued by the
+Australians based on their experience with Vertisols in their country.
+2. Suborder changes
+a. The cracking criteria used to define suborders was enhanced by including a specified width and
+thickness of the cracks in addition to their seasonal pattern of formation. This was done to provide
+criteria for use in the field that better describe when a crack is of sufficient size to be considered
+for meeting the criteria.
+b. An Aquic suborder (Aquerts) was introduced. At the time this was a difficult issue because the
+concept of the aquic moisture regime is not applicable to Vertisols which, because of their deep
+cracking, wet simultaneously from the top and the bottom. The moisture control section and
+associated wetness patterns as defined for the aquic moisture regime cannot be applied to these
+soils. In addition, it was argued that Aquerts by their nature are quite different from other aquic
+suborders due to the fact that they must experience significantly dry periods in order to drive the
+shrink-swell processes necessary for the morphological expression (slickensides) required for the
+Vertisols order. The creation of the Aquic Conditions concept by ICOMAQ helped to solve these
+issues to some degree, and the Aquerts were adopted. Interestingly, an Aquerts suborder was
+included in the 7th Approximation in 1960 but was dropped and not included in the 1st edition of
+Dr. Comera was on a sabbatical leave from his position in Venezuela and working at Texas A&M University
+for part of the time he was chair of ICOMERT.
+2
+In addition to 5 circular letters, the chairs of ICOMERT, ICOMID and ICOMORT conducted a joint field tour
+in Sudan, November 1-11, 1982 (5th International Soil Correlation workshop), to consider the charges for the three
+committees. A second trip and 6th International Soil Correlation workshop was jointly coordinated by ICOMERT
+and ICOMID and held August 6-18, 1989, in Montana, Idaho, and Wyoming in the U.S. and in Saskatchewan,
+Canada. The main purpose was to consider the proposed expansion of Vertisols and Aridisols into cold regions.
+1
+
+15
+
+3.
+
+4.
+
+“Soil Taxonomy” in 1975, probably due to the problem of applying the aquic moisture regime
+criteria in cracking soils as described above.
+c. The restriction of Vertisols to soils with a mesic or warmer temperature regime was removed, thus
+allowing aerial expansion of the order into colder regions. A Cryerts suborder was adopted for
+Vertisols having a cryic soil temperature regime. The use of temperature at the suborder level
+recognizes the greater importance of temperature over moisture for these soils. In addition, slightly
+warmer Vertisols having a frigid temperature regime were recognized at the family level.
+Great groups
+a. It was generally agreed that the concepts for the then-existing Pell and Chrom great groups which
+were defined by color were not working as intended to separate the sloping, better drained
+Vertisols from those on nearly level positions that are less well drained. It was also notable that
+the Torrerts had no great groups and went directly from suborder to subgroup. The Pell and
+Chrom great groups were replaced with a new suite of great groups based on the presence of
+important diagnostic horizons and features.
+b. Dystr and Eutr great groups were added to separate some low pH and high pH soils.
+c. The chrom concept was revised for use as a subgroup.
+Subgroups
+a. Numerous subgroups were introduced. They generally paralleled similar subgroups in other
+orders.
+b. Two subgroups reflecting limited depth to restrictive layers were used. In addition to the
+traditional Lithic subgroups for soils with a lithic contact within 50 cm, Leptic subgroups are used
+to recognize Vertisols with root-restive layers within 100 cm.
+i. Not all great groups of Vertisols, however, have a Lithic subgroup recognized, so some
+soils with a lithic contact within 50 cm are included in the Leptic subgroup by default. It
+is not clear why there are no Lithic subgroups in some great groups. Perhaps they simply
+were not documented anywhere.
+c. Alic subgroups were included to separate acid Vertisols with high aluminum content (these
+subgroups were later dropped).
+d. Vertic intergrade subgroup criteria in other orders were revised to include either morphology such
+as cracks and slickensides or the potential for significant shrinking and swelling as evidenced by
+LE. Previously, morphology was required in all cases.
+
+Proposed But Not Adopted
+1. Although it is difficult to determine for certain today, it appears that the committee chose to use the term
+Stagnaquerts rather than Epiaquerts for the mostly ponded Aquerts having episaturation (wetness
+originating at the surface and moving downward into the upper part of the soil). This seems to have been
+influenced by the deliberation status of ICOMAQ at the time. ICOMAQ was also using the formative
+element stagn for saturation originating at the surface, in contrast to the endo case in which saturation rises
+from below. Debate went back on forth on this until eventually the consensus among soil classifiers seemed
+to be to use the formative elements Epiaqu and Endoaqu to recognize the two patterns of saturation and to
+name great groups consistently for all the aquic suborders. Thus Stagnaquerts were changed to Epiaquerts
+at some point, possibly after the final proposal was submitted (the timing on this is not clear).
+Interesting Ideas Discussed But Not Proposed
+1. There was early discussion of expanding the concept of Vertisols by including soils that have slickensides
+present only at depths below 100 cm. Many objected to this idea because it was generally felt that shrinkswell processes are most important in soils where they occur in the upper part of the soil, thus significantly
+influencing use and management. Also, by including soils where the expression is below 100 cm, soils with
+other important processes in the upper part will be excluded from other orders where they may be better
+placed (such as vertic intergrades of Alfisols or Mollisols).
+2. Two subgroups were considered to reflect structural conditions of the surface layer: Grumic for selfmulching conditions and Mazic for surfaces with a crust. There is the obvious problem of common
+agricultural management practices having an effect on these properties and impacting classification,
+something best avoided when designing classes in Soil Taxonomy. The idea was not pursued further.
+3. There was a suggestion for a new suborder of Monerts for Vertisols having a monsoonal climate. A general
+proposal was made based on the timing and occurrence of cracks (cracks that open just once annually).
+16
+
+4.
+
+After initial discussion, it was generally agreed that since the concept of recognizing a monsoonal moisture
+regime should be applied to more than the Vertisols, the proposal should be considered by ICOMORT in
+that larger context. This has not been pursued because ICOMORT did not complete its work. However, it
+seems to have merit and could be considered in the future.
+There was discussion about the possible need to quantify the amount of slickensides required for the
+Vertisols order (there was a suggestion for 10%, by weighted average, in the particle-size control section).
+This issue was raised because Vertisols are commonly associated on the landscape with soils of at least
+moderate age, such as Alfisols. However, some soils that are associated with Entisols on young landscapes
+also qualify as Vertisols. The Sharkey series on flood plains of the Mississippi River Valley is an example.
+While there was some initial interest in excluding these from Vertisols, there was insufficient information
+available to craft a proposal for doing this effectively. Also, it was generally felt that a required weighted
+average percentage of slickensides would be difficult to evaluate in the field. The criteria for slickensides
+were therefore left as not requiring any specific amount. Slickensides must simply be present and have an
+orientation of 10-60 degrees from horizontal (which denotes movement and not just pressure). As a
+consequence, Vertisols today are associated with both young and older soils on the landscape.
+
+17
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on Spodosols (ICOMOD)
+Committee Chair: Dr. Robert V. Rourke, University of Maine
+Period of Major Activity: 1984-1991 1
+Purpose: To better coordinate the morphological characteristics of soil horizons formed by the podzolization
+process (spodic horizons) with the chemical criteria used in Soil Taxonomy to support their classification. There was
+a general dissatisfaction with the fact that Spodosols required a significant amount of lab data to be classified and it
+was not unusual for the general correlation between the degree of morphological expression observed in the field
+and the associated laboratory data to be poor. In addition, the existing chemical criteria were ineffective at
+distinguishing Spodosols from Andisols. Confidence in field classification was low due to these problems.
+Much of the work to develop the proposal consisted of testing a diverse collection of pedons that had complete
+morphological descriptions, associated laboratory data, and physical samples on-hand to evaluate current chemical
+criteria and test new criteria, including new kinds of laboratory analyses. Morphological information (horizon
+nomenclature, color, texture, structure, horizon boundary, and thickness) was entered into a database in an attempt to
+develop a “morphologic model” for Spodosols. The development of criteria related to field-observable morphology
+was an important aspect of the committee’s work. The final result appears to have been a successful attempt to
+utilize field-observable morphology as much as possible to identify Spodosols while keeping the necessary
+laboratory data to a reasonable minimum and still have an effective set of criteria.
+Circular Letters: 10
+Adoption by Soil Taxonomy: 1992, Keys to Soil Taxonomy (5th edition)
+Significant Contributions
+1. Order
+a. The criteria listed in the key to soil orders for Spodosols was expanded significantly to include
+specific requirements such as volumetric makeup of the eluvial (albic) and illuvial (spodic
+materials) layers, upper and lower boundary location of the spodic horizon, and overall thickness
+and texture. Also integrated in the criteria are allowed temperature classes, cementation
+requirements, and an exclusion of andic soil properties.
+2. Suborders
+a. Ferrods were dropped (there were no great groups for this suborder prior to ICOMOD’s work).
+b. Cryods were added.
+3. Great groups
+a. Spodic materials that are relatively high in aluminum compared to iron were recognized with Allic
+great groups (Alaquods, Alorthods).
+b. Trop great groups were dropped (this was a taxonomy-wide change made across all the orders, as
+discussed in the ICOMLAC summary).
+c. The Sideraquods great group was dropped (these became either Endoaquods or Epiaquods).
+d. Endo and Epi great groups of Aquods were introduced, reflecting to the work of ICOMAQ.
+e. Duri great groups were added to Humods and Orthods and also included in the new Cryods.
+4. Subgroups
+a. Andic intergrades and Oxyaquic extragrades were included, reflecting the work of ICOMAND and
+ICOMAQ, respectively.
+b. The definitions for Spodic subgroups as intergrades in other orders were written using relaxed
+criteria for some of the properties used in the spodic materials definition (cementation by organic
+matter/aluminum, oxalate Fe plus AL, and ODOE).
+5. Family. No changes proposed.
+In addition to 10 circular letters, a field tour and conference were conducted October 1-14, 1988, in
+northeastern U.S. and southeastern Canada as the 5th International Soil Correlation Meeting (ISCOM) on
+Characterization, Classification, and Utilization of Spodosols.
+1
+
+18
+
+6.
+
+7.
+
+Spodic materials
+a. A new diagnostic characteristic of spodic materials was introduced for identifying illuvial
+amorphous materials consisting of organic matter and iron (with or without aluminum) in the soil.
+Criteria are a combination of chemical and morphological properties.
+b. New laboratory tests. After evaluation and testing of several chemical tests for identifying illuvial
+amorphous materials, two that were found to be most effective and practical were incorporated as
+criteria.
+i. Optical density of the oxalate extract (ODOE) was introduced as a criterion reflecting the
+illuvial nature of spodic materials (accumulation of fulvic acids).
+ii. A new criterion involving comparisons of extractions of iron and aluminum by
+ammonium oxalate between the eluvial and illuvial horizons was introduced, also as a
+reflection of the illuvial nature of spodic materials (accumulation of iron and/or
+aluminum).
+Spodic horizon
+a. Dropped the index of accumulation as one of the criteria previously used in Soil Taxonomy for the
+identification of a spodic horizon. This index was essentially an attempt to quantify the amount of
+amorphous material in the profile.
+b. Spodic horizon identification relies on the definition of the newly introduced spodic materials,
+simply requiring the horizon to contain at least 85% spodic materials and be at least 2.5 cm thick.
+c. The concept of the spodic horizon was expanded to allow recognition in an Ap horizon so that
+cultivated Spodosols would remain within the order.
+
+Proposed But Not Adopted
+1. In circular letter 10, the draft keys to the orders had Andisols keying before Spodosols. In the 5th edition of
+the Keys this was changed to have the Spodosols key out before Andisols. One benefit of this approach is
+that the keys can be written using positively worded phrases (for example, saying an albic horizon is
+present above the spodic horizon) rather than having to use somewhat confusing, negatively worded
+phrases (such as saying Andisols do not have an albic horizon over a horizon having various color
+combinations (i.e., spodic colors)).
+2. The subgroups included in the 5th edition of the Keys are slightly modified from those shown in circular
+letter 10, although the changes are relatively minor.
+Interesting Ideas Discussed But Not Proposed
+1. As part of the 1998 field study and conference, several chemical laboratory and field tests were included
+for review, testing, and discussion by participants. Tests described and evaluated during the field tour (see
+circular letter 7) were:
+a. Bartlett’s P-test
+b. Holmgren’s AL or humic acid color test
+c. Canadian HCL-HF test
+d. New Zealand oxalate color test
+e. P-retention test
+Eventually, it was agreed to use new tests evaluated by the National Soil Survey Laboratory using
+ammonium oxalate extractions of iron and aluminum along with ODOE.
+2. ICOMOD suggested changes to the criteria for andic soil properties. Although technically beyond the
+ICOMOD mandate, the close relationship between spodic materials and andic soil properties was
+recognized. In circular letter 7, a proposed criterion was suggested for addition to the andic soil properties
+definition that would differentiate the two diagnostic properties. The criteria involved pyrophosphate
+extractable C and fulvic carbon. This was not pursued further and was not included in the final proposal.
+
+19
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee for the Aquic Moisture Regime (ICOMAQ)
+Committee Chair: Dr. Johan Bouma, Soil Survey Institute, Wageningen, The Netherlands
+Period of Major Activity: 1985-1991 (officially formed in 1981)
+Purpose: Review the definition of the aquic moisture regime and suggest ways and means to revise, where strictly
+necessary, the present taxa with an aquic regime at the level of generalization deemed appropriate. 1
+Much of the deliberations of the committee revolved around issues representing a number of conditions embodied in
+the concept of wet soils. The following framework for recognizing various kinds of field conditions seemed to prove
+useful in organizing the discussion:
+1. Wet, reduced, with mottles
+a. Ground water gleys (became endoaquic)
+b. Surface water gleys (became epiaquic, anthraquic)
+2. Wet, reduced, no mottles (for example, red parent materials)
+3. Wet, non-reduced, no mottles (became oxyaquic)
+4. Moist, non-reduced, with mottles – drained soils
+5. Moist, non-reduced, no mottles (udic soils, not an issue)
+6. Flooded soils with little or no mottling in the surface layer (recognized as a problem in some very
+clayey soils)
+Circular Letters: 9
+Adoption by Soil Taxonomy: 1992, Keys to Soil Taxonomy (5th edition)
+Significant Contributions to Soil Taxonomy
+1. Changes to diagnostic characteristics
+a. The introduction of several new diagnostic characteristics (rather than any new diagnostic
+horizons) designed for the identification of seasonal wetness at multiple taxonomic levels
+depending on where they occur in the profile. These characteristics were grouped under the new
+diagnostic characteristic Aquic Conditions. The required characteristics making up aquic
+conditions are:
+i. saturation,
+ii. reduction, and
+iii. redoximorphic features.
+All three are required to meet the definition of aquic conditions. Also of significance is that the
+definition of aquic conditions does not include any particular depth. Aquic conditions can occur at
+any depth in the soil. The depth required for any particular class, such as a suborder or subgroup,
+is specified in the keys.
+b. Introduction of redoximorphic features. The term “mottles” is no longer used to describe
+morphology associated with wetness. Furthermore, the term “mottles with chroma 2 or less” was
+removed from the Keys. The more precise terms introduced for redoximorphic features (along
+with their color and location) are used to document the morphological expression of saturation and
+reduction. The term “mottles” is used to describe color patterns that are due to conditions other
+than redox processes (such as lithochromic color variation).
+c. Patterns of saturation are recognized by new terms. Saturation of the entire profile (generally due
+to the seasonal rise of ground water from below) is recognized as endosaturation. Saturation
+limited to the upper parts of the profile due to the restricted downward movement of water from
+above (i.e., “perched water table”) is recognized as episaturation. In addition, anthric saturation
+1
+
+As stated by Dr. Frank Moorman, first ICOMAQ Chair, in Report on Workshop on Characterization
+Classification and Utilization of Wetland Soils, 26 March - 5 April, 1984, Manila, Philippines.
+
+20
+
+d.
+e.
+
+f.
+g.
+
+2.
+
+3.
+4.
+
+was introduced for human-induced conditions, such as in flood irrigation practices. These
+distinctions are recognized as needed at the great group level of soils in Aquic suborders.
+Saturation was formally defined as “zero or positive pressure in the soil water.” This corresponds
+to the satiated, wet class in the “Soil Survey Manual” (free water present).
+Reduction was not defined in a quantitative way due to the difficulty of setting threshold redox
+potential (Eh) values reflecting many possible environmental conditions, especially pH (as shown
+in pH/Eh diagrams depicting the stability of mineral species). In addition, no minimum period of
+time is specified for the soil to be saturated because this would vary from place to place. The
+degree of reduction required is (for practical reasons) equated with that needed to reduce iron
+since this results in the morphological expression of redox features given in the Keys, and can also
+be documented with dyes (i.e., alpha,alpha-dipyridyl) or now with IRIS tubes. These techniques
+are easier to perform than measuring redox potential with instruments. Measurement of redox
+potential for the purpose of correlating values with wet soil morphology at specific locations,
+however, was recognized as an ongoing need and was encouraged.
+No minimum length of time that saturation and reduction must persist could be stated as a criterion
+for aquic conditions because it will vary from one environment to another.
+The morphological expression of saturation and reduction was embodied in the new terms for
+redoximorphic features. These include redox concentrations (nodules and concretions, masses,
+and pore linings), redox depletions (iron depletions and clay depletions), reduced matrix (reduced
+iron present with little or no movement out of the horizon so that a color change is noted upon
+exposure to oxygen), and positive reaction to alpha,alpha-dipyridyl (only useful if reduced iron is
+present).
+
+Suborders
+a. The Aquic Soil Moisture Regime became obsolete as far as its use in classifying a soil at the
+suborder level. Although still recognized in Soil Taxonomy, it is no longer mentioned in any of
+the keys to suborders. It has been replaced in the keys by Aquic Conditions. Despite the fact that
+the aquic regime is not used in the Keys, soils are still recognized as having an aquic (or peraquic)
+soil moisture regime in their descriptions.
+Great groups
+a. Epi and Endo great groups introduced in the Aquic suborders. They appear in the last positions in
+each of the keys to great groups (except they are not used in Aquox).
+Subgroups
+a. Introduction of Oxyaquic subgroups. The stated intent was to account for soils that are
+periodically saturated but are not reduced and therefore do not have redoximorphic features. In
+some of the discussion, these soils were referred to as “saturated-oxidized.” This was believed to
+be the case under conditions where: 1) the water is oxygenated, 2) an energy source is lacking for
+the microbes, and/or 3) temperatures are too low for microbial activity 1.
+b. The existing Epiaquic subgroups of Ultisols were renamed Ombroaquic. This was not a change
+recommended by ICOMAQ. Presumably, it was recognized as a need by the Soil Classification
+and Standards Staff at the National Soil Survey Center to avoid confusion between the use of the
+existing term “epiaquic” as both a subgroup term and as a type of saturation for the newly
+proposed aquic conditions.
+
+Proposed But Not Adopted
+1. Use of potassium ferric cyanide (in addition to alpha,alpha-dipyridyl) was included in the proposal as a
+field test for detecting reduced iron. This was not included in the final approved version. It is not clear why,
+although a report by ICOMAQ Workgroup 2 suggests that while both tests are proposed, alpha,alphadipyridyl is more commonly used.
+
+In practice numerous soil series that have been classified in Oxyaquic subgroups have redox features and are
+presumably reduced at times, but technically fail the criteria for aquic subgroups as written (due to factors such as
+depth to redox features or having redox depletions with chroma 3 rather than 2). There probably are many more soils
+classified in Oxyaquic subgroups today than ICOMAQ would have expected.
+1
+
+21
+
+Interesting Ideas Discussed But Not Proposed
+1. There was discussion about the possible addition of a “gleyic epipedon” to be used in soils with perched
+water tables (epiaquic). Circular letter 6 has an appendix describing the proposal. Over time it became clear
+that defining one epipedon that can be successfully applied across all orders was difficult and complex. It
+was agreed that defining diagnostic characteristics associated with saturation and reduction would allow
+more flexibility than a specific kind of horizon and would be easier to apply.
+2. There was discussion about relying on Ksat of an underlying layer to define the epiaquic situation rather
+than the layer being unsaturated. This was eventually dropped because the creation of a perched water table
+also depends on precipitation/evapotranspiration amounts, lateral flow onto the pedon, and other
+environmental factors that vary from place to place. There really is no single Ksat value that could be used.
+In addition, Ksat data is not readily available and not particularly easy to obtain.
+3. Two kinds of diagnostic redox characteristics, based on the patterns and locations of redox depletions and
+concentrations relative to ped surfaces, ped interiors, and macropores, were discussed. One referred to as
+gleyic features (later termed endoaquic features) would be considered diagnostic of endosaturation. This is
+characteristic of horizons with oxidizing conditions underlain by horizons with reducing conditions. The
+other, stagnic features (later termed epiaquic features) would be considered diagnostic of episaturation.
+This is characteristic of horizons with reducing conditions on top of, or penetrating into, horizons with
+oxidizing conditions. Criteria describing redox feature patterns were drafted for each condition. These were
+tested (see circular letter 9) with 222 official series descriptions in the United States. Results were poor.
+While patterns of redoximorphic features provide important clues as to the saturation patterns at a given
+site, it was concluded that one set of criteria would not work across all soils.
+4. There was discussion about possibly replacing the existing Aquic subgroups with either Gleyic or Stagnic
+subgroups depending on whether the wetness was endo or epi in nature. This was not pursued or discussed
+further in the circular letters. It is of some interest to note that the gleyic and stagnic concepts and terms
+have been adopted for use in the World Reference Base classification system.
+
+22
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on Aridisols (ICOMID)
+Committee Chair: Dr. Ahmed Osman, Soil Science Division, Arab Center for the Study of Arid Zones and Dry
+Lands, League of Arab States, Damascus, Syria
+Period of Major Activity 1: 1980-1993
+Purpose: Evaluation and improvement of the Aridisols order of Soil Taxonomy. One widely recognized problem
+was the overly broad nature of the soils included in the Orthids suborder. Much of the background information used
+in developing the proposal was gained by study of soils in the Near East and North Africa, as well as existing
+knowledge from the United States and elsewhere. Consideration was given to a greater use of properties important
+to soil interpretations and also building upon approaches of both the Russian and French classification systems.
+Circular Letters: 6 (letters 1 through 4.2)
+Adoption by Soil Taxonomy: 1994, Keys to Soil Taxonomy (6th edition)
+Significant Contributions to Soil Taxonomy
+1. Order
+a. Included as Aridisols are soils that have a salic horizon beginning within 1 m and no other diagnostic
+subsoil horizon above it, and no water table within 1 m (Haplosalids). Previously, there was no
+provision for these soils within the Aridisols order. If the keys were strictly followed, these soils would
+classify as Typic Torriorthents.
+b. Through consultation with the contemporaneous ICOMAND, it was agreed that soils with andic
+properties and an aridic moisture regime should classify as Andisols (Torrands) rather than Aridisols.
+Therefore, the Andisols precede the Aridisols in the key to soil orders. This reasoning is similar to the
+reasoning for Torrox and Torrerts.
+2. Suborders
+a. Establishment of six suborders, based on the presence of diagnostic horizons, to replace Orthids. The
+new suborders were Calcids, Cambids, Cryids, Durids, Gypsids, and Salids. (Argids were already a
+recognized suborder.) Previously, these diagnostic horizons were recognized at the great group level
+(i.e., Gypsiorthids, Calciorthids, etc.).
+3. Great groups, subgroups, and families
+a. Numerous great groups and subgroups for these new suborders were established. No changes were
+made to families.
+Proposed But Not Adopted
+1. Two new diagnostic subsoil horizons were proposed – hypercalcic and hypergypsic horizons. It was
+recognized that the range of carbonate content in noncemented calcic horizons and gypsum content in
+noncemented gypsic horizons is very wide and this has management implications for each. The concepts of
+hypercalcic and hypergypsic were considered for calcic and gypsic horizons with very high contents of
+calcium carbonate and gypsum, respectively. The subgroup term Meta was proposed for soils with these
+horizons. While these proposals were seen to have some merit, they were probably not approved because
+they would be somewhat redundant with the existing carbonatic and gypsic mineralogy classes at the
+family level. The continued desire to recognize very high gypsum levels was accommodated several years
+Prior to the formal creation of the committees, the Chairs of ICOMERT, ICOMID and ICOMORT conducted
+a joint field tour in Sudan, November 1-11, 1982 (5th International Soil Correlation workshop), to consider the
+charges for the three committees. The early draft proposal developed by ICOMID was prepared after the
+International Training Forum (Tunisia, 1985) and revised after the International Soil Correlation Meeting (Yemen
+Arab Republic, 1986). Circular letters 4.0, 4.1, and 4.2 were based on this draft proposal version and routed and
+debated after these events. A field tour (4th International Soil Correlation Meeting) was conducted in the southwest
+U.S. in October 1987 to test many of the proposals and make additional refinements. The 6th International Soil
+Correlation Meeting was held in August 1989 to review information about cold Aridisols and cold Vertisols before
+the ICOMID proposal was finalized.
+1
+
+23
+
+2.
+
+3.
+
+later with the introduction of the kk and yy horizon suffix symbols for engulfment by carbonates and
+gypsum, respectively, in the 10th edition of the “Keys to Soil Taxonomy” (2006). Also, the hypergypsic
+mineralogy class was added in the 11th edition of the Keys (2010).
+A new halic diagnostic subsoil horizon was proposed for a horizon with levels of salt accumulation that,
+while significant to use and management, are not high enough to meet the requirements for the salic
+horizon. Soils with a halic horizon would be recognized with a Halic subgroup. This was not adopted
+because the salinity of this horizon can easily be lowered significantly under irrigation management, which
+would cause the classification to change. One of the guiding principles of Soil Taxonomy has been to
+avoid, as much as possible, the establishment of taxonomic classes that are relatively easily changed by
+common soil management practices. Traditionally in the U.S., these kinds of soils were handled as saline
+phases of soil series and this practice was considered the best approach.
+A new vermic epipedon was proposed. Some soils in oases in Syria and other Mideast countries that have
+been irrigated for hundreds of years (or even millennia in a few cases) have intense bioturbation to depths
+of more than 50 cm (often more than 1 m) by worms, termites, etc. The epipedon would have elevated OM,
+but would not meet the color requirements for the mollic epipedon. It was argued that the intense biological
+activity is a very important soil-forming process in these soils. For these soils, the vermic epipedon was
+considered to be recognized at the subgroup or great group level. Others argued that given its limited
+extent, it could simply be accommodated in the anthropic epipedon, and the vermic epipedon was not
+adopted.
+
+Interesting Ideas Discussed But Not Proposed
+1. There were ongoing discussions about possibly going beyond the expansion of the existing Orthids in
+revising the Aridisols order. It was pointed out that Soil Taxonomy is inconsistent because it does not
+include all soils with aridic moisture regimes in the Aridisols order. In some cases, it provides for the aridic
+regime to be applied at the suborder (Torrerts, Torrox, and Torrands) or great group (Torripsamments,
+Torriorthents, Torrifluvents, and Torrifolists). Two possible remedies were explored. The first would
+eliminate the Aridisols order altogether partly due to objections to using a moisture regime in defining the
+order. This could be accomplished by moving all of the existing Aridisols into other orders by creating new
+suborders of Alfisols and Inceptisols (Torralfs and Torrepts), which would parallel the existing Torrox,
+Torrands, and Torrerts. The second approach suggested for overcoming the inconsistency described above
+was to keep the Aridisols order and expand the number of soils included in the order to all soils with an
+aridic moisture regime. This would be accomplished by adding additional suborders such as Oxids, Vertids,
+Andids, Entids, and Histids. Neither of these two approaches were pursued because an important general
+principle of Soil Taxonomy is that the soil orders are to reflect major current soil-forming processes. So
+keeping soils like Torrox, Torrerts, and Torrands in the Oxisol, Vertisol, and Andisols orders, respectively,
+recognizes the processes leading to the formation of the oxic horizon, expanding clays, and andic soil
+properties as being more important than the aridic moisture regime in the genetic development of these
+soils, thus justifying their placement in the other orders. Similar arguments are made for the soils where the
+aridic moisture regime is applied at the great group (Torripsamments, Torrifluvents, etc.). Conversely,
+moving the Argids into the Alfisols, or moving the Calcids, Cambids, Gypsids, etc. into the Inceptisols,
+would not reflect the great importance of the extreme dryness for these soils, which is considered the most
+important driver of soil processes at the order level of classification. To a large degree this is a question of
+one’s opinion as to what genetic factors and processes are most important in all of these soils. As such,
+reasonable arguments can be made on either side and there may not be a clear right or wrong approach.
+2. A batholithic contact was considered for soils with coherent underlying material (i.e., bedrock) at a depth
+of between 50 and 125 cm. It was defined the same as the lithic contact, but would be used in taxa where
+the depth to rock is within 125 cm. As such, it really was not a new kind of contact but rather an attempt to
+recognize rock at depths a bit deeper than required for the traditional Lithic subgroups. These would be
+named Batholithic subgroups. Some reviewers liked the basic idea of having a subgroup, similar to Lithic,
+for soils with rock between depths of 50 and 125 cm, but took exception to the use of the root term
+“batholith” due to its specific definition as used by geologists (exposed, igneous rock intrusion). It was
+suggested also that the Lithic subgroups could simply be defined as having a lithic contact within 125 cm,
+rather than the usual 50 cm as in most other orders. It was pointed out that Oxisols and Histosols already
+have different limits for Lithic subgroups. In the end, both the term and the concept were dropped.
+3. There was some debate regarding how soils with an argillic horizon and an aridic moisture regime should
+be classified. From a pedogenic process viewpoint, an argillic seems difficult to form in the present dry
+24
+
+4.
+
+environment, especially with significant carbonates in the system (which flocculate clay minerals). It was
+suggested that perhaps these soils should be Torralfs rather than Argids (similar to Torrox or Torrands), or
+that perhaps the presence of the argillic should be recognized at the subgroup level rather than the suborder
+level. However, it was also argued that seasonal rains in thermic and hyperthermic areas of Aridisols,
+particularly those bordering ustic or xeric, may be sufficient to illuviate clay in some soils, and therefore
+constitute a current soil-forming process. Also, where sodium ions are part of the soil system (even with
+carbonates), clay can be illuviated. The Argids suborder was retained.
+Recognition of a new torric epipedon was discussed as a way to replace the aridic moisture regime entirely.
+As discussed above, there was some opposition to the use of the aridic moisture regime to define the order.
+This horizon seemed to reflect a sort of compromise that would allow the continued use of the Aridisols
+order, but to do so based on the morphology of the surface layer rather than soil moisture patterns. This
+would eliminate the need for soil climate data to identify the aridic regime. The applicable morphology was
+to include some combination of the following features: low OC, light color, vesicular pores, high base
+status, secondary carbonates, eolian sand, and desert pavement. It seems likely that some soils not having
+an aridic moisture regime would meet these criteria. Also, the basic principle of avoiding establishment of
+classes that are easily changed by normal management practices (in this case cultivation and irrigation,
+grazing, unintended erosion, etc.) strongly suggests this is an approach to be avoided. The idea was not
+pursued further.
+
+25
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on the Classification of Families (ICOMFAM)
+Committee Chair: Dr. Benjamin Hajek, Auburn University
+Period of Major Activity 1: 1988-1994
+Purpose: Develop and present proposals and recommendations for changes in the Family category of Soil
+Taxonomy
+Circular Letters: 3
+Adoption by Soil Taxonomy: 1996, Keys to Soil Taxonomy (7th edition)
+Significant Contributions to Soil Taxonomy: All Changes Were to the Family
+1. The chloritic mineralogy class was dropped. Apparently, there were no U.S. soil series using this class
+and no objection from outside the U.S. to dropping it.
+2. The use of fine and very-fine particle-size classes was extended to the Ultisols. Previously, only the
+more generalized clayey class term was used.
+3. Clay activity classes were introduced. There was broad recognition of the value of this because soils in
+mixed or siliceous mineralogy classes that are loamy or clayey provided no indication about the nature
+of the clay minerals in the fine-earth fraction of the soil. This can be an important factor with regard to
+CEC as it relates to fertility and chemical behavior of the soil. Early in the committee’s deliberations
+five classes were discussed. In the final report, three classes were proposed based on a review of
+existing data. However, four classes were ultimately adopted. Presumably, there continued to be debate
+about the best number of classes. Over time, the practical experience of applying these classes has
+resulted in some difficulty due to the prevalence of laboratory data for multiple pedons in a series that
+span class boundaries. Perhaps just three classes as proposed would have been easier to apply since
+there would be less opportunity to straddle the class boundaries with fewer classes.
+4. The parasesquic mineralogy class was adopted to replace the oxidic class. The oxidic class was
+problematic because it placed no lower limit on total iron oxide and/or gibbsite content (it used a ratio
+to clay instead). The new parasesquic class would place a lower limit on total iron oxide and/or
+gibbsite content, thus making it a bit more restrictive. The originally proposed limit of 7.5% iron oxide
+plus gibbsite was revised upward to 10% and adopted.
+5. The paramicaceous mineralogy class was adopted for use with loamy soils with at least 25%, by
+weight, mica (45% by grain count), which was too low for the micaceous class. Research had shown
+that these lesser amounts of mica are significant for use and management. Later, with the 11th edition
+of the Keys, both the paramicaceous and micaceous classes were combined into one new micaceous
+class using the lower limit of 45% by grain count. Experience indicated there was little practical
+benefit to separating these two classes.
+6. The class name montmorillonitic was changed to smectitic. Smectite is a more inclusive term for 2:1
+expanding clay species than the more narrowly defined montmorillonite and is simply a term that
+better describes this mineralogy class. The class definition was not changed.
+7. The former serpentinitic mineralogy class was revised to include a range of magnesium-silicate
+minerals, and the name was changed to magnesic. (ICOMFAM proposed the name “mafitic.”)
+8. Aniso was introduced as a modifier of the particle-size class term. It is used in soils that have a
+particle-size control section that consists of more than one pair of strongly contrasting particle-size
+classes. As proposed, aniso was placed before the particle-size class term, but when adopted in Soil
+Taxonomy it came after the particle-size class term. Aniso had originally been proposed by
+ICOMAND. It did not actually appear in the “Keys to Soil Taxonomy” until the 8th edition.
+
+ICOMFAM was preceded by the Task Force to Evaluate the Soil Family at the 1987 NCSS Conference. This
+task force helped develop charges for ICOMFAM. In addition, a report by Dr. Hajek completed in 1985, “A Review
+of the Family Category in Soil Taxonomy,” formed an important basis for the deliberations of the task force as well
+as ICOMFAM.
+1
+
+26
+
+9.
+
+The addition of a mineralogy methods section was proposed for the next edition of the “Keys to Soil
+Taxonomy.” This was not done. Instead, the idea was expanded upon and a more comprehensive
+Laboratory Methods section was added as an appendix to the 9th edition of the “Keys to Soil
+Taxonomy” (2003).
+10. The definitions of the halloysitic and kaolinitic mineralogy classes were simplified in order to make
+them reflect how laboratories were commonly reporting data (lumping the dominant mineral in with
+other associated minerals and just reporting it all as the dominant one). This decision was reversed
+with the 8th edition of the Keys. These definitions reverted to their previous wording, which is likely a
+more accurate reflection of the makeup of clay minerals in the soils with these mineralogy classes.
+Proposed But Not Adopted
+1. A definition for the family category was proposed that emphasized that the purpose of the family is to
+recognize properties that reflect soil genetic processes and controls on those processes. This was in
+contrast to the current language in “Soil Taxonomy” stating that families were defined by grouping
+soils “having similar physical and chemical properties that affect their responses to management and
+manipulation for use. … Soil properties are used in this category without regard to their significance
+as marks of processes or lack of them.” This proposal was designed to clarify the intent of the family
+in a way that better aligned with the higher categories, but it would have only had relatively minor
+impact on the properties being used as family criteria at the time because most can be seen as being
+important both to genetic process controls as well as considerations for use and management. It is not
+entirely clear why the proposal was not adopted. Only minor revisions to the language describing the
+intent of the family category appear in the 2nd edition of “Soil Taxonomy” as compared to the 1st
+edition.
+2. A proposal was made to define the depth limits of the particle-size control section more uniformly in
+mineral soils. This was primarily due to a perceived confusion about the control section in soils with
+argillic horizons where only some or all of the argillic is considered. If adopted, most soils with an
+argillic would have a particle-size control section at depths of 25 to 100 cm (or to a root-limiting
+layer), the same as non-argillic soils. This was not adopted. If it had been adopted, it probably would
+have had a significant impact on the classification of many existing soil series that have argillic, natric,
+or kandic horizons. Potential impacts would include an increase in the number of soils with a
+contrasting particle-size class as well as changes in particle-size class due to the need to perform a
+weighted average of clay content over a now thicker zone (for example, fine-loamy becoming coarseloamy, fine becoming fine-loamy, etc.). The benefits of implementing this change were likely
+considered to be minimal compared to the potential large work load of reclassifying soils and revising
+statements about how members of the (now) same family differ.
+3. The committee proposed absolute lower limits of 50% vermiculite in the vermiculitic class and 50%
+smectite in the smectitic class (rather than allowing these to simply be the most prevalent mineral as
+previously defined). This idea was not adopted. If it had been, presumably some soils currently in these
+mineralogy classes would have now failed these classes and ended up in the “mixed” class.
+Interesting Ideas Discussed But Not Proposed
+1. Some committee members advocated for the inclusion of individual keys to soil families within each
+of the soil order chapters. Presumably this would have consisted of one key to follow at the end of the
+chapter. (Although in theory there could be individual keys after the great groups or even subgroups,
+this clearly would result in lots of repetition.) The advantage of having a separate key with each order
+is that it would have allowed for the appearance of simplification since some details of the
+comprehensive version of the key could be dropped in the orders where they do not apply. This would
+have the advantage of making it a little easier to classify a soil at the family level. This idea was
+discussed but not pursued further.
+2. The chairman asked committee members to consider the introduction of phosphatic class terms for
+soils with P-retention issues, including classes, appropriate limits, and methods of analysis. This would
+have represented an addition to the properties used for defining soil families. Other than the request for
+ideas, no further discussion was included in the circular letters, suggesting there must have been little
+further interest in this and the idea was dropped.
+
+27
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on Permafrost-Affected Soils (ICOMPAS)
+Committee Chair: Dr. James Bockheim, University of Wisconsin, Madison
+Period of Major Activity 1: 1994-1997
+Purpose: To evaluate a proposal to establish the Gelisols as the 12th soil order of Soil Taxonomy and to propose
+revisions to Soil Taxonomy and related standards as needed. The rationale behind the work of this committee
+included the following key points: 1) permafrost is widespread and found in a significant proportion of the world’s
+soils, 2) cryopedogenesis is a dominant soil-forming process, worthy of recognition at the soil order level, 3)
+permafrost is a significant soil property reflecting soil climate, 4) there is a need to better understand how these
+important soils will respond to environmental change, and 5) the (then) existing approach in Soil Taxonomy of
+classifying these soils as pergelic subgroup extragrades of Cryic great groups within other orders was seen as
+inadequate to represent such important, extensive soils of the high latitudes.
+Circular Letters: 5
+Adoption by Soil Taxonomy: 1998, Keys to Soil Taxonomy (8th edition)
+Significant Contributions to Soil Taxonomy and Horizon Nomenclature
+1. Definition of “soil”
+a. The definition of “soil” as used in Soil Taxonomy was revised to include soils that are affected by
+pedogenesis but cannot support higher plants.
+i. Intended for environments such as cold desert soils of Antarctica and China as well as other
+places with extreme environments.
+2. Order
+a. Establishment of Gelisols as the 12th soil order in Soil Taxonomy. The order includes all soils with
+permafrost within 100 cm or soils with gelic materials within 100 cm and permafrost within 200
+cm.
+b. The Gelisols key out first in the key to soil orders.
+3. Suborders
+a. Three suborders were introduced to recognize Gelisols that formed in organic soil materials
+(Histels), those subject to cryoturbation (Turbels), and all other Gelisols (Orthels).
+4. Great groups
+a. Most great groups proposed are similar to those used in other orders, including Histosols.
+b. New great groups unique to the Gelisols include those with a glacic horizon (such as Glacistels)
+and those with anhydrous conditions (such as Anhyorthels).
+5. Subgroups
+a. Most subgroups proposed are similar to those used in other orders, including Histosols.
+b. New subgroups unique to Gelisols include Glacic (for intergrades to Glac great groups) and Nitric
+(for extragrades with high nitrate content).
+6. Diagnostic horizons and characteristics
+a. The definition of permafrost as a diagnostic feature was expanded (based on the International
+Permafrost Association definition) for better clarification of its nature as a thermal condition of the
+soil. A requirement for minimum duration of 2 or more consecutive years was added. Also added
+was a brief description of the physical nature of permafrost.
+
+Prior to the formation of ICOMPAS, a conference on Cryopedology was held in Pushchino, Russia
+(November 1992). After the conference, a proposal to establish the Gelisols order was developed by Bockheim,
+Ping, Moore, and Kimble. This proposal was tested in the field in 1993 on 20 pedons in the Northwest and Yukon
+Territories of Canada and in Alaska as part of the International Correlation Meeting on Permafrost-Affected Soils.
+After this initial testing and refinement of the proposal, ICOMPAS was formed to evaluate the proposed new order
+and the draft version of the Keys. Five circular letters were routed, leading to the final proposal for inclusion of the
+Gelisols order in Soil Taxonomy.
+1
+
+28
+
+i.
+
+b.
+c.
+
+d.
+
+7.
+
+8.
+
+The use of permafrost as a diagnostic soil property replaced “soil temperature <0 C” in the
+Keys.
+Recognition of cryoturbation in Soil Taxonomy along with the introduction of gelic materials and
+the Turbels suborder, thus recognizing this important soil-forming process at the suborder level.
+Introduction of anhydrous conditions as a diagnostic feature effectively replacing the moisture
+regime in the classification for very cold and dry permafrost-affected soils (e.g., Anhyorthels).
+i.
+This was done rather than either revising the aridic moisture regime to include Gelisols or
+introducing a new moisture regime for these dry Gelisols.
+Introduction of the glacic layer (composed of ice) as a diagnostic horizon and the Glac great
+groups and Glacic subgroups.
+i.
+The melting of glacic layers can result in thermokarst development and unstable land
+surfaces.
+
+Family
+a. Three new family temperature classes were introduced for Gelisols and Gelic suborders:
+hypergelic, pergelic, and subgelic, which more or less correspond to areas of continuous,
+discontinuous, and sporadic permafrost, respectively.
+i.
+These separations provide some insight into how these soils will respond to surface layer
+disturbance and the effect of disturbances on the thermal characteristics of the soil.
+Horizon nomenclature
+a. Horizon suffix ff introduced for dry permafrost.
+b. Horizon suffix jj introduced for horizons with evidence of cryoturbation.
+c. Master horizon symbol W introduced for subsurface water layers (liquid or frozen).
+
+Proposed But Not Adopted
+1. A new diagnostic horizon, called the nitric horizon, was proposed for soil horizons in cold deserts with a
+secondary enrichment of nitrates.
+a. Although not adopted as a new diagnostic horizon, the criteria were used to identify Nitric
+subgroups.
+2. A new diagnostic horizon, called the petrosalic horizon, was proposed for soil horizons in cold deserts with
+cementation with salts more soluble than gypsum.
+Interesting Ideas Discussed But Not Proposed
+1. The term “Cryosols” (as in the Canadian system) was considered for the name of the order but rejected to
+avoid having to redefine the cryic temperature regime and also to avoid having difficult-to-pronounce
+lower taxa names ending in “cry” and not beginning with the usual vowel (e.g., Sapristels rather than
+Sapristcrys).
+2. There was discussion about the need for a horizon suffix to recognize soils with illuvial silt in the form of
+silt accumulations on peds. This was not formally proposed. One difficulty seemed to be the lack of
+available subscripts. The use of si was debated, but there was concern it would be confused with the
+existing single suffixes s and i. No alternative was put forward.
+3. There was debate, especially from Russian scientists, that the scope of soils included within the proposed
+new order may be too large. They pointed out the wide diversity encompassed by dry permafrost soils
+(similar to Aridisols), organic soils (Histosols), highly cryoturbated as well as minimally cryoturbated soils,
+wet soils, etc. In the end, however, it was believed that cryopedogenic processes are a universal driving
+force of all these soils and keeping them together aids in understanding issues such as permafrost recession,
+thermokarst development, and release of trace gases to the atmosphere through global warming, etc. With
+regard to the dry, cold desert Gelisols, part of the motivation for including them was that the existing
+Aridisols order simply had no accommodation for them. Aridisols would have had to be revised to include
+them, and this was not within the scope of ICOMPAS.
+4. There was some discussion of establishing permafrost occurrence classes, rather than new family
+temperature classes, to be applied at the series level: continuous (>90%), discontinuous (25-89%), and
+sporadic (<25%). Most committee members rejected this idea, suggesting permafrost occurrence is a
+regional condition and not a property associated with a soil pedon.
+5. Introduction of 11 family classes for patterned ground types was debated. The motivation for including
+them was to improve communication between cryopedologists and cryogeologists. This ultimately was not
+included in the final proposal because the patterned ground was seen as more of a site feature than a
+29
+
+6.
+
+7.
+
+8.
+
+characteristic of the soil pedon itself, and the class definitions (taken from the literature) were not clearly
+distinguished from one another (there is overlap). It was strongly recommended that patterned ground be
+described as part of pedon descriptions, included as phases of series where appropriate, and included in
+map unit descriptions.
+There was discussion about establishing “polygenetic” subgroups for soils with horizons formed under
+previous climates. ICOMPAS member response was strongly opposed to doing this due to the difficulty of
+developing unambiguous criteria based on soil properties rather than theories of genesis. Also, in many
+cases, the polygenetic nature of a Gelisol would be evident. For example, the argillic horizon of the
+Argiorthels certainly formed in a previous climate.
+The use of trophic level (based on surface water pH), rather than degree of decomposition as is done in
+other organic soils (i.e., sapric, hemic fibric), was discussed for great groups of Histels because trophic
+level better reflects natural vegetation and productivity. While the idea was deemed to have merit,
+committee members felt it best for this to be addressed for all organic soils (i.e., Histosols) by another
+committee. Changes could then be coordinated with the Histels after that. This has never been pursued.
+Introduction of an anhydrous moisture regime (basically cold aridic) was discussed. This idea was dropped,
+and anhydrous conditions were proposed instead.
+
+30
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on Anthropogenic Soils (ICOMANTH)
+Committee Chair: Dr. Ray Bryant, Cornell University, followed by Dr. John Galbraith, Virginia Polytechnic
+Institute and State University 1
+Period of Major Activity: 1995-2013 2
+Purpose: To propose appropriate classes to Soil Taxonomy for soils with major properties derived from human
+activity. It was stressed that new taxa should serve a practical purpose.
+For the first few years, the committee progressed through the distribution of circular letters containing specific
+questions to be answered by members in order to get a general sense of what people’s thoughts and opinions were
+regarding a wide range of issues about anthropogenic soils and their identification, classification, mapping, and
+interpretation.
+In 2002, the committee focus shifted slightly to address several issues sequentially. First to be addressed was the
+adequacy of the standards used to describe anthropogenic soils in the field (horizon nomenclature, descriptive terms
+and classes for features unique to anthropogenic soils, etc.). After this the focus was to turn to taxonomic
+deficiencies, including the need for new and unique diagnostic horizons and characteristics. Finally, taxonomic
+issues, including soil family criteria, and any changes needed at higher taxa were addressed. To facilitate this
+process, a collection of known anthropogenic soil descriptions, photos, data, etc., was organized and made available
+online and with CD-ROMs (released in 2002 and updated in 2006) so that discussion could be focused on this
+collection representing a diverse array of anthropogenic soils.
+It is noteworthy that with regard to taxonomic classes, the recommendations of ICOMANTH utilize the lower
+classes of subgroup and family. There was much early debate about what level should be used, with some
+advocating for a new soil order of Anthrosols. In the end it was decided to include them in the existing orders.
+Circular Letters: 7
+Adoption by Soil Taxonomy: 2014, Keys to Soil Taxonomy (12th edition)
+Significant Contributions
+1. Order. No changes.
+2. Suborders
+a. Deleted Arents and Anthrepts.
+i.
+These are now recognized at the subgroup level. For example, the former Torriarents are
+now Anthraltic Torriorthents.
+3. Great groups
+a. Deleted Anthracambids.
+i. These are now recognized at the subgroup level.
+4. Subgroups
+a. Introduced seven new subgroup terms as extragrades.
+i.
+They are listed in order of their interpretive significance at the end of chapter 3 in the “Keys
+to Soil Taxonomy.” Short descriptions for their intended application are included.
+b. The criteria for Fluventic subgroups throughout Soil Taxonomy were revised to exclude their use
+for thick layers of human-transported material.
+
+Dr. Bryant served as chair until career changes caused him to relinquish his leadership role in the committee.
+In 2004, Dr. Galbraith, who was already active with ICOMANTH, agreed to serve as Chairman.
+2
+In addition to 7 circular letters, a field tour and conference on the Classification, Correlation, and Management
+of Anthropogenic Soils was held in California and Nevada (September 21 to October 2, 1988).
+1
+
+31
+
+Family changes
+a. Human-altered and human-transported material classes were added as a new family category to
+convey information on the safety and origin of human-altered and human-transported material.
+Twelve classes were added.
+6. Materials
+a. Two new diagnostic characteristics consisting of human-transported material (HTM) and humanaltered material (HAM) were introduced.
+i.
+These are unique kinds of parent materials and are recognized as diagnostic characteristics
+for some taxa.
+b. Added manufactured layer and manufactured layer contact as a characteristic diagnostic for
+HTM/HAM.
+7. Anthropic epipedon
+a. The definition of the anthropic epipedon was expanded and simplified.
+i.
+This had an additional impact of allowing for the removal of phosphorous content criteria
+from both the mollic and umbric epipedons because they were was no longer needed to
+differentiate them from the anthropic.
+8. Anthropogenic landforms
+a. The use of geomorphic positions as taxonomic criteria for soils that occur on artificial (i.e.,
+anthropogenic) landforms and microfeatures was expanded.
+i.
+One of the attributes of Soil Taxonomy states that the differentiae selected for classification
+are soil properties. Characteristics of a site, such as geomorphic position, are not normally
+used as criteria for classifying natural, undisturbed soils. Geomorphic position had
+previously been used only in the required characteristics of the plaggen epipedon; now, it is
+being used for classifying other human-altered and human-transported soils.
+ii.
+Anthropogenic landforms and microfeatures are listed as a diagnostic characteristic in
+chapter 3 of the “Keys to Soil Taxonomy.”
+9. Horizon nomenclature additions
+a. Caret symbol (^), which is used as a prefix before the master horizon symbol to indicate a horizon
+consisting of human-transported material.
+b. Subscript u, which is used to indicate a horizon containing artifacts.
+c. Master horizon M, which is used to indicate a manufactured layer.
+10. Artifacts
+a. Artifacts were defined as a type of human-manufactured material that can be described in the soil
+as a kind of fragment and used as criteria for some taxa. Standards for describing artifacts were
+developed and included in the “Soil Survey Manual” and “Field Book for Describing and
+Sampling Soils.” The standards include terms and classes for describing artifacts as well as
+protocols for modifying texture terms when significant amounts of artifacts are present in the soil.
+b. Artifacts are also listed as a diagnostic characteristic in chapter 3 of the “Keys to Soil Taxonomy.”
+11. Buried soils and surface mantle of new soil material
+a. Definitions were revised and updated to better accommodate human-transported materials. The
+30-50 cm sliding depth scale was eliminated and replaced by simply 50 cm in all cases.
+5.
+
+Proposed But Not Adopted
+1. It was proposed that the presence of an anthropic epipedon be allowed to qualify a soil as an Inceptisol, but
+this was not included in the final revised key to orders. While an anthropic epipedon can occur in an
+Inceptisol, the proposed change as written would have required that some soils best classified as Entisols
+instead be classified as Inceptisols.
+Interesting Ideas Discussed But Not Proposed
+1. The idea of using documented historical knowledge about the formation of the soil (for example, soil
+material cut from a known area and used to fill adjacent low areas) when there are no morphological
+expressions in the soil reflecting the exact human processes involved in forming the soil. While not directly
+incorporated in some way to the keys for classifying a soil, documented historical knowledge is recognized
+as an important resource for understanding soils in an area and it also can be an important part of the
+justification for a soil scientist to describe a soil profile using horizon nomenclature for recognizing HTM.
+In addition, although not explicitly listed as a criterion in Soil Taxonomy for identifying HTM/HAM, when
+32
+
+2.
+3.
+
+historical knowledge is available to indicate the likely presence of HTM/HAM in an area of interest, it has
+the effect of motivating the soil scientist to look closely for the evidence in the soil itself that is used as
+criteria for identifying these diagnostic characteristics.
+A new master horizon H was debated for use with human-transported material. Most, however, felt that our
+current master horizon symbols were sufficient to denote HTM when coupled with the caret symbol.
+Before settling on the use of the caret symbol as a horizon symbol prefix for HTM, it was proposed to use
+an asterisk (*) or a prime symbol (´). The former was rejected due its use as a wild card symbol in
+computer code. The later was rejected due to confusion with the prime symbol used after a capital letter
+designation.
+
+33
+
+Summary Review of the Activity and Impact on Soil Taxonomy of the
+International Committee on Moisture and Temperature Regimes (ICOMMOTR)
+Committee Chair: Dr. Ron Paetzold, National Soil Survey Center, followed by Dr. Wayne Hudnall, Texas Tech
+University 1
+Period of Major Activity: 1990-(not finished) 2
+Purpose: To propose improvements to the definitions and application of moisture and temperature regimes in Soil
+Taxonomy
+The current definitions for the moisture control section and the moisture regimes in Soil Taxonomy are generally
+considered to be too difficult to rigorously apply (and therefore rarely are). The moisture regime definitions were
+developed primarily to be used in calculating the soil water balance with precipitation/evapotranspiration data (such
+as with Newhall’s model) rather than by routine field measurements.
+The temperature regimes were less controversial, but there was some interest in adding to the number of temperature
+regimes and revising the definitions a bit. Also considered was having temperature readings at depths of both 15 cm
+and 50 cm.
+The moisture and temperature regimes were considered to be minimally effective at recognizing seasonal patterns in
+soil climate, mostly through the use of iso temperature regimes and the contrast of udic, ustic, and xeric moisture
+regimes. The committee wanted to develop proposals to allow soil scientists to do better. For example, the seasonal
+variation in soil climate for a mesic Hapludalf on the Oregon coast is quite different from a mesic Hapludalf in
+Wisconsin, yet the same climate information is included for each in its current classification.
+The committee developed several proposals to redefine and expand the number of moisture and temperature regimes
+and to improve the way they are applied in the Keys. The general goal was to make it feasible to determine the
+moisture regime of the soil from field measurements (rather than water balance modeling) and to better account for
+seasonal soil climate variability from one region to another.
+There was a lack of data for rigorous testing of the proposals. It was anticipated that, as a concerted effort was
+carried out to install soil temperature and moisture sensors at many locations (e.g., SCAN sites), it would eventually
+be possible to test and refine the ideas that were developed. This testing has not been done because the committee
+became inactive, lost its chairman, and has not been reactivated. However, considerable data exists now (particularly
+in the U.S.) and these ideas can be tested.
+Circular Letters: 4
+Significant Ideas Considered by the Committee
+1. Soil temperature
+a. The committee discussed the possibility of adding two new temperature regimes for the warmest
+soils: megathermic (MAST > 28 degrees C) and iso-megathermic.
+b. For the coldest soils, several changes/additions to the regimes were suggested, including
+subdividing the pergelic regime (something later accomplished by ICOMPAS), and subdividing
+the frigid regime into four classes differentiated by increasingly lower MSST.
+c. The committed discussed changing the break between isomesic and isofrigid from MAST of 8
+degrees C to 10 degrees C.
+Dr. Paetzold served as chair until he retired. Dr. Hudnall then served as chairman until his death in 2012,
+although the committee was inactive for a few years prior to his death. No new chair was appointed, and the
+committee did not finish its work.
+2
+ICOMMOTR was an expansion of the previously established ICOMORT, which was charged with evaluating
+moisture regimes in tropical areas. ICOMORT had 3 circular letters prior to the establishment of ICOMOTR (late
+1970s/early 1980s). ICOMMOTR’s charge was expanded to consider both moisture and temperature regimes for all
+regions. A summary of ICOMORT discussions is included in ICOMMOTR’s circular letter 1.
+1
+
+34
+
+d.
+
+Soil temperature at a depth of 50 cm lags air temperature in a fashion that depends on several
+variables affecting heat transfer into and out of the soil. The committee considered revising the
+definitions of summer and winter used in Soil Taxonomy (each based on 3 named months) to
+simply the warmest 3 months and coldest 3 months.
+e. For classifying soils in the keys, six temperature combinations would be available: mean annual,
+mean summer, and mean winter, each with depths of 15 cm and 50 cm.
+2. Soil moisture
+a. Redefining the regimes based on a simplified concept of mean annual and mean seasonal moisture
+potential at a single depth (between 75 and 100 cm) could be done in a way that would not
+significantly disrupt current soil series and would be much more practical to measure in the field.
+A second measurement at around 10 cm could be used for subgroup intergrades. Measuring at a
+specific depth would eliminate the soil moisture control section and bring it into alignment with
+how we measure soil temperature.
+b. Defining moisture regimes based on seasonal patterns of water potential at a specific depth (rather
+than the moisture control section) would allow for the same definitions in Vertisols as the other
+orders and thus do away with the cracking criteria used only in Vertisols.
+c. Seasonality of soil moisture changes would be accounted for with three new seasonal classes:
+mean annual soil water state (MAWS), mean dry season soil water state (MDWS), and mean wet
+season soil water state (MWWS). Wet and dry seasons were defined in the proposal.
+d. For the new definitions of moisture regimes, temperature was not integrated as part of the criteria
+as is currently the case. This was done to let each property stand on its own and simplify the
+definitions. In addition, it would allow the ustic regime in colder (cryic) regions.
+e. The xeric moisture regime was redefined by eliminating reference to a “Mediterranean climate.” It
+would be based solely on seasonal variation in moisture state. In effect, xeric would be a special
+case of ustic.
+f. There was some discussion of separating the drier end of aridic as a new hyperaridic moisture
+regime.
+3. Regarding the underlying basis for separating the moisture and temperature regimes, it was recognized that
+there needs to be considerable discussion to clarify what we are trying to define. Are the regimes based on
+genetic processes, agricultural management, or some combination? Are management considerations for
+native species (grassland, forest, desert shrub, etc.) or for cropping systems? These are not new questions,
+but a clear statement added to Soil Taxonomy would be helpful.
+4. There is a need to develop standard conditions for measuring soil temperature and moisture. Factors such as
+presence or absence of organic surface layers, kind of vegetative cover, etc. all influence soil climate.
+Guidance is needed for determining how to deal with the variation this presents. The measurements impact
+the classification of a soil as well as correlation decisions for naming and defining map units in soil survey.
+5. New (simplified) definitions for regimes of soil temperature (18 classes) and moisture (12 classes) were
+drafted in circular letters 2 and 3. These classes are more reflective of seasonal variation in temperature and
+moisture than the existing classes, and they would likely be a better reflection of soil climate between
+regions.
+6. Although there are more proposed classes than currently used in Soil Taxonomy, it is expected that through
+testing and refinement of the criteria, few series would be split (although many would get new taxonomic
+names). Rather, the classes would do a better job of describing soil climate from one region to another and
+would clarify the soil climate-related differences between soil series.
+
+35
+
+

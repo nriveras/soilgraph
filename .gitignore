@@ -1,0 +1,22 @@
+# R package artifacts
+*.Rproj.user
+*.Rcheck
+*.tar.gz
+*.Rhistory
+*.RData
+*.Ruserdata
+
+# Build and output
+docs/
+outputs/
+..Rcheck/
+src/*.o
+src/*.so
+src/*.dll
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+*.Rproj

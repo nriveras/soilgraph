@@ -1,0 +1,1670 @@
+A Glossary of Terms Used in
+Soil Survey and Soil Classification
+Including Definitions and Brief Commentary
+By Dr. Craig Ditzler
+
+1
+
+Foreword
+This glossary contains terms commonly used in soil survey, including many found in Soil Taxonomy.
+Reference materials used in formulating the definitions and commentary include Soil Taxonomy, The
+Guy Smith Interviews, National Soil Survey Handbook, Soil Survey Manual, Field Book for Describing and
+Sampling Soils, Geomorphic Description System, Soil Survey Laboratory Information Manual, Soil
+Taxonomy International Committee Reports, and the Soil Science Society of America’s Glossary of Soil
+Science Terms. Also used were personal experiences and knowledge from professionals in soil survey
+activities.
+This glossary is intended for use by individuals with more than a passing interest in soil survey or soil
+classification. For the general user, the first sentence or two of each entry will suffice to convey the
+meaning of the word or phrase. For soil science students and soil survey practitioners who want more
+than a simple definition, this glossary offers additional information for a deeper understanding.
+A wide array of terms are included. Some are terms from Soil Taxonomy that have specific technical
+definitions and criteria. Examples include andic soil properties, episaturation, and identifiable secondary
+carbonates. A significant number of the terms included in this glossary are words that can be found in a
+common dictionary, but that have specific unique meanings in the context of soil survey and soil
+classification. Examples include artifacts, buried soil, artificial drainage, component, correlation, horizon,
+and normal year. This glossary also contains a selection of taxonomic class terms from great groups,
+subgroups, or families. Examples include Arenic, Leptic, Ombroaquic, Pachic, and Rhodic. Finally, many
+terms that have meanings specific to soil survey are provided. Examples include consociation, diagnostic
+horizon, taxadjunct, and pedon.
+The short commentary that accompanies many of the terms provides information about the importance
+of the item in soil classification, soil interpretation, or understanding soil genesis (see Cumulic subgroup
+for an example). In some cases, background information regarding the origin of the term for use in soil
+survey is provided (see Oxyaquic subgroup and cation-exchange activity class for examples). In many
+cases, the entry for the term ends with a cross reference to one or more related terms to show how one
+term or concept relates to others.
+January 2017
+
+2
+
+A
+Abrupt textural change.—A diagnostic soil characteristic of mineral soils defined as a considerable
+increase in silicate clay content within a short vertical distance (<7.5 cm) between the epipedon and an
+underlying argillic, kandic, glossic, or natric subsoil horizon. The required clay increase varies depending
+on the clay content of the epipedon. Where present, this feature significantly restricts the downward
+movement of water. From the standpoint of soil genesis, it generally suggests that the soil formed on a
+relatively stable geomorphic surface of significant age.
+Accumulation.—A term used in Soil Taxonomy and in the definitions of horizon suffix symbols to
+indicate that a specific material is present in a higher concentration than assumed for the original parent
+material. For example, a calcic horizon (Bk) has more calcium carbonate than is presumed to have been
+present in the parent material.
+Acid sulfate soil.—A soil that formed in sulfur-bearing mineral or organic sediments under strongly
+reducing conditions. Acid sulfate soils are most commonly encountered in marine, estuarine, or brackish
+water environments, but they can develop in some freshwater settings if sulfur is available. Some
+sulfate-bearing soil materials are in inland areas where geologic materials are associated with coal
+deposits such as lignite, and some are in deposits that were laid down in or around ancient seas. These
+materials may be shielded from oxidation due their position under a thick overburden. Once acid sulfate
+soil materials are exposed to oxygen by activities such as draining, dredging, or mining operations,
+sulfates are converted to sulfides by bacteria decomposing the organic matter, and sulfuric acid (H2SO4)
+is produced. Concentrations of the yellowish mineral jarosite may also be observed. The production of
+acid results in very low pH (unless significant amounts of carbonate are present to neutralize the acid).
+These highly acidic materials are toxic to plants and corrosive to utilities and structures. Runoff waters
+can be toxic to adjacent waterways and wetlands. There is no single taxonomic classification for all acid
+sulfate soils. They are recognized in Entisols, Gelisols, Inceptisols, Vertisols, and Histosols. Their common
+feature is the presence of either sulfidic materials or, when oxidized, a sulfuric horizon. Profile
+descriptions of horizons with sulfidic materials are denoted with horizon symbol suffix “se” (e.g., Cseg,
+Oase). See oxidized pH and sulfidic material.
+Active layer.—The upper soil layers that are subject to annual freeze-thaw cycles and that are underlain
+by permafrost. Soil horizons within the active layer are subject to cryopedogenic processes and may
+meet the definition of gelic materials as defined in Soil Taxonomy. See cryoturbation.
+Aeric (subgroup).—A taxonomic term used at the subgroup level for soils in aquic suborders that are
+somewhat better drained than other soils in their associated great group. The color and redox feature
+patterns of one or more horizons show evidence of having only moderately reducing conditions. Soils in
+an Aeric subgroup are commonly assigned to the “somewhat poorly drained” soil drainage class. Aeric
+subgroups are not true extragrades. Instead they infer a special kind of departure from the Typic
+subgroup.
+Albic materials.—A diagnostic soil characteristic of mineral soils. Albic materials are defined by a specific
+range of color that is likely due to uncoated sand and silt particles. It is assumed that coatings of clay
+and/or free iron oxides have been removed from individual particles to the extent that the color is due
+to the primary color of the soil particles. Soil materials meeting the color requirement, but not as a
+result of the implied eluvial pedogenic process, are not considered albic materials. See eluviation.
+
+3
+
+Allic.—A soil family class term used in Oxisols as a calcareous and reaction class category. Soils placed in
+the allic class are acid and have low CEC with high amounts of KCl-extractable aluminum in a layer at
+least 30 cm thick within the control section. If used for agriculture, these Oxisols require large inputs of
+lime to displace the aluminum and raise pH.
+Alpha,alpha-dipyridyl (positive reaction to).—A compound that when dissolved in 1N ammonium
+acetate is used to detect the presence of reduced iron (Fe2+). It is used as a simple field test in wet soils,
+particularly those with no visible redoximorphic features, to confirm that the soil is reduced. A positive
+reaction satisfies the criterion for redoximorphic features in the definition of aquic conditions in Soil
+Taxonomy. It should be noted that a positive reaction will only occur when the iron is currently in a
+reduced state. If the iron is in an oxidized state (such as during the dry season), no reaction will occur
+even though the soil is subject to periodic saturation and reduction. See aquic conditions.
+Amorphous minerals.—A general term that refers to an array of minerals that are amorphous to x-rays
+and have no more than short-range order within their molecular structure. Examples include allophane
+and imogolite, which are early weathering products of pyroclastic materials in humid environments.
+Other terms commonly used interchangeably with the term “amorphous” include “short-range-order,”
+“poorly crystalline,” and “noncrystalline.” Notable properties resulting from a significant amorphous
+mineral content include high variable charge, high surface area, high reactivity with phosphate and
+organics (high anion retention), high water retention, and low bulk density. Amorphous minerals are
+most commonly formed in Andisols and some Spodosols. See andic soil properties.
+Andic soil properties.—A diagnostic soil characteristic of mineral soils. These properties are mostly the
+product of weathering and transformation of soil materials containing volcanic glass. The weathering
+may be either weak, such as in relatively fresh tephra deposits still rich in glass, or moderate, as in soils
+where characteristic short-range-order mineral species (such as allophane, imogolite, and ferrihydrite)
+have formed from the weathering of the silica-rich volcanic glass. These weathering products may also
+form (but less commonly) in cool humid environments that are rich in organic matter but lack volcanic
+glass. Soils with andic properties commonly have unique chemical and physical characteristics, including
+moderate to high P-retention, relatively low bulk density, good friability, and a high water-holding
+capacity. Andic soil properties are most common in Andisols and, to a lesser degree, in Spodosols. See
+amorphous minerals.
+Anhydrous conditions.—A diagnostic soil characteristic of mineral soils in very cold deserts with
+permafrost (commonly dry permafrost) such as those in Antarctica. These conditions are similar to the
+aridic soil moisture regime, except soil temperatures are colder.
+Aniso class.—A taxonomic term used at the family level as a modifier of the particle-size class term. It is
+used in soils that have a particle-size control section that consists of more than one pair of strongly
+contrasting particle-size classes. The boundaries between strongly contrasting particle sizes restrict the
+downward movement of water and may affect rooting. See strongly contrasting particle-size class.
+Anthric saturation.—A specific pattern of saturation resulting from human-induced cultivation and flood
+irrigation; a variant of episaturation. Color and redox feature patterns suggest reduction processes in
+the saturated surface layer and subsequent oxidation of the mobilized iron and manganese ions in the
+unsaturated layers below. See aquic conditions.
+Apparent cation-exchange capacity (ACEC).—The cation-exchange capacity expressed as centimoles of
+charge per kilogram of clay; calculated as [(CEC-7/clay %) x 100]. It differs from cation-exchange
+capacity: CEC is measured for the fine-earth fraction and reported on a kg of soil basis while ACEC is a
+mathematical adjustment of CEC performed to report it on a kg of clay basis. ACEC is used as criteria in
+4
+
+the kandic and oxic horizons and also for Oxic subgroups of Haplustolls and Kandic subgroups of Alfisols
+and Ultisols. See cation-exchange capacity and cation-exchange activity class.
+Apparent effective cation-exchange capacity (AECEC).—The effective cation-exchange capacity
+expressed as centimoles of charge per kilogram of clay; calculated as [(ECEC/clay %) x 100]. It differs
+from ECEC: ECEC is measured for the fine-earth fraction and reported on a kg of soil basis while AECEC is
+a mathematical adjustment of ECEC performed to report it on a kg of clay basis. AECEC is used as criteria
+in the kandic and oxic horizons and also for Acric great groups of Oxisols and subgroups of Ultisols. See
+effective cation-exchange capacity.
+Apparent field texture.—A tactile evaluation of soil texture in the field, with no inference as to expected
+laboratory results for textural analysis. Some soil samples cannot be adequately dispersed in the
+laboratory for accurate texture analysis using standard procedures. Factors that hinder the effectiveness
+of standard procedures for particle-size analysis include high content of low-activity clays or iron oxides,
+andic or spodic materials in soils having an isotic mineralogy class, carbonates, and gypsiferous
+materials. These soils tend to have ratios of 1500 kPa water to clay outside the normally expected range
+of 0.25 to 0.6, and clay content is therefore estimated rather than measured for family particle-size class
+as indicated in Soil Taxonomy (see note preceding item C in the key to particle-size and substitute
+classes). The apparent field texture reported in the soil profile description commonly appears coarser
+than the calculated result for placement in a taxonomic family particle-size class (e.g., fine sandy loam
+apparent field texture vs. fine family particle-size class).
+Aquic conditions.—A diagnostic soil characteristic of mineral or organic soils that indicates the presence
+of continuous or periodic saturation and reduction in one or more layers, which leads to biogeochemical
+reduction of Mn and Fe. The criteria include saturation, reduction, and (for mineral soils) the presence
+of redoximorphic features. Beginning with the 5th edition of the Keys to Soil Taxonomy (1992), aquic
+conditions replaced the requirement for an aquic soil moisture regime as diagnostic criteria in the keys.
+Arenic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) in some great groups
+of Alfisols, Aridisols, Inceptisols, Mollisols, Spodosols, and Ultisols for soils that have a moderately thick
+(50 to 100 cm) continuous layer of sandy materials in the upper part of the profile. Although not a
+requirement, in most cases the sandy layer is eluvial in nature. Qualifying texture classes of the fineearth fraction are coarse sand, sand, fine sand, loamy coarse sand, loamy sand, and loamy fine sand.
+Argillan.—A ped or void surface feature composed of illuvial clay. The term is used interchangeably with
+clay film.
+Artifacts.—Materials created, modified, or transported from their source by humans typically for a
+practical purpose in habitation, manufacturing, excavation, agriculture, or construction activities.
+Artifacts are a specific category of soil fragments defined for the purpose of identifying humantransported material in soil descriptions and for classification. The presence of artifacts is a criterion
+used to identify anthropic and plaggen epipedons. It is also used for some human-altered and humantransported material classes at the family level. In addition, some artifacts are included in consideration
+for skeletal particle-size classes. See human-transported material.
+Artificial drainage.—The removal of water by onsite practices, such as surface grading, ditching, or
+subsurface tile drainage, from a soil having aquic conditions in its natural state. Also included as forms of
+artificial drainage are off-site practices that prevent water from reaching a site, such as dams, levees,
+and pumps. There is an expectation that if the drainage practice is removed, aquic conditions will return
+to the site. The term “artificial drainage” is used to describe an exclusion to the requirement for
+saturation in the criteria for aquic conditions, in some diagnostic horizon criteria, and in various places
+throughout the Keys to Soil Taxonomy. This exclusion was introduced early in the development of Soil
+5
+
+Taxonomy because it is not practical to require a precise determination of what the depth to free water
+was originally in an artificially drained soil before the soil can be classified.
+Ashy (particle-size substitute class).—A family class term used instead of a particle-size class for some
+soil materials of volcanic origin. These materials either have andic soil properties and retain relatively
+low amounts of water at 1500 kPa tension (wilting point) or they have significant amounts of glass in the
+fine-earth fraction. Three ashy classes are defined: ashy-pumiceous, ashy-skeletal, and ashy. See
+particle-size substitute class and particle-size class (taxonomic).
+Association (map unit).—A map unit consisting of two or more dissimilar major components occurring
+in a regular and repeating pattern on the landscape. The major components of an association can be
+separated at a scale of about 1:24,000, but due to land use, or user needs, the map unit design
+integrates the predictable and repeating pattern of soil occurrence. Many general soil maps use soil
+associations as map units because they are at scales much smaller than 1:24,000 and only the
+characteristic landscapes of associated soils can be depicted, not the individual soils. The major
+components are sufficiently different in morphology or behavior that the map unit cannot be called a
+consociation.
+Available water capacity.—The volume of water that would be expected to be available to plants if the
+moisture content of the soil profile is at field capacity. It is generally considered to be the amount of
+water held between field capacity and the permanent wilting point (i.e., water retention difference) with
+corrections for factors such as salinity, rock fragments, and rooting depth. It is expressed as a volume
+fraction or as thickness of available water in a 100-cm or 150-cm soil profile. These values may be
+grouped into classes; however, as meaningful classes reflecting local conditions and commonly grown
+crops will vary from region to region, no single set of classes is used throughout the NCSS. Physical and
+chemical factors of the soil that affect the ability of plants to extract water include texture, rock
+fragment content, bulk density, porosity, salt content, clay mineral types, organic matter content, low
+available calcium, high extractable aluminum, and presence of root-limiting layers (such as fragipans,
+duripans, and bedrock). Individual plant species also have somewhat differing abilities to extract water
+from the soil.
+
+B
+Base saturation.—The ratio of the quantity of exchangeable bases (calcium, magnesium, sodium, and
+potassium) to the cation-exchange capacity (CEC) of the soil, expressed as a percent. Two different
+methods are used in Soil Taxonomy that reflect the the importance of pH-dependent CEC in various
+groups of soils. Base saturation of the CEC measured at pH 8.2 is used to differentiate the moderately
+weathered, fertile Alfisols (where CEC is dominated mostly by permanent charge and not dependent on
+pH) from the more weathered, less naturally fertile Ultisols (where CEC is dominated by variable charge
+depending on pH). Base saturation of the CEC measured at pH 7.0 of the surface horizons is used to
+distinguish between base-rich mollic epipedons and their base-poor umbric equivalents. See cationexchange capacity.
+Bedrock.—Generally, a continuous layer of fixed, cemented rock. Bedrock may be hard or soft and may
+underlie the soil or be exposed at the surface. Hard bedrock is described in profile descriptions with the
+master symbol “R.” Soft bedrock is described in profile descriptions with the horizon symbol “Cr.”
+Descriptions commonly include information about the kind of rock, fracture interval, hardness (dry
+rupture resistance class), and degree of weathering. Soil Taxonomy uses Lithic subgroups and shallow
+
+6
+
+families to classify soils with hard or soft bedrock, respectively, within critical depths. See lithic contact
+and paralithic contact.
+Bisequum.—A sequence of two or more pairs of eluvial/illuvial horizons that formed in the same
+material. For example, some Spodosols have two horizons of accumulation, an upper horizon with an
+accumulation of amorphous materials (spodic horizon) and a lower horizon with an accumulation of
+phyllosilicate clays (argillic horizon). The two are separated by an eluvial horizon. This sequence of
+horizons is a bisequum. A sequence of eluvial/illuvial horizons is not considered a bisequum if the
+horizons formed in different materials at different times (for example, if the lower sequum is a buried
+soil or if characteristics of the upper sequum extend across the material discontinuity and into the lower
+sequum). See sequum.
+Bottom tier.—The deepest of three zones making up the control section that are considered for
+classification of organic soils (Histosols and Histels). It is generally a zone 40 cm thick, beginning at the
+base of the subsurface tier, commonly at 90 or 120 cm, depending on the kind of organic materials in
+the upper part of the soil. The concept of tiers is used in organic soils because they lack diagnostic
+horizons as defined for mineral soils. Tier depth and thickness are more or less arbitrary. See control
+section, surface tier, and subsurface tier.
+Bulk density.—Mass per unit volume (commonly reported as g cm-3) at a specified moisture content (10
+kPa, 33 kPa, or oven dry). The sample measured includes the solids plus the pore space. Bulk density is
+used in the definitions of mineral and organic soils, andic soil properties, and several taxonomic classes.
+It is also used in estimating Ksat and is essential for converting from a weight to a volume basis, such as
+for estimating carbon content per cubic meter. Accurate bulk density determination requires careful
+sampling and transport of samples to preserve their natural volume. A common procedure is collecting
+saran-coated clods.
+Buried horizon.—A genetic soil horizon that originally formed at or near the soil surface and is now
+covered by more recently deposited material. The major genetic features of the horizon were formed
+before burial. A buried horizon within a profile description is denoted with horizon symbol suffix “b”
+(e.g., Ab, Btb). The presence of one or more buried horizons does not automatically mean a buried soil is
+present for classification purposes. For a soil to be considered a buried soil, the technical criteria given in
+chapter 4 of the Keys to Soil Taxonomy must be met. See buried soil.
+Buried soil.—A soil profile having one or more genetic horizons that is covered with a surface mantle of
+new soil material 50 cm or more thick. In essence, two soils are present—a new soil in the mantle and
+an older soil below that formed before the mantle was deposited. Special rules are given in chapter 4 of
+the Keys to Soil Taxonomy for the proper classification of such soils. See surface mantle of new soil
+material.
+
+C
+Calcareous class.—A soil family class term used in a limited number of mineral soil taxa that require a
+calcareous and reaction class term. Soils placed in the calcareous class effervesce in cold, dilute (0.1 M)
+HCl in the fine-earth fraction of all parts of the control section, as defined for calcareous and reaction
+classes. See calcareous soil.
+Calcareous soil.—A general term for a soil containing sufficient calcium carbonate to effervesce
+noticeably when treated with cold, dilute (0.1 M) HCl. There is no minimum amount of calcium
+carbonate required to be considered calcareous. The presence of calcareous horizons in the upper part
+7
+
+of the soil is used as a criterion in Soil Taxonomy for some Calci great groups and some Calcic and Entic
+subgroups. In addition, the term free carbonates is used in several places in the keys to reflect soil
+materials having finely disseminated carbonates that effervesce in cold, dilute (0.1 M) HCl. See
+calcareous class and free carbonates.
+Calcium carbonate equivalent (CCE).—The amount of carbonates in the soil (weight percent) relative to
+the dry total sample weight. A monometric test involving treatment with HCl and measurement of
+evolved CO2 is used. CCE is used in the definitions of mollic epipedons and calcic horizons and in several
+taxonomic classes, from suborder to family. Calcium carbonate affects fertility, erosion susceptibility,
+and water-holding capacity.
+Caliche.—A general term for a layer of surficial soil material with a significant accumulation of calcium
+carbonate. It is commonly pedogenic in origin but may also be geogenic. The material is commonly light
+in color and may be unconsolidated or cemented. A petrocalcic horizon (i.e., Bkkm) or a calcic horizon
+with a large amount of calcium carbonate (i.e., Bkk) generally would be considered caliche. The term
+“caliche” is not used in Soil Taxonomy. Surficial geologists use it more than pedologists.
+Catena.—A sequence of soils across a landscape. Soils in a catena are about the same age, are derived
+from the same or similar parent material, and formed under similar climatic conditions. However, they
+have different characteristics primarily due to variations in relief and drainage. The soils making up a
+catena on a hillslope have a pedological relationship with one another primarily due to the downslope
+movement of water and dissolved constituents across the soil surface and laterally through the subsoil.
+Important soil catenas are often illustrated with block diagrams in soil survey reports. A catena is
+sometimes called a “toposequence”; a toposequence is slightly different because its soils formed in the
+same parent material while those of a catena formed in similar, but not necessarily the same, parent
+material. Differences in topography, as a soil-forming factor, lead to differences between soils in a
+toposequence, while differences in parent material, as a soil-forming factor, may have a relatively
+greater additional influence on differences between soils in a catena. The concepts are so similar that
+many use the terms interchangeably. See toposequence.
+Cation-exchange activity class.—A family class term used in selected taxa of mineral soils to express
+their relative level of clay activity. It is used primarily for soils with a combination of mixed or siliceous
+mineralogy and a clayey or loamy particle-size class. It is calculated as the ratio of CEC-7 to the weight
+percent of silicate clay and reported as a dimensionless weighted average for the control section. Four
+classes are used: superactive, active, semiactive, and subactive. The term was first introduced in the 7th
+edition of the Keys to Soil Taxonomy (1996). It is intended to improve interpretations related to the
+nutrient-holding capacity and the general level of clay activity for the soils assigned this class. See
+apparent cation-exchange capacity.
+Cation-exchange capacity (CEC).—A measure of the negatively charged exchange sites within the soil,
+expressed as centimoles of charge per kilogram of soil. It is the sum of exchangeable bases measured at
+pH 7.0 or 8.2. The total CEC may vary significantly depending on the pH at the time of measurement due
+to the amount of pH-dependent charge present (generally more important in highly weathered soil
+materials). CEC measured at pH 8.2 is commonly used for the moderately weathered, fertile Alfisols
+(where CEC is dominated mostly by permanent charge and is less dependent on pH). CEC measured at
+pH 7.0 is commonly used for the more weathered and less naturally fertile Ultisols (where CEC is
+dominated by variable charge depending on pH). See effective cation-exchange capacity and apparent
+cation-exchange capacity.
+Cindery (particle-size substitute class).—A family class term used instead of a particle-size class for
+some very coarse soil materials of volcanic origin. The soil materials are dominated by cinders or other
+8
+
+non-pumice-like fragments. The soil contains more than 90 percent, by volume, particles 2 mm or more
+in size, so less than 10 percent is “fine earth.” At least 60 percent of the whole soil consists of some
+combination of ash, cinders, lapilli, pumice, and pumice-like materials, but less than two-thirds of the
+particles 2 mm or more in size consist of low-density pumice or pumice-like materials. Cinders have a
+specific gravity greater than 1.0 and therefore do not float in water. See particle-size substitute class.
+Clay bridge.—A specific type of ped and void surface feature consisting of an accumulation of illuvial
+clay in intergrain spaces of the soil matrix that links adjacent sand grains. Clay bridges are one form of
+evidence of illuvial clay listed in the definition of the argillic horizon. Significant clay bridging within an
+otherwise sandy soil layer has the effect of partially obstructing pores, thus slowing water movement. In
+addition, depending on the kind of clay minerals, clay bridges may increase the overall CEC and fertility
+of the layer. Soil horizons with clay bridges are commonly designated by the suffix “t” (e.g., Bt). See clay
+film and lamellae.
+Clay depletion.—A localized area characterized by chroma lower than the surrounding soil matrix due to
+a loss of iron and manganese pigment and of clay as a consequence of oxidation-reduction processes. A
+clay depletion is a specific type of redoximorphic depletion. Clay depletions are commonly described as
+skeletans or silt coatings. See skeletan and redoximorphic features.
+Clay film.—A specific type of ped and void surface feature consisting of oriented illuvial clay that coats
+ped surfaces and/or lines pores. Clay film orientation is the result of the plate-like clay particles
+accumulating in a horizontal fashion along the ped surface; as the pore water in which they were
+transported downward is depleted, clay particles remain as a coating on the surface. Clay films (also
+called argillans or clay skins) are one form of evidence of illuvial clay listed in the definition of the argillic
+horizon. Clay films in significant amounts may partially obstruct pores, thus slowing water movement. In
+addition, depending on the kind of clay minerals, clay films may increase the overall CEC of the layer.
+Soil horizons with clay films are commonly designated by the suffix “t” (e.g., Bt). See clay bridge.
+Coefficient of linear extensibility (COLE).—A measurement for the proportional change in linear
+dimension of a soil clod due to shrinking and swelling. Higher values indicate greater potential for soil
+movement. COLE is used in the criteria for argillic and natric horizons to identify conditions with high
+shrink-swell potential (COLE > 0.4) where the visual evidence of clay illuviation (such as oriented clay as
+clay films on faces of peds and in pores) is likely to be destroyed due to soil movement. COLE is
+calculated as: [length (moist) – length (dry)] / length (dry). It is also used to calculate linear extensibility
+(LE).
+Combination horizon.—A soil horizon comprised of two distinct parts that are recognizable as different
+kinds of master horizons. Commonly, the dominant horizon type surrounds the material of the
+secondary horizon type. Two capital letters separated by a virgule are used to designate the horizon
+(e.g., A/B or B/C), with the first symbol being the horizon type occupying the greatest volume. Where
+two kinds of horizons are present as continuous layers, but one of the horizon types is too thin to be
+described separately (such as a sequence of lamellae within an E horizon), the word “and” is used in
+place of the virgule (e.g., E and Bt). See transitional horizon and horizon nomenclature.
+Complex (map unit).—A map unit consisting of two or more dissimilar major components that may
+occur in a regularly repeating pattern or in an unpredictable pattern. The major components of a
+complex cannot be mapped separately at a scale of about 1:24,000. Each major component is normally
+present in each delineation, but its proportions may vary appreciably from one delineation to another.
+See component.
+Component (map unit).—Within the context of a map unit, a component is an entity that can be
+delineated at some scale. It is commonly a soil, but it may be a miscellaneous area. Components
+9
+
+consisting of soil are named for a soil series or a higher taxonomic class. Those that are miscellaneous
+areas have an appropriate name, such as Rock outcrop or Urban land. In either case, each component
+that makes up a map unit can be identified on the ground as well as delineated separately at a
+sufficiently large scale.
+Concretion.—A kind of concentration within a soil horizon consisting of a chemical compound, such as
+calcium carbonate or iron and/or manganese oxide, that is cemented to form a discreet body. It can be
+removed from the soil intact and exhibits crude internal organization. The organization within a broken
+specimen is evident to the naked eye as concentric layers around a point, line, or plane. Concretions are
+similar to nodules, but nodules do not have evident internal organization. In Soil Taxonomy,
+iron/manganese concretions are a specific kind of concretion recognized as a diagnostic redoximorphic
+feature and calcium carbonate concretions are considered a kind of identifiable secondary carbonate. In
+some cases, it is difficult to determine whether the concretions in a horizon formed in place or formed
+elsewhere and were transported to their current location. A color change gradation from the matrix to
+the concretion that is not sharp may suggest in situ formation. Soil horizons containing concretions (or
+nodules) are indicated with the suffix “c” (e.g., Bsc, Bgc). See nodule.
+Consistence.—The degree of cohesion and adhesion of soil material and its resistance to deformation
+when a stress is applied, expressed by a set of soil attributes. Individual field tests can be performed for
+specific aspects of consistence, including rupture resistance, penetration resistance, plasticity,
+toughness, stickiness, and manner of failure. These tests, along with class definitions, are described in
+chapter 3 of the Soil Survey Manual. Only the tests considered useful for describing and understanding a
+specific soil are performed and recorded. Consistence is used as a criterion in some places in Soil
+Taxonomy. Examples include mollic and umbric epipedons; duripan, fragipan, petrocalcic, and
+petrogypsic horizons; plinthite; durinodes; spodic, densic, and paralithic materials; anhydrous
+conditions; and the ortstein family class. The similar term “consistency” is used by engineers to describe
+similar concepts regarding the response of soils to applied force, but the tests prescribed are different
+from those described in the Soil Survey Manual.
+Consociation (map unit).—A map unit dominated by a single soil component (or miscellaneous area).
+Most of the remainder of the delineation consists of soil so similar to the named soil that major
+interpretations are not affected significantly. The total amount of dissimilar minor components generally
+does not exceed about 15 percent if they are limiting and 25 percent if they are nonlimiting.
+Control section.—A specific fixed part of the soil profile to be evaluated for determining the soil
+moisture and temperature regimes, applying particular terms used in the family name, and defining a
+soil series. The organic soils (Histosols and Histels) also have a specifically defined control section that is
+evaluated for their classification. Soil Taxonomy explicitly defines control sections for the cases listed
+above. In addition, while not explicitly called such, “control sections” for evaluating defining properties
+at various taxonomic levels are incorporated directly into the keys for the higher categories. For
+example, Mollisols are required to have 50 percent or more base saturation within specified depths.
+Coprogenous earth.—A type of limnic material consisting of an accumulation of fecal pellets excreted by
+aquatic organisms. Generally, it is a nonplastic organic material that shrinks and cracks upon drying and
+is difficult to rewet. It has a relatively low CEC compared to many other organic soil materials. A layer
+consisting of coprogenous earth is designated by horizon nomenclature “Lco” in soil profile descriptions.
+The term “coprogenous” is used as a mineralogy family term in some Limnic subgroups of Histosols and
+as a textural modifier for some layers of limnic materials with significant contents of coprogenous earth.
+See limnic materials.
+
+10
+
+Correlation (soil).—The multistep process of quality assessment that assures accuracy and consistency
+both within and between soil surveys on both a local and regional basis. It involves describing and
+classifying soils, naming map units, and providing accurate interpretations in a consistent manner.
+Individual soil scientists make correlation decisions on a daily basis, such as when they identify multiple
+observations as being the same kind of soil and when they label two or more map unit delineations with
+the same symbol. Supervisory soil scientists periodically review the work in the field to assure the
+consistent mapping and naming of soils within and between soil survey areas. They approve the
+correlation of the soils when it meets NCSS standards.
+Cryoturbation.—The physical mixing of soil material within a pedon by frost churning. Evidence of this
+process is considered a diagnostic soil characteristic for both mineral and organic soils. Cryoturbation is
+defined by macromorphological evidence that can be observed visually in a profile, such as irregular or
+broken horizons, involutions, accumulations of organic matter on the permafrost table, oriented rock
+fragments, and silt caps on rock fragments. It is a criterion used in the taxonomic keys to identify
+Turbels. See gelic materials.
+Cumulic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) for soils that have
+an overthickened mollic or umbric epipedon (40, 50, or 60 cm thick, depending on the taxa), relatively
+gentle slopes, and an irregular distribution of organic carbon with depth. It is intended for soils in an
+aggrading landscape position that receive fresh sediments periodically, such as a toeslope or concave
+head slope. The landform surface generally is not sufficiently stable for the formation of a well
+developed subsoil (other than possibly a cambic horizon) but the rate of sediment delivery is slow
+enough for the formation of a thick, continuous epipedon. See Pachic subgroup.
+Cutan.—A general term for ped surface features resulting from modification of the texture, structure, or
+fabric of the ped surface. A cutan forms from the concentration of a particular soil constituent (such as
+clay or calcium carbonate) or in situ modification of the soil (such as a pressure face or slickenside). It is
+described in soil profile descriptions as specific kinds of ped or void surface features (e.g., clay films,
+organic stains, and skeletans).
+
+D
+Densic materials.—A diagnostic soil characteristic consisting of relatively unaltered, noncemented (i.e.,
+they slake in water), compact, and root-restrictive soil materials. The compaction is non-pedogenic and
+may be geologic or human induced. Densic materials commonly consist of earthy materials such as
+dense glacial till or volcanic mudflows, but they include mechanically compacted materials such as those
+in a plow pan or heavily trafficked area. Noncemented rock such as highly weathered, unconsolidated
+sandstone can also be considered densic material. Densic materials, by definition, cannot also meet the
+criteria for any other diagnostic horizon or characteristic. Their definition was included in the 7th edition
+of the Keys to Soil Taxonomy (1996) in part to accommodate the decision to not recognize fragipans in
+relatively unaltered dense glacial till. See paralithic materials and slake.
+Diagnostic horizon.—A specific kind of soil horizon used to identify classes in Soil Taxonomy. Each
+diagnostic horizon has a definition describing key characteristics of its physical and chemical properties.
+The definition consists of a few observable and measurable properties that together reflect major
+genetic processes. Grouping soils with similar diagnostic horizons therefore results in the grouping of
+soils formed by similar pedogenesis. The strategy of using diagnostic horizons as part of taxonomic
+criteria was first introduced with the 6th approximation (1957) of Soil Taxonomy. The use of diagnostic
+horizons has since been adopted by several other soil classification systems worldwide. Diagnostic
+11
+
+horizons are not equivalent to genetic horizons. For example, a genetic horizon labeled “Bt” is not
+necessarily an argillic horizon. Somewhat surprisingly, the term “diagnostic horizon” is not formally
+defined anywhere in Soil Taxonomy.
+Diatomaceous earth.—A type of limnic material containing a significant content of the remains of
+diatoms. Organic matter coating the diatoms shrinks and cracks irreversibly upon drying (this can be
+observed under a microscope). Generally, the material is a grayish siliceous deposit. A layer consisting of
+diatomaceous earth is designated by horizon nomenclature “Ldi” in soil profile descriptions. The term
+“diatomaceous” is used as a mineralogy family term in some Limnic subgroups of Histosols and as a
+textural modifier for some layers of limnic materials with a significant content of diatomaceous earth.
+See limnic materials.
+Drainage class.—Seven classes are used to describe the frequency and duration of soil wetness under
+natural conditions. The definitions generally consider the ease with which water is removed from the
+profile, and the depth and persistence of internal free water. Human alterations such as irrigation or
+drainage are generally not considered in class placement unless the morphology of the soil has been
+affected, such as with anthric saturation. The class definitions are a mixture of semi-quantitative and
+qualitative criteria; therefore, their interpretation and application vary somewhat from region to region
+to best fit local conditions.
+Durinode.—A pedogenically formed nodule or concretion that is cemented by silica as opal or
+microcrystalline silica. It is often associated with soils containing volcanic glass as the silica source.
+Durinodes are used as diagnostic criteria for several subgroups in Soil Taxonomy. By definition, a
+durinode has a rupture resistance class of weakly or more cemented and has a diameter of 1 cm or
+more. To confirm that silica is the cementing agent (rather than calcium carbonate), the durinode is first
+treated with HCl, which removes any carbonates, and then subjected to hot KOH, which dissolves the
+silica cement.
+Dynamic soil properties.—Properties that change with land use, management, and disturbance over a
+human timescale (decades to centuries). These properties can be affected either intentionally or
+inadvertently through direct and indirect human activities. Many dynamic soil properties exert controls
+on the level at which soils function in the ecosystem and can therefore serve as indicators of soil
+quality/health. Examples include organic matter content and bulk density. See near-surface subzones
+and inherent soil properties.
+Dystric (subgroup).—A taxonomic term used at the subgroup level (an intergrade) for some great
+groups of Andisols, Entisols, and Inceptisols. Criteria for Dystric subgroups vary between taxa, but in
+general the members of these taxa have a lower concentration of base cations, or in some cases lack
+free carbonates, in a specified part of their profile.
+
+E
+Effective cation-exchange capacity (ECEC).—A measure of the negatively charged exchange sites within
+the soil, expressed as centimoles of charge per kilogram of soil. It is used for acid soils. It is calculated by
+the sum of bases extracted with 1N NH4OAc pH7 plus KCl extractable aluminum. ECEC is generally less
+than cation-exchange capacity (sum of exchangeable bases). It is considered to be a more accurate
+reflection of the CEC of the soil at the native pH value. See cation-exchange capacity and apparent
+effective cation-exchange capacity.
+
+12
+
+Electrical conductivity (EC).—Conductivity of electricity (dS m-1) through a saturated paste extract (or
+1:5 soil-water vol/vol mixture) for subaqueous soil analysis. It is used to infer soluble salt levels in saltaffected soils. EC is a criterion for the salic diagnostic horizon and for Halic subgroups. It is also used to
+differentiate freshwater and brackish water subaqueous soil classes. Salt content affects plant growth
+and plant-available water.
+Eluvial horizon.—A horizon formed primarily as a result of pedogenic removal of soil constituents such
+as clay, organic matter, or iron oxides. It includes diagnostic horizons such as albic and glossic horizons.
+Some ochric epipedons and cambic horizons formed at least partially due to eluviation. Many eluvial
+horizons are designated by master horizon symbol “E” in profile descriptions. See eluviation.
+Eluviation.—An important pedogenic process characterized by the loss of materials such as clay, iron
+oxides, organic matter and other constituents from the soil. Examples of morphological features
+resulting from eluvial processes are skeletans, clay depletions, and albic and glossic horizons. Eluviation
+has also been important in the formation of many cambic horizons. See eluvial horizon.
+Endosaturation.—A diagnostic soil characteristic consisting of a particular pattern of soil wetness
+characterized by saturated layers throughout the profile from a depth of 200 cm or more and extending
+upward to the top of the water table. It is used to define some great groups. Saturation, reduction, and
+redoximorphic features are the three elements required for aquic conditions. See episaturation.
+Epipedon.—A pedogenic horizon formed at or near the soil surface. Pedogenesis is evidenced by the
+loss of most rock structure, darkening by organic matter, and/or eluviation. Eight diagnostic epipedons
+are defined in Soil Taxonomy and used to classify soils at multiple taxonomic levels.
+Episaturation.—A diagnostic soil characteristic consisting of a particular pattern of soil wetness in which
+one or more saturated layers are underlain by one or more unsaturated layers, all within 200 cm from
+the mineral soil surface. Episaturation is commonly called a perched water table. It is used to define
+some great groups. Saturation, reduction, and redoximorphic features are the three elements required
+for aquic conditions. See endosaturation.
+Exchangeable sodium percentage (ESP).—Exchangeable sodium as a percentage of cation-exchange
+activity (at pH 7). ESP is used as a criterion for the natric diagnostic horizon and several sodium-related
+great groups and subgroups. Excessive levels of sodium can inhibit plant growth and adversely affect soil
+structure and hydraulic conductivity. Horizons with accumulations of exchangeable sodium are
+commonly designated by the horizon suffix “n” (e.g., Btn).
+Extragrade.—A kind of a taxonomic subgroup defined by properties that are not representative of its
+great group and that do not indicate a transition to other known taxa. “Lithic” and “Oxyaquic” are
+examples of extragrade subgroup terms. See intergrade and Typic subgroup.
+
+F
+Family.—The category in Soil Taxonomy between the subgroup and the series (the 5th level). Its
+intended use is for grouping the soils within a subgroup that have similar physical and chemical
+properties. These properties include capacity factors (such as soil texture, mineralogy, and depth) as
+well as intensity factors (such as soil temperature, reaction, and cation-exchange activity). Soil families
+are generally defined by properties that are considered important for the use and management of the
+soil, such as those related to agronomic or engineering purposes. Less emphasis is placed on factors
+reflecting genetic processes at the family level compared to the higher categories.
+
+13
+
+Ferrihumic soil material.—Soil material used to define the ferrihumic mineralogy class in some
+Histosols. It consists of hydrated iron oxide and organic matter that formed in place (bog iron). It may be
+either dispersed and soft, or cemented into aggregates. The layer in which it forms may be either
+mineral or organic; is saturated for 6 months or more per year (or is drained); contains iron concretions,
+free iron oxide, and organic matter; and has dark reddish or brownish color that changes little upon
+drying.
+Fibers.—Fragments of plant tissues (excluding live roots) within organic soil materials. Fibers recognized
+for soil classification purposes are those that are retained on a sieve with 0.15-mm openings, show
+evidence of cellular structure, and have a smallest dimension of less than 20 mm (or can be crushed and
+shredded with the fingers). Fiber content is used in the definitions of kinds of organic soil materials
+(fibric, hemic, and sapric) as an indicator of the degree of decomposition.
+Fibric soil material.—The least decomposed of three classes of organic soil material. It is used as a
+diagnostic characteristic for organic soils. For soil classification purposes, fibric soil material generally
+has three-fourths or more fibers remaining after rubbing (see Soil Taxonomy for the full definition). It
+commonly has low bulk density and high water content on a dry-weight basis compared to other organic
+soil materials. See hemic soil material and sapric soil material.
+Field capacity.—The content of water remaining in a soil soon after having been soaked by rain or
+irrigation and after free drainage becomes negligible, generally 2 to 3 days. It is expressed quantitatively
+on a mass or volume basis. It is roughly equivalent to the “very moist” to “nonsatiated” wet soil
+moisture state classes. Definitions for the fragipan and fragic properties, coefficient of linear
+extensibility, and plinthite refer to physical characteristics when at or near field capacity. See moisture
+state.
+Fine-earth fraction.—The part of the soil consisting of mineral particles less than 2 mm in diameter
+(sand, silt, and clay). In the laboratory, whole-soil samples are treated to remove organic matter and
+then dried, crushed, and sieved to remove rock fragments so that just the fine-earth fraction remains.
+The weight percents of sand, silt, and clay of the fine-earth fraction are used to determine texture class
+as depicted in the USDA textural triangle. Many chemical and physical properties used in determining
+taxonomic placement are based on analysis of just the fine-earth fraction of the soil. See whole soil.
+Fluventic (subgroup).—A taxonomic term used at the subgroup level (an intergrade) for soils that are
+grading towards Fluvents or Fluvaquents, both of which exhibit less pedogenic development compared
+to soils in Fluventic subgroups. It is intended for soils in aggrading landscape positions that periodically
+receive fresh sediments, such as a flood plain, low stream terrace, alluvial fan, or concave depression.
+Soils in Fluventic subgroups have an irregular distribution of organic carbon with depth. In Histosols they
+have one or more strata of mineral material between the organic layers. In mineral soils the landform
+surface is sufficiently stable for a diagnostic horizon to have formed, such as a cambic or calcic subsoil
+horizon or a mollic or umbric epipedon. Fluventic subgroups are recognized in Aridisols, Histosols,
+Inceptisols, and Mollisols.
+Fragic soil properties.—A diagnostic soil characteristic associated with some soil aggregates in subsoil
+horizons of mineral soils. Aggregates with fragic properties are firm (or firmer) and brittle when the
+moisture content is at or near field capacity. Air-dry fragments slake when submerged in water (are not
+cemented). In addition, the aggregates show evidence of pedogenesis and are restrictive to roots. In
+effect, fragic soil properties are recognized in materials exhibiting all the characteristics of a fragipan
+except for continuity and/or thickness. Fragic soil properties are diagnostic for Fragic subgroups
+(intergrades to other soil classes having a fragipan). Soil horizons that exhibit fragic properties (including
+those that qualify as fragipans) are designated by the suffix “x” (e.g., Bx, Ex).
+14
+
+Fragmental (particle-size substitute class).—A family class term used instead of a particle-size class for
+some soils consisting almost entirely of rock fragments. These soils contain more than 90 percent, by
+volume, particles 2 mm or more in size, so less than 10 percent is “fine earth.” Also by definition, less
+than 60 percent of the whole soil consists of material of volcanic origin, such as ash, cinders, lapilli, or
+pumice. See particle-size substitute class.
+Free carbonates.—Unbound fine particles of soil carbonates disseminated throughout the soil matrix (as
+indicated by effervescence when treated with cold, dilute HCl). The term “free carbonates” is used as a
+diagnostic soil characteristic for mineral soils described in Soil Taxonomy. Although the particles are
+generally composed of calcium carbonate, they may also be sodium carbonate or magnesium carbonate.
+Free carbonates may be a precipitate dispersed throughout the soil matrix, or they may have been
+present in the original parent material. Their presence therefore does not automatically imply
+pedogenesis. In some situations, their presence or absence in a soil horizon may infer leaching, or lack of
+leaching. Presence (or absence) of free carbonates is used as a criterion for several taxa and also as part
+of the definition of the isotic mineralogy class. See calcareous soil and identifiable secondary carbonates.
+
+G
+Gelic materials.—Diagnostic soil material recognized in mineral and organic soils that are subject to
+intense cryoturbation. Many of these soils are affected by permafrost. Gelic materials are identified
+either in the freeze-thaw active layer, commonly just above the permafrost and/or in the upper part of
+the permafrost. In some cases there is no permafrost within 200 cm of the soil surface. Gelic materials
+are formed by cryopedogenic processes and can be identified by either macro- or micromorphological
+properties. Macromorphological evidence includes irregular and broken horizons, involutions,
+accumulation of organic matter on top of and within the permafrost, oriented rock fragments, siltenriched layers, and ice segregation forms (such as lenses, vein ice, ice wedges, and segregated ice
+crystals). Micromorphological evidence includes the micro fabric forms “orbiculic,” “conglomeric,”
+“banded,” and “vesicular.” The presence of gelic materials is a criterion used in the taxonomic keys.
+Depending on the depth to gelic materials, their presence is used to identify soils of the Gelisols order;
+Turbels suborder; and Turbic subgroups within some Andisols, Inceptisols, Mollisols, and Spodosols. See
+active layer and cryoturbation.
+Gilgai.—A type of landscape microrelief consisting of a pattern of concave microlows surrounded by
+convex or linear microhighs distributed over a nearly level plain. The distance from microhigh to
+microlow is commonly about 3 to 10 meters. This distinctive landscape pattern is commonly associated
+with Vertisols or other soils that shrink and swell markedly. The presence of gilgai is not used as a
+criterion anywhere in Soil Taxonomy.
+Gleyed layer.—A soil layer that is predominantly gray, bluish, or greenish due to prolonged saturation
+with water. Color chroma is 2 or less, and value is commonly (but not always) neutral. The saturation
+leads to reducing conditions and the subsequent reduction of iron to its ferrous state. The iron has
+either been significantly removed from the layer by fluctuating water table levels over time or
+continuous waterlogging has kept the iron in a reduced state with little or no removal. Soil colors
+reflective of gleying are used as diagnostic criteria for redoximorphic features and in many taxa in Soil
+Taxonomy. Horizons and layers that are strongly gleyed are indicated in soil profile descriptions with the
+horizon suffix “g” (e.g., Bg, Cg). See aquic conditions and redoximorphic features.
+Great group.—The category in Soil Taxonomy between the suborder and subgroup (the 3rd level). Its
+intended use is for grouping soils within a suborder that have similar properties that affect soil
+15
+
+development in addition to those identified at the suborder level. These properties are commonly static,
+such as the presence of a particular diagnostic horizon, soil temperature or moisture conditions, base
+status, and pattern of saturation.
+Grossarenic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) in some great
+groups of Alfisols, Mollisols, Spodosols, and Ultisols for soils that have a very thick (between 100 and
+200 cm) continuous layer of sandy materials in the upper part of the profile. Qualifying texture classes of
+the fine-earth fraction are coarse sand, sand, fine sand, loamy coarse sand, loamy sand, and loamy fine
+sand.
+Gypseous (particle-size substitute class).—A family class term used instead of a particle-size class for
+soils with a high content of the mineral gypsum. The soil contains 40 percent or more, by weight,
+gypsum in the part consisting of particles less than 20 mm in diameter (e.g., medium gravel and finer).
+Three gypseous classes are defined. From coarsest to finest, they are “gypseous-skeletal” for those with
+35 percent or more rock fragment content, “coarse-gypseous” for those with 50 percent or more
+particles ranging from 0.1 to 2.0 mm, and “fine-gypseous” for those with more than 50 percent particles
+less than 0.1 mm. Gypsum is relatively soluble in water and easily leached from the soil. It is therefore
+found primarily in arid areas where little leaching takes place. Soils with high gypsum contents are
+susceptible to dissolution and subsidence if subject to repeated water run-on from adjacent built-up
+areas or from irrigation. See particle-size substitute class.
+
+H
+Hemic soil material.—One of three classes of organic soil material. Hemic soil material is intermediate in
+its degree of decomposition. It is used as a diagnostic characteristic in organic soils. For soil classification
+purposes, hemic soil material generally has between one-sixth and three-fourths fibers remaining after
+rubbing (see Soil Taxonomy for the full definition). Hemic soil materials commonly have intermediate
+bulk density and water content on a dry-weight basis compared to other kinds of organic soil materials.
+See fibric soil material and sapric soil material.
+Horizon.—A term used for a layer in the soil in which some or all soil properties have resulted from
+pedogenic processes. The horizon is more or less parallel to the soil surface and can be distinguished
+from adjoining horizons or layers by differences in one or more of its properties. See layer and horizon
+nomenclature.
+Horizon nomenclature.—A standard system used to label soil layers and horizons in profile descriptions.
+Included in the system are capital letters designating master horizon types; lowercase letters as suffixes
+to indicate important physical, chemical, or mineralogical properties; numbers to subdivide layers or
+horizons vertically; and special symbols to indicate lithologic discontinuities, human-transported
+material, and other unique characteristics. The nomenclature allows soil scientists to convey
+information to the reader about the key properties and genetic processes that have produced the
+morphology observed in the soil profile. Many of the definitions for horizon nomenclature in the Soil
+Survey Manual are qualitative or semi-quantitative, thus allowing individual scientists to describe a
+profile somewhat differently based on their perception of the soil and its pedogenic development.
+Human-altered material.—Mineral or organic soil material that has been mixed or otherwise
+purposefully altered on site by human activity. Included within the concept are deep tillage, onsite
+excavation and replacement, and the development of anthric saturation by subsoil compaction and
+flood irrigation. Human-altered material is recognized as a kind of parent material. Where it is 50 cm or
+more thick (or rests directly on a lithic or paralithic contact) it is recognized as a diagnostic characteristic
+16
+
+for soil classification purposes. Some anthropic epipedons formed in human-altered material. All soils in
+Anthraltic subgroups and most in Anthraquic subgroups formed in human-altered material. Some soils in
+Anthrodensic and Anthropic subgroups formed in human-altered materials. For some soils that formed
+in human-altered material, the nature of the material is recognized at the family level with a humanaltered and human-transported material class term. See human-transported material.
+Human-transported material.—Mineral or organic soil material that has been moved horizontally onto
+a pedon from a source area outside of that pedon by directed human activity, usually with the aid of
+machinery. Human-transported materials are most commonly associated with building sites, mining or
+dredging operations, sanitary landfills, or other similar activities that result in the formation of a
+constructional anthropogenic landform. Human-transported material is recognized as a kind of parent
+material. It almost always has a lower boundary that can be easily recognized as a lithologic
+discontinuity or contact with a buried soil. Where it is 50 cm or more thick (or rests directly on a lithic or
+paralithic contact) it is recognized as a diagnostic characteristic for soil classification purposes. Most
+anthropic and plaggen epipedons formed in human-transported material. All soils in Anthroportic,
+Plaggic, and Haploplaggic subgroups, and most in Anthropic subgroups, formed in human-transported
+material. Some soils that are classified in Anthrodensic and Anthraquic subgroups formed in humantransported materials. For some soils that formed in human-transported material, the nature of the
+material is recognized at the family level with a human-altered and human-transported material class
+term. See human-altered material.
+Humilluvic material.—An illuvial accumulation of humus within the lower part of some organic soils. The
+accumulation commonly is above a contact with a mineral layer. The humus is not older than the organic
+material above. Humilluvic materials are known to occur in some acid Histosols that have been drained
+and cultivated. Humilluvic materials constituting 50 percent or more (by volume) of a layer at least 2 cm
+thick are a diagnostic characteristic for the Luvihemists great group.
+Hydric (subgroup).—A taxonomic term used at the subgroup level with three different meanings,
+depending on the kind of soil. In several great groups of Andisols, Hydric subgroups are an extragrade
+indicating that the soil materials retain a relatively high water content (70 percent or more water at a
+tension of 1500 kPa, i.e., the wilting point). In some great groups of Histosols, Hydric subgroups are an
+extragrade indicating that the soil has a layer of water within the profile (a floating bog). In
+Frasiwassents, the Hydric subgroup is an intergrade for soils with low bearing strength (n value > 0.7,
+clay content > 8%) that are grading towards the Hydrowassents great group.
+Hydrous (particle-size substitute class).—A family class term used as a substitute for a particle-size class
+for soils with andic soil properties and a high capacity to absorb and retain water. Undried samples have
+a 1500 kPa water content of 100 percent or more of the dried sample weight. Three hydrous classes are
+defined: hydrous-pumiceous, hydrous-skeletal, and hydrous. See particle-size substitute class.
+Hypocoat.—A specific type of ped and void surface feature consisting of material infused beneath a
+surface. It commonly is formed by oxidation-reduction processes and described as a kind of redoximorphic
+feature. An example is an iron concentration in a narrow zone within the ped matrix lining a pore.
+
+I
+Identifiable secondary carbonates.—A diagnostic soil characteristic of mineral soils consisting of
+translocated calcium carbonate that has precipitated from the soil solution and was not simply inherited
+from a soil parent material. It is used in the definition of the calcic diagnostic horizon and for several
+taxa that have secondary carbonates. Identifiable secondary carbonates are the result of pedogenic
+17
+
+processes. They may be soft masses, filaments, cemented nodules or concretions, or coatings within
+pores or on ped or fragment surfaces, or they may completely engulf a horizon. See free carbonates.
+Illuvial horizon.—A soil horizon that formed primarily as the result of pedogenic accumulation of soil
+constituents such as clay, organic matter, soluble salts, carbonates, and iron oxides. The majority of
+diagnostic horizons are formed by the illuvial process. They include mollic and melanic epipedons and
+argillic, calcic, gypsic, salic, and natric subsoil horizons. See illuviation.
+Illuviation.—An important pedogenic process resulting in the movement and subsequent accumulation
+of materials such as clay, calcium carbonate, gypsum, and organo-metallic compounds in a soil horizon.
+Morphological features resulting from illuvial processes include clay films, carbonate masses, iron
+accumulations, argillic horizons, calcic and petrocalcic horizons, sombric horizons, and spodic horizons.
+Infiltration.—The movement of water across the interface between air and soil into the soil. The rate of
+infiltration is highly dependent on near-surface soil conditions and the water state immediately
+preceding the application of water. It is also influenced significantly by vegetative cover, cropping
+systems, and soil management practices and may change seasonally. See saturated hydraulic
+conductivity.
+Inherent soil properties.—Properties that are little affected by changes in land use and management.
+Examples include texture, color, and mineralogy. Unlike dynamic soil properties, inherent soil properties
+are resistant to change and tend to define the basic limitations and potentials for soil use and
+management. See dynamic soil properties.
+Interfingering of albic materials.—A diagnostic soil characteristic of mineral soils consisting of thin
+penetrations of albic material extending 5 cm or more into an argillic, kandic, or natric subsoil horizon.
+The penetrations form continuous skeletans 1 mm or more thick, mostly on the vertical faces of peds. By
+definition, they make up less than 15 percent, by volume, of the horizon. If they comprise more than 15
+percent, a glossic horizon is recognized. By inference, a horizon with interfingering of albic materials
+may eventually form a glossic horizon. See skeletan.
+Intergrade.—A kind of a subgroup defined by properties that are not representative of its great group
+and that indicate a transition to another known taxa. Examples of intergrade subgroup terms are Vertic
+(transitioning toward Vertisols) and Andic (transitioning toward Andisols). See extragrade and Typic
+subgroup.
+Iron depletion.—A specific type of redoximorphic feature characterized by chroma lower than the
+surrounding soil matrix due to a loss of iron and manganese pigment, as a consequence of oxidationreduction processes under anaerobic conditions. The depletion’s clay content is similar to the
+surrounding matrix. The presence of iron depletions suggests that the soil is subject to periodic
+saturation to the degree that anaerobic conditions occur (oxygen depletion). See redoximorphic
+features.
+Iso (temperature regime variations).—The prefix “iso” is added to the temperature regime term used at
+the family level of classification for soils with a difference between mean summer and mean winter soil
+temperatures of less than 6 degrees C. These soils are mostly intertropical soils or soils in coastal areas
+in some temperate regions. They are subject to relatively narrow fluctuations in seasonal temperatures
+and therefore have longer growing seasons than soils classified in the “non-iso” regime counterpart. The
+classes are isofrigid, isomesic, isothermic, and isohyperthermic.
+
+18
+
+J
+Jarosite.—A potassium (ferric) iron hydroxy sulfate mineral that is associated with the oxidation of
+sulfidic materials and subsequent production of sulfuric acid and very low pH (3.5 or less). Once formed,
+jarosite can be stable in post-active acid sulfate soils and therefore persist for long periods of time at
+higher pH. It has a characteristic straw-yellow color. Hue is 2.5Y or yellower, and chroma is commonly 6
+or more (although chroma as low as 3 or 4 has been reported). The presence of jarosite is used in Soil
+Taxonomy to identify the sulfuric horizon, Sulfaqueptic subgroup, and Dystraquerts great group. In
+profile descriptions, horizons with jarosite are indicated by horizon symbol suffix “j.” See acid sulfate
+soil.
+
+K
+Krotovina.—A soil feature created by burrowing animals. It consists of elongated to irregular or tubular
+pockets or tunnels filled with material originating from outside the layer in which the animal burrows
+are found. Krotovinas commonly cross horizon boundaries in the soil profile.
+
+L
+Lamellae.—Multiple thin illuvial horizons, each less than 7.5 cm thick, between thicker eluvial horizons.
+Lamellae are typically within an otherwise sandy horizon. An individual lamella contains an accumulation
+of oriented silicate clay on or bridging sand and silt grains. Each lamella has more silicate clay than the
+overlying eluvial horizon. Lamellae slow water movement through the soil profile, thus increasing the
+time water is available for plant uptake. In addition, depending on the kind of clay minerals, they may
+increase the overall CEC and fertility of the soil. In Soil Taxonomy, lamellae are a diagnostic soil
+characteristic of mineral soils. Soil horizons with lamellae may qualify as agric, argillic, natric, or cambic
+diagnostic subsoil horizons. Lamellae are a diagnostic criterion for Lamellic subgroups of some great
+groups of Alfisols, Entisols, Inceptisols, Mollisols, Spodosols, and Ultisols. Soil profile descriptions use the
+horizon nomenclature “E and Bt” to indicate a horizon with lamellae. See clay bridge and combination
+horizon.
+Layer.—A zone within a soil profile for which some or all soil properties are thought to be inherited from
+the parent material and not the result of pedogenesis. In this case, “layer” is used rather than “horizon.”
+The term “layer” may also be used when no judgement is made as to the genetic origin of the zone. See
+horizon.
+Leptic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) in some soil great
+groups (not all) to denote soils exhibiting relatively shallow profile development. There are three general
+cases where Leptic subgroups are defined: 1) for sodium-affected Alfisols and Mollisols, the limited
+genetic development is evidenced by the presence of visible gypsum (or more soluble minerals) within a
+depth of 40 cm; 2) for Haplogypsids, a gypsic horizon is present at a depth of less than 18 cm; 3) for
+some Vertisols, a root-limiting layer or contact is present within a depth of 100 cm. It should be noted
+that not all shallowly developed soils are indicated by the Leptic subgroup term.
+Limnic materials.—Organic or inorganic soil materials deposited in freshwater environments such as
+lakes or ponds. They accrue by precipitation or as aquatic organisms (such as algae or diatoms)
+accumulate, or they are the by-product of aquatic animals excreting previously ingested plant material.
+19
+
+Limnic materials are a diagnostic soil characteristic for some organic soils. For soil classification and
+description, three kinds of limnic materials are recognized: coprogenous earth, diatomaceous earth, and
+marl. Limnic materials are a diagnostic criterion for some Histosols, but not Histels. They are a criterion
+for Limnic subgroups and some mineralogy classes of Histosols (coprogenous, diatomaceous, and
+marly). Layers consisting of limnic materials are designated by the master horizon symbol “L” in soil
+profile descriptions.
+Linear extensibility (LE).—The change in length of an unconfined clod as moisture content is decreased
+from a moist to a dry state. LE is expressed in cm of potential movement, generally summed for the
+upper 100 cm of the soil profile. It is a diagnostic soil characteristic for soils that have a high potential to
+shrink upon drying and swell upon rewetting. Volume change is influenced by the amount and type of
+clay minerals present. Soils with high LE contain significant amounts of smectitic clay minerals. An LE of
+6.0 cm or more is used as a criterion for Vertic subgroups (intergrades to Vertisols) in several soil orders.
+See coefficient of linear extensibility.
+Lithic contact.—A diagnostic soil characteristic consisting of the two-dimensional horizontal plane
+separating the soil profile above from the strongly (or more) cemented, laterally continuous bedrock
+below. Cracks are separated by 10 cm or more. The degree of cementation is such that digging with
+hand tools is impractical. The presence of a lithic contact, depending on its depth, is a diagnostic
+criterion at the subgroup level of Soil Taxonomy. Where it is too deep for the Lithic subgroup
+classification, the lithic contact is commonly used to define soil series. The series control section extends
+to, but not below, the depth of the lithic contact. In a soil profile description, the lithic contact generally
+coincides with the upper boundary of a layer designated by the master horizon symbol “R.” See
+paralithic contact.
+Lithologic discontinuity.—A significant change in particle-size or mineralogy that indicates differences in
+lithology and/or age between layers in a soil profile. A lithologic discontinuity is a diagnostic
+characteristic recognized for mineral soils. The contrast between the soil material above the
+discontinuity and that below may be readily apparent or subtle. Evidence of a discontinuity includes
+abrupt textural contacts not due to pedogenesis, contrasts in the particle-size distribution within the
+sand fraction, presence of stone lines, differences in rock fragment lithology compared to underlying
+bedrock, changes in soil color, and other features. The lithologic discontinuity is one of the few
+diagnostic characteristics lacking a clear, quantitative definition. It is somewhat subjective due to the
+fact that there is no simple way to construct a universally applicable definition that recognizes all
+conditions reflecting a change in lithology or age. The presence of a lithologic discontinuity is not used
+explicitly in any criteria in Soil Taxonomy, although many soils with a contrasting family particle-size
+class have a lithologic discontinuity. In addition, some soil series definitions include the presence of a
+lithologic discontinuity as a criterion. The presence of a lithologic discontinuity is indicated with a
+numerical prefix before the master horizon symbol (e.g., 2B) in soil profile descriptions. See stone line.
+
+M
+Manufactured layer.—An artificial, root-limiting layer purposely introduced to restrict rooting and, in
+some cases, the downward movement of percolating water. It is in a position below a layer of humantransported material. Manufactured layers commonly consist of geotextile liners, asphalt, concrete, or
+plastic. A manufactured layer is a diagnostic feature recognized for some human-altered and humantransported soils. The presence of a manufactured layer is indicated in a soil profile description by the
+master horizon symbol “M.” See manufactured layer contact.
+20
+
+Manufactured layer contact.—A diagnostic soil characteristic consisting of a two-dimensional horizontal
+plane in the soil profile made up of human-transported material with an underlying manufactured layer.
+Either the contact has no cracks, breaks, or tears, or cracks allowing penetration by roots are separated
+by 10 cm or more. The presence of a manufactured layer contact, depending on its depth, is a diagnostic
+criterion at the family or series level in Soil Taxonomy. Where it is too deep for family criteria, it is
+commonly used to define soil series. The series control section is allowed to extend to 25 cm below the
+manufactured layer contact. See manufactured layer.
+Map unit (soil).—A collection of areas with soil components or miscellaneous areas that are both
+defined and named the same. Each map unit differs in some respect from all others in a survey area and
+is uniquely identified by a symbol on a soil map. Each individual area (polygon) on the map is a
+“delineation.” See component.
+Marl.—An unconsolidated earthy material that has a significant content of calcium carbonate mixed
+with clay. It is a type of limnic material. Marl did not form from pedogenic processes but rather accrued
+as a deposit in an aquatic environment, such as a lake or pond. It is light in color (nearly white) and
+effervesces when treated with dilute HCl. The color changes little upon drying. A layer of marl is
+designated by horizon nomenclature “Lma” in soil profile descriptions. The term “marly” is used as a
+mineralogy family term for some Limnic subgroups of Histosols and is also used as a textural modifier for
+some layers of limnic materials with significant contents of marl. See limnic materials.
+Medial (particle-size substitute class).—A family class term used instead of a particle-size class for soils
+with andic soil properties and an intermediate capacity to absorb and retain water. Undried samples at
+1500 kPa tension have a water content of between 30 and 100 percent of the dried sample weight.
+Three medial classes are defined: medial-pumiceous, medial-skeletal, and medial. See particle-size
+substitute class.
+Melanic index.—A calculated value derived from laboratory analysis used to infer the origin of humified
+organic matter (e.g., forest vs. grassland). Specifically, it involves the ratio of the light absorbed by an
+extraction solution at two wavelengths (related to the ratio of humic and fulvic acids). A melanic index
+value of < 1.70 suggests a significant contribution of grass or grass-like plants to the organic matter in
+the soil. The melanic index is used as a criterion for the melanic epipedon.
+Micromorphology.—The study of soil morphology at very small scales by microscopic methods (such as
+using a petrographic polarizing light microscope) and, less commonly, by submicroscopic methods (such
+as electron microscopy). Carefully extracted, structurally intact samples are collected, and their natural
+up/down orientation is marked. They are impregnated with a resin and ground in preparation of thinsections for microscopic study. Morphological features of interest are the soil fabric configuration
+(including the relationship of particles to one another), the degree of aggregation of particles forming
+microstructures, the kind and arrangement of voids, and the relationships of fine and coarse grains
+forming the overall matrix. Also of interest is the identification of pedofeatures such as oriented clay
+films, silt coatings, void infillings, and organic features. In addition, the mineral composition, including
+crystalline and amorphous minerals, is noted. The terminology used to describe micromorphological
+features is not standardized and therefore varies somewhat between researchers. Micromorphological
+features are included in criteria for argillic, natric, and sombric horizons and used in identification of
+lithologic discontinuities, some limnic materials, and gelic materials. See soil morphology.
+Mineral soil material.—Soil material with properties that are dominated by the mineral component of
+the soil rather than the organic part. Mineral soil material contains roughly less than about 35 percent
+organic matter (or less than about 20 percent organic carbon). The definition used in Soil Taxonomy also
+considers wetness and clay content. See organic soil material.
+21
+
+Mineral soil surface.—The datum (a horizontal plane) commonly specified in Soil Taxonomy where
+measurements start for depth or thickness in profiles of mineral soils, for use in evaluating criteria in the
+taxonomic keys. It is the top of the first layer comprised of mineral soil materials (rather than organic
+soil materials). For soil profiles with an O horizon at the surface, the mineral soil surface is the top of the
+first underlying mineral layer. The mineral surface layer is preferred to an organic layer primarily
+because it is not susceptible to loss due to oxidation or other processes after disturbance. It provides a
+relatively more stable and durable datum, relative to subsurface horizon thickness and depth, than an
+organic surface layer. See soil surface.
+Miscellaneous area.—A special kind of map unit component that does not meet the definition of soil as
+given in Soil Taxonomy. These areas are incapable of supporting vegetation without major reclamation
+efforts. Examples include Rock outcrop, Oil-waste land, and Urban land. The NCSS maintains a list of
+miscellaneous land types that can be correlated as map unit components in the National Soil Survey
+Handbook. See component.
+Moisture state.—The general moisture status of a soil horizon at the time it is described. Two classes
+are used: moist and dry. The dry class is for an air-dry condition, and the moist class equates to a
+“moderately moist” or “very moist” soil water state. There are numerous definitions in Soil Taxonomy
+that specify soil color in either the moist or dry state (e.g., criteria for mollic and umbric epipedons). The
+Munsell color value commonly changes according to the moisture state. Hue and/or chroma also may
+change. In addition, some taxonomic criteria based on the rupture resistance class specify a moist or dry
+state (e.g., duripan, fragipan). For clarity, the moisture state should be recorded when describing a soil.
+In humid regions the moist class commonly is considered the standard condition for soil descriptions
+and is listed first, while in arid regions the dry class is considered the standard. When not stated
+explicitly, the moisture state is generally assumed based on this relationship. See soil water state.
+Mottles.—Spots or blotches of different color or shades of color interspersed more or less randomly
+with the dominant color of the soil matrix. Mottles are commonly lithochromic or lithomorphic colors
+(i.e., inherited from the parent material). Colors that are due to reduction or oxidation reactions, and
+colors that are associated with ped surfaces or other organizational or compositional features, are not
+called mottles today because they are pedogenic in nature. However, before the introduction of
+redoximorphic features as a diagnostic feature in Soil Taxonomy in 1992, color variations due to
+reduction or oxidation reactions were called mottles. As a result, caution is needed when interpreting
+the meaning of the term “mottles” in soil descriptions made prior to 1992. See variegated color pattern.
+Munsell color.—A widely accepted color designation system using notations for hue, value, and chroma
+(e.g., 10YR 6/4). The National Cooperative Soil Survey adopted the Munsell system to describe soil color
+in 1949. It has coordinated with the proprietary holders of the Munsell system over the years to add
+additional chips to the Munsell soil-color charts when needed and to assign adjectives to each of the
+color chips (e.g., light yellowish brown) so that color can be described consistently in soil descriptions.
+Numerous criteria throughout Soil Taxonomy use soil color expressed with Munsell color notation.
+
+N
+n value.—A numerical value based on the percentage of water held under field conditions as well as
+percentages of silt, sand, clay, and organic matter. It expresses the relative ability of soil under natural
+conditions to support a load such as grazing cattle or machinery. The n value is used as a criterion in the
+Keys to Soil Taxonomy to identify specific soils (i.e., some great groups or subgroups of Aquents,
+Wassents, and Aquepts) commonly occurring in environmental settings, such as marshes, that have low
+22
+
+load-bearing ability. For practical reasons, the n value is rarely calculated when classifying these soils.
+The simpler (but somewhat subjective) field test for determining fluidity class (see chapter 3 of the Soil
+Survey Manual) is commonly used as a surrogate to estimate the n value.
+National Cooperative Soil Survey (NCSS).—A nationwide soil survey partnership of Federal, regional,
+State, and local agencies and private entities and institutions in the United States. This partnership
+works to cooperatively investigate, inventory, document, classify, interpret, disseminate, and publish
+information about soils of the United States and its Trust Territories and Commonwealths. Bylaws are
+contained in part 602 of the National Soil Survey Handbook.
+NCSS.—See National Cooperative Soil Survey.
+Near-surface subzones.—Specific kinds of layers within the uppermost few centimeters of the surface
+soil (generally from less than 1 cm to about 18 cm thick). These subzones are strongly influenced by
+antecedent weather (including moisture changes and freeze-thaw) and by soil use (including tillage,
+cropping systems, irrigation, grazing, and other forms of disturbance) and, as a result, have unique
+properties related to consolidation or bulking of the soil. Five distinct kinds of near-surface subzones are
+described in chapter 3 of the Soil Survey Manual. Descriptions of near-surface subzones are useful in
+studies of the impact of management systems on soils. See dynamic soil properties.
+Nodule.—A kind of concentration within a soil horizon consisting of a chemical compound, such as
+calcium carbonate, iron oxide, or hydrated amorphous silica (opal), that is cemented to form a discreet
+body. It can be removed from the soil intact and has no evident orderly internal organization. Durinodes
+and iron/manganese nodules are specific kinds of nodules recognized as diagnostic features in Soil
+Taxonomy. Calcium carbonate nodules are considered a kind of identifiable secondary carbonate.
+Nodules are similar to concretions but concretions have evident internal organization. In some cases it is
+difficult to determine whether the nodules in a horizon formed in place or formed elsewhere and were
+transported to their current location. If the color change gradation from the matrix to the nodule is not
+sharp, in situ formation is likely. Soil horizons containing nodules (or concretions) are indicated with the
+suffix “c” (e.g., Bsc, Bgc). See concretion.
+Normal year.—A term used throughout the Keys to Soil Taxonomy as part of the criteria for determining
+the class of soil moisture regime from long-term (30 years or more) precipitation data. It was introduced
+in 1998 with the 2nd edition of Soil Taxonomy to replace the terms “most years” and “six out of ten
+years,” which were considered too subjective for analyzing long-term climate data. The term “normal
+year” has a rigorous definition that uses a statistical analysis of the variability of annual and monthly
+precipitation data to identify a given year as normal as opposed to abnormally wet or dry. In practice,
+application of the definition has been difficult in at least some cases because a large number of years
+appear to fail the definition and therefore cannot be included in analysis to determine the soil moisture
+regime class. The definition was relaxed with the 11th edition of the Keys to Soil Taxonomy to allow
+some of these years to be used in the determination under certain circumstances.
+
+O
+Ombroaquic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) for some
+Ultisols. It indicates soils that have redoximorphic concentrations in one or more layers in the upper part
+of the profile, that are periodically saturated by water, and that are redder with depth. A kind of
+episaturation.
+
+23
+
+Order.—The highest (and most generalized) level in Soil Taxonomy. All of the world’s soils can be
+grouped into one of the 12 orders. The intended use is for grouping soils based on the presence (or
+absence) of diagnostic horizons or features, which reflect major soil-forming processes that mostly
+operate over large physiographic regions. The distinctions between orders are based on the evidence of
+processes that are dominant forces shaping the character of the soil profile.
+Organic carbon.—Soil carbon originating from organic sources (e.g., decaying plant or animal tissue)
+rather than inorganic sources (such as calcium carbonate from limestone). It is determined in the
+laboratory by using dry combustion to measure total carbon and then subtracting inorganic carbon. It is
+commonly reported as percent by weight. Organic carbon is used in Soil Taxonomy for definitions of
+organic soil material and melanic, mollic, umbric, plaggen, and histic epipedons and in taxa implying high
+organic matter content, such as Humic suborders. Organic matter generally has high CEC and therefore
+contributes to nutrient cycling and retention. It has beneficial effects on physical properties such as soil
+structure, aggregate stability, water-holding capacity, bulk density, and permeability. Organic carbon (as
+organic matter) is known to be an important soil quality/health indicator. Soil organic carbon cycling is
+important for terrestrial carbon cycle studies. To convert organic carbon values to organic matter,
+multiply by the Van Bemmelen factor of 1.724.
+Organic soil material.—Soil material that contains a sufficiently high content of organic matter to have
+its overall properties dominated by organic rather than mineral constituents. The soil material is
+considered organic rather than mineral for purposes of classifying and describing the soil profile. Factors
+considered in differentiating between organic and mineral soil materials are seasonal saturation with
+water and the content of clay. Soils that are rarely saturated for more than a few days are organic if they
+contain 20 percent or more, by weight, organic carbon (roughly 35 percent organic matter). For wet soils
+(saturated for extended periods), the required organic carbon content ranges from 12 to 18 percent, by
+weight (roughly 20 to 30 percent organic matter) depending on the clay content. The lower a soil’s clay
+content the less organic carbon the soil needs to have to be considered organic soil material. The
+distinction between organic and mineral soil materials has practical considerations because organic soil
+materials tend to absorb more water and a have higher cation-exchange capacity and lower bulk density
+than most mineral soil materials. In addition, organic soil materials are subject to loss of organic matter
+upon disturbance and drainage (due to oxidation) and subsequently may subside appreciably due to
+volume loss. Horizons composed of organic soil materials are commonly designated by the master
+horizon symbol “O.” Some organic horizons that are comprised of limnic materials are designated by the
+symbol “L” (but not all L layers meet the definition for organic soil material). See mineral soil material.
+Ortstein.—A pedogenically formed black or reddish accumulation of iron, manganese, and organic
+matter cementing a matrix made up of spodic materials (essentially a cemented spodic horizon). Orstein
+is defined in Soil Taxonomy as being at least 25 mm thick and being cemented in at least 50 percent of
+its volume (thus root restrictive). It is a diagnostic soil characteristic used to define a family ruptureresistance class recognized for some Spodosols.
+Oxidized pH.—A laboratory test for confirming the presence of oxidizable sulfur compounds (i.e., sulfidic
+materials) in a soil. Fresh soil samples are kept moist, incubated at room temperature, and exposed to
+air. Sulfur compounds, if present, will oxidize, form sulfuric acid, and thus lower the pH of the sample
+significantly over a matter of days or a few weeks. Results of this test are used as a criterion in Soil
+Taxonomy to identify sulfidic materials. Soils with sulfidic materials are sometimes referred to as acid
+sulfate soils. They are most commonly encountered in coastal marine sediments, such as salt marshes or
+lagoons, and may also be unearthed from deep strata in upland mining operations, where materials that
+were originally deposited in ancient seas are exposed. See acid sulfate soil and sulfidic material.
+
+24
+
+Oxyaquic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) for soils that have
+one or more layers within a depth of 100 cm (or 150 cm in some taxa) saturated with water but not
+chemically reduced. These soils are believed to be less restrictive to plant growth than other similarly
+wet soils having anaerobic conditions. The Oxyaquic subgroups, as proposed by the International
+Committee on Aquic Moisture Regimes, were introduced to provide taxa for soils that are periodically
+saturated but are not reduced and that therefore have not formed redoximorphic features. In practice,
+however, numerous soil series that have been classified in Oxyaquic subgroups have redoximorphic
+features in the profile but they fail the criteria for Aquic subgroups, generally because the redoximorphic
+features are slightly outside the depth required by the Aquic subgroup criterion.
+
+P
+Pachic (subgroup).—A taxonomic term used at the subgroup level (an extragrade) for soils with a mollic,
+melanic, or umbric epipedon that is 50 cm or more thick or, in some cold soils, 40 cm or more thick.
+These soils commonly are in landscape positions that are fairly stable and have well developed subsoil
+horizons, such as argillic or calcic horizons. The thick epipedon is thought to be the result of factors
+causing relatively deep natural incorporation of organic matter into the subsoil rather than the
+incremental accumulation of fresh sediment to the surface layer. See Cumulic subgroup.
+Pale great group, concept of.—The great groups beginning with the formative element “Pale” are
+intended to include soils on very old land surfaces (early Pleistocene or Pliocene). The idea was an
+outgrowth of the now classic geomorphology studies carried out in the middle 20th century by the
+National Cooperative Soil Survey, especially those in North Carolina and New Mexico. These studies
+documented very old, stable land surfaces on interfluves with highly developed soil profiles reflecting
+their age. Since absolute age is not a practical diagnostic criterion for soil classification, the Pale great
+groups were defined based on soil properties observed in the various settings where the soils occur.
+Properties such as clay distribution throughout the argillic horizon, abrupt texture changes, presence of
+a petrocalcic horizon, red color, and other features are used as diagnostic criteria in the taxonomic keys.
+The criteria used to identify Pale great groups vary among suborders. For example, an old desert soil
+(e.g., Paleargid) is very different from an old soil on a coastal plain in the southeastern United States
+(e.g., Paleudult), and the two soils therefore require different taxonomic criteria to classify them. It is
+likely that some soils that are not relatively old are inadvertently grouped in some of the Pale great
+groups. Further geomorphology studies are needed to better refine the criteria used in Soil Taxonomy.
+Paralithic contact.—A diagnostic soil characteristic consisting of a two-dimensional horizontal plane
+separating the soil profile above from the cemented, laterally continuous soft bedrock below. The
+cementation class of the bedrock is very weakly coherent to moderately coherent. The bedrock has
+either been partly weathered or is naturally only weakly consolidated. The underlying paralithic material
+is mostly continuous, meaning cracks allowing penetration by roots are separated by 10 cm or more.
+The presence of a paralithic contact, depending on its depth, is a diagnostic criterion at the family or
+series level of Soil Taxonomy; where it is too deep for family criteria, it is commonly used to define soil
+series. The series control section is allowed to extend to 25 cm below the paralithic contact. In a soil
+profile description the layer below the paralithic contact is typically designated by the horizon symbol
+“Cr.” See paralithic materials and lithic contact.
+Paralithic materials.—A diagnostic soil material consisting of partially weathered or weakly consolidated
+bedrock that is at least very weakly coherent but no more than moderately coherent. Typically, these
+materials can be dug with hand tools (although with some difficulty). Dry fragments placed in water do
+25
+
+not slake, thus confirming they are coherent. In a soil profile description, the layer consisting of
+paralithic materials is typically designated by the horizon symbol “Cr.” See densic materials and slake.
+Pararock fragments.—Pieces of paralithic material 2 mm or more in size. Individual fragments are
+referred to as paragravel, paracobbles, etc. As with rock fragments, textural modifiers are used in soil
+descriptions depending on the amount of pararock fragments present (i.e., paragravelly sand, very
+paracobbly loam, etc.). Due to their relatively weak consolidation, pararock fragments may be broken
+apart and/or crushed during routine laboratory sample preparation. Consequently, the reported
+particle-size distribution results may indicate a pararock content lower than that observed in the field.
+See paralithic materials.
+Parent material.—The original unconsolidated mineral or organic material from which the soil formed.
+Once pedogenic processes act upon and alter the material making up the solum of the soil, the nature of
+the parent material can only be inferred by the properties of the genetic horizons. The parent material
+may have been essentially the same as the unaltered soil material currently lying below the solum, or
+the material from which the soil formed may have all been subject to pedogenic processes and can no
+longer be observed at the site. The latter is generally the case for soils with one or more lithologic
+discontinuities. Specific kinds of parent material (other than organic soil material) are not used as
+criteria in the taxonomic keys for classifying soils. Largely unaltered mineral soil material is generally
+designated by the horizon symbol “C.”
+Particle-size class (taxonomic).—One of several class terms that together make up the family level of
+Soil Taxonomy. The terms are designed to characterize the grain-size composition of the whole soil,
+including both the fine-earth material and the rock and pararock fragments, as well as some human
+artifacts. They do not include organic matter and salts more soluble than gypsum. The definitions of the
+classes represent a sort of compromise between particle-size groupings commonly used in pedology and
+those commonly used in engineering. Exceptions to rules include treating clay-size carbonates as silt and
+allowing very fine sand particles to be considered as either sand or silt, depending on the texture class of
+the fine-earth material. The technical definitions of the classes and rules of application are described in
+chapter 17 of the Keys to Soil Taxonomy. See texture class.
+Particle-size distribution.—The proportions of mineral particles of various sizes making up the soil.
+Depending on the purpose, the distribution of particles considered may be limited to just the fine-earth
+material (i.e., sand, silt, and clay) or it may be for the whole soil, thus including the fine-earth material as
+well as rock and pararock fragments. The relative distribution of the various sizes of particles can be
+used to categorize the soil material using various systems, such as the USDA texture classes (sandy loam,
+loam, etc.) and AASHTO (A-2, A-3, etc.) and Unified (SP, GP, etc.) engineering textural classes, as well as
+other systems. See texture class.
+Particle-size substitute class.—A family class term used instead of a particle-size class for soil materials
+that either cannot be dispersed effectively by standard laboratory methods or that contain too little
+fine-earth material for reliable and useful particle-size analysis. Substitute class terms are used for soils
+with andic properties; soils with high contents of volcanic glass; soils with very high contents of pumice,
+cinders, or other rock fragments; and soils with high amounts of gypsum. See particle-size class.
+Ped.—A single soil structural unit that formed as a result of pedogenic processes. The ped surface
+persists through successive cycles of wetting and drying. Structural units not caused by pedogenesis are
+called clods. See soil structure.
+Pedon.—A three-dimensional body of soil that encompasses sufficient area (roughly 1 to 10 m 2) and
+depth (up to 200 cm) to enable description of the internal arrangement of horizons and collection of
+representative samples for laboratory analysis. The pedon is the soil individual classified in Soil
+26
+
+Taxonomy. Descriptions of soils are commonly referred to as “pedon descriptions”; in practice, however,
+it is more accurate to call them “profile descriptions” because most are a description of a twodimensional face of an exposed soil, as in a pit or road cut, rather than the result of the dissection of a
+three-dimensional volume of soil. See soil profile.
+Permafrost.—Soil material that remains below 0 degrees C for 2 or more consecutive years. Permafrost
+is a diagnostic characteristic used for both mineral and organic soils. It is one of the criteria used to
+define the Gelisols soil order. Permafrost may be impregnated with ice or be dry. Layers of dry
+permafrost are designated by the horizon suffix “ff” (e.g., Cff) while those containing ice are designated
+by the suffix “f” (e.g., Cf). The depth at which permafrost occurs can fluctuate through time as it
+responds and equilibrates to local environmental conditions. Soil layers above the permafrost (the active
+layer) are subject to repeated freeze-thaw cycles and the unique pedogenic processes associated with
+cryoturbation. On a global scale, permafrost provides an important carbon sink and has the potential to
+be a large carbon source in response to global warming.
+Plinthite.—An iron-rich, humus-poor, reddish concentration of clay, quartz, and other minerals. It has
+firm or very firm consistence while in place in the soil and may be in the form of discrete redoximorphic
+concentrations, horizontally oriented plates, or irregular patterns. Plinthite is a diagnostic feature
+recognized in some Alfisols, Entisols, Inceptisols, Oxisols, and Ultisols. It forms by segregation of iron,
+which may originate within the horizon or be transported from horizons of nearby soils. It is believed to
+be the product of redox processes and is found in some wet soils (e.g., Plinthaqualfs) and in some soils
+that may have been wet at some previous time in their genetic development (e.g., Plinthudults).
+Plinthite has the unique characteristic of hardening irreversibly to form ironstone or cemented soil
+aggregates upon repeated wetting and drying and exposure to heat from sunlight (as in a road cut or
+other exposure). In some parts of the world, plinthite-rich soils are used as a source material for making
+inexpensive bricks for construction. Soil horizons containing plinthite are indicated with the suffix “v” in
+profile descriptions (e.g., Btv).
+Polypedon.—A group of similar contiguous pedons that collectively form the conceptual basis for
+defining the taxonomic limits of a soil series. The concept of the polypedon was introduced early in the
+development of Soil Taxonomy because a single pedon cannot encompass extensive features such as
+slope, stoniness, and the wider variation of properties observed for a component within a map unit
+delineation. An entity larger than a single pedon was needed to encompass this variation. In practice
+however, the polypedon has been largely ignored because its boundaries in the field cannot be observed
+in any practical sense. In addition, the concept of linking polypedons to soil series relies on a circular
+argument—the series is defined by, and its classification is based upon, properties of the polypedon, but
+you must first know the definition of the soil series in order to identify the pedons belonging to the
+polypedon. For this reason, the polypedon concept was largely ignored in the 2nd edition of Soil
+Taxonomy. The term “polypedon” remains in informal use and provides a useful tool for communicating
+about soils, but it is not defined or used in Soil Taxonomy today.
+Pumiceous (particle-size substitute class).—A family class term used instead of a particle-size class for
+some very coarse soil materials of volcanic origin that are dominated by relatively lightweight pumice or
+pumice-like fragments. The soil contains more than 90 percent, by volume, particles 2 mm or more in
+size, so less than 10 percent is fine-earth material. At least 60 percent, by weight, of the whole soil
+consists of ash, cinders, lapilli, pumice, or pumice-like material, and two-thirds or more of the particles 2
+mm or larger in size consist of pumice or pumice-like materials. Pumice has a specific gravity of less than
+1.0 and therefore is relatively lightweight and floats. See particle-size substitute class.
+
+27
+
+Q
+Quality assurance (soil survey).—The process of providing technical standards and guidelines, oversight
+and review, and training to ensure that soil survey products meet NCSS standards. Responsibility for
+assuring quality in NCSS soil survey products rests primarily with soil scientists in supervisory and
+administrative positions. Examples of quality assurance activities include carrying out periodic reviews of
+completed work, conducting training, developing technical notes to clarify the application of standards,
+reviewing the technical content and accuracy of manuscripts and databases, and similar actions. See
+quality control.
+Quality control (soil survey).—The routine implementation of the collective set of standards and
+procedures adopted by the NCSS. Controlling quality involves the competent application of soil survey
+standards and procedures on an ongoing basis by those directly performing soil survey tasks, whether in
+the field, in the laboratory, on cartographic or editorial staffs, etc. It also includes providing direct review
+and inspection, direction, and coordination of soil survey production activities by supervisory soil
+scientists. These supervisory scientists do this by ensuring that staff members have the equipment and
+training necessary to complete their tasks and that their soil survey products meet the defined
+standards for content, accuracy, and precision. When deficiencies are discovered they are quickly
+remedied, be it through training, acquisition of proper equipment, mentoring, etc. See quality
+assurance.
+
+R
+Ratio, 1500 kPa water content to clay.—A calculation that is used to define the relationship between
+water content at 1500 kPa tension (wilting point) and measured clay percent. In general, if a sample is
+effectively dispersed during standard pretreatment in the laboratory, the ratio of 1500 kPa water to clay
+dominantly falls between 0.25 and 0.6, most commonly around 0.4. Values of 0.6 or higher suggest poor
+dispersion, and the particle-size distribution results are considered unreliable. Low values tend to result
+from the dominance of low-activity clays, iron oxides, gypsum, or carbonates. High values are common
+for soils with andic or spodic soil properties or soils from which organic matter has not been effectively
+removed. The rules of application for family particle-size class require that clay be calculated with the
+formula: clay = 2.5 (1500 kPa water -% OC) when the calculated ratio of 1500 kPa water to clay is 0.25 or
+less, or 0.6 or more. In addition, a ratio of 0.6 or more is one of the diagnostic criteria for the isotic
+mineralogy class and for some Oxic subgroups. It should also be noted that the criteria for both the
+kandic and oxic diagnostic subsoil horizons assume the likelihood of poor dispersion and therefore
+require the use of the higher value for clay content (either lab measured or calculated as given in the
+taxonomic criteria) for determination of apparent ECEC and apparent CEC, regardless of the ratio of
+1500 kPa water to clay.
+Ratio, CEC-7 to clay.—A calculation that is used to define the relationship between measured cationexchange capacity (by ammonium acetate at pH7) and silicate clay. It can be used to generally infer the
+kinds of clay minerals present. Larger values indicate the presence of clay minerals with a higher density
+of cation-exchange sites, such as illite or smectite. Smaller values suggest the presence of low-activity
+clay minerals, such as kaolinite, halloysite, or gibbsite. The ratio of CEC-7 to clay is used with some loamy
+or clayey soils with mixed or siliceous mineralogy to calculate CEC activity classes for soil family
+placement in Soil Taxonomy. This allows one to make more precise interpretations about cation
+
+28
+
+retention and chemical movement in these soils than could be made from texture and mineralogy class
+alone. See cation-exchange activity class.
+Redox concentration.—A specific type of redoximorphic feature; a localized area within a ped or a
+horizon where iron-manganese compounds have accumulated as a result of reduction-oxidation
+processes. The concentrations have enhanced pigmentation compared to the surrounding matrix
+(commonly redder). They may be masses (noncemented) or they may be nodules or concretions
+(cemented). Redox concentrations may also occur as redder concentrations lining pores. See
+redoximorphic features.
+Redox depletion.—A specific type of redoximorphic feature; a localized area within a ped or a horizon
+where iron-manganese compounds have been depleted as a result of reduction-oxidation processes.
+Reduction-oxidation processes cause the ions to migrate away toward areas of lower concentration. The
+depleted area, due to its loss of pigment, reveals the underlying mineral color, which is generally grayer,
+lighter, or less red than the surrounding matrix. Redox depletions can be further characterized as either
+iron depletions or clay depletions. See redoximorphic features.
+Redoximorphic features.—Features in the soil that are a morphological expression resulting from
+saturation with water, development of anaerobic conditions, and oxidation-reduction reactions. When
+reduced due to these processes, iron and manganese compounds are mobile in the soil and migrate
+from locations of higher concentration to areas of lower concentration within a ped, within a horizon, or
+between horizons. Iron and/or manganese may be depleted in areas where anaerobic conditions persist
+(causing a loss of pigment and resulting in lighter colors) and are subsequently concentrated in other
+areas upon oxidation (resulting in the formation of concentrations with enhanced pigmentation and
+commonly redder and/or brighter color). These color patterns and physical features of iron-manganese
+accumulations or losses, when known or inferred to be caused by oxidation-reduction processes, are
+described as redoximorphic features in soil profile descriptions. The presence of redoximorphic features
+is a diagnostic criterion in Soil Taxonomy for soils that are subject to saturation in various parts of the
+soil profile.
+Reduced matrix.—A waterlogged soil horizon in which iron has been reduced but not appreciably
+moved out of the horizon. While in place, the horizon is dominated by low chroma color. Upon exposure
+to air (e.g., when the soil profile is exposed for description), the reduced iron (Fe+2) is oxidized to Fe+3
+(generally within about 30 minutes) and causes a change to a redder, brighter color. A reduced matrix is
+a specific type of redoximorphic feature described in Soil Taxonomy. The presence of a reduced matrix is
+a diagnostic criterion for some Aquents. See redoximorphic features.
+Resistant minerals.—Mineral species such as quartz, zircon, tourmaline, and others that are considered
+“durable” in a humid climate. Soils with a high proportion of resistant minerals have likely been exposed
+to intense weathering at some point in their genetic history (or are naturally high in such minerals due
+to the nature of the parent material) and have little potential for further mineral weathering. Their
+natural fertility tends to be quite low. For soil classification purposes, resistant materials are determined
+by petrographic analysis (grain counts) of grains 0.02 to 2.0 mm in size (coarse silt to very coarse sand).
+While the proportion of resistant minerals is a criterion in some taxa, the Keys to Soil Taxonomy does
+not contain a list of resistant minerals. Rather it refers to the Soil Survey Laboratory Information Manual
+(SSIR 45, 2011; see table 7.5.2). The dominance of resistant minerals (sometimes stated as a low content
+of weatherable minerals) is used to define the Quartzipsamments great group, the siliceous family
+mineralogy class, and the oxic horizon. See weatherable minerals.
+Rhodic (great group, subgroup).—A term used as a formative element for some great groups of Alfisols
+and Ultisols and for some subgroups that are intergrades to those great groups. It is intended to group
+29
+
+soils having very dark red color, which is indicative of free iron in the soil. The free iron and its form are
+important factors in determining the pH-dependent charge on the clay particles, and the charge on the
+particles in turn is a factor in maintaining the commonly observed stable structure in these soils even
+when cultivated intensively. These soils formed on basic or ultrabasic rocks, such as basalts and
+limestones. The content of phosphorus is generally higher in soils of the Rhodic great groups compared
+to those in other associated great groups of Alfisols and Ultisols. The combination of a natural source of
+cations and phosphorous contributes to the relatively high native fertility of the Rhodic soils.
+Rock fragments.—Discreet mineral fragments 2 mm or more in size that have a strongly coherent or
+higher rupture-resistance class (i.e., gravel, cobbles, stones, etc.). Their origin may be geologic (e.g.,
+pieces of granitic rock inherited from the parent material) or pedogenic (e.g., unattached pieces
+dislodged from a petrocalcic horizon). See pararock fragments and artifacts.
+Rock structure.—A characteristic of unconsolidated soil materials in which the fine stratifications of
+sediments (alluvial, aeolian, lacustrine, or marine), or the minerals or pseudomorphs of saprolite
+inherited from bedrock parent material, retain their original relative positions. The prevalence of rock
+structure that persists in the soil material is an indication that little pedogenic development has
+occurred. The lack of rock structure throughout most of a layer is a diagnostic criterion included in many
+of the definitions of diagnostic epipedons and subsurface horizons in the Keys to Soil Taxonomy.
+Root-limiting layers.—Specific kinds of layers or horizons that are root restrictive in nature. Unless
+otherwise indicated in Soil Taxonomy, the diagnostic horizons or features considered to be root-limiting
+layers are: duripans; fragipans; petrocalcic, petrogypsic, and placic horizons; continuous ortstein or a
+manufactured layer; and densic, lithic, paralithic, and petroferric contacts. Embodied within the
+definitions of most of these features is the requirement that roots entering these materials are limited
+to cracks or fractures no closer than 10 cm apart. It should be noted that the concept of root-limiting
+layers in Soil Taxonomy is strictly as a physical impediment to roots. The concept does not include other
+root-inhibiting factors such as chemical limitations (e.g., aluminum toxicity), a permanent high water
+table and accompanying anaerobic conditions, or temperature (e.g., permafrost). The top of a rootlimiting layer is the lower depth limit for the application of most soil family criteria and for determining
+thickness or depth in some of the other definitions used in Soil Taxonomy.
+Ruptic (subgroup).—A taxonomic term used at the subgroup level in some Alfisols, Aridisols, Gelisols,
+Inceptisols, Mollisols, and Ultisols. It is intended for soils that have important diagnostic features present
+in only part of each pedon. These discontinuous features include argillic or kandic horizons, lithic
+contacts, and organic soil materials. In addition, in some Gelisols the term “ruptic” is used to denote
+organic soil material that is either discontinuous or highly variable in thickness. Ruptic subgroups are not
+true extragrades, instead they infer a special kind of departure from the Typic subgroup.
+
+S
+Sapric soil material.—The most decomposed of three classes of organic soil material; used as a
+diagnostic characteristic in organic soils. For soil classification purposes, sapric soil material generally has
+one-sixth or less fibers remaining after rubbing (for the full definition, see Soil Taxonomy). Sapric soil
+materials commonly have higher bulk density and lower water content on a dry-weight basis compared
+to other organic soil materials. Due to their advanced decomposition, these materials are fairly resistant
+to further decomposition compared to other organic soil materials. See fibric soil material and hemic soil
+material.
+
+30
+
+Saprolite.—Noncemented, relatively soft and friable soil material that retains the particle arrangement
+and fabric of the original bedrock from which it was derived. Due to extensive weathering in place, it is
+no longer cemented (compare to paralithic materials). See rock structure.
+Saturated hydraulic conductivity.—A quantitative measure of a saturated soil’s ability to transmit water
+when subjected to a hydraulic gradient; commonly abbreviated as “Ksat.” It is formally defined as the
+proportionality factor that relates water flow rate to hydraulic gradient in Darcy’s equation. Although it
+is commonly reported in units of length/time (meters/second, inches/hour, etc.), this form of expression
+only applies in the special case when the hydraulic gradient is unity (numerically equal to flux). Ksat
+expressed by length/time values is useful for comparison and general ranking purposes, but does not
+represent the actual rate of water movement at any particular site. Saturated hydraulic conductivity is a
+property of the soil that governs the ease with which pores of a saturated soil permit water movement.
+Ksat measurements in the field are subject to large variation within relatively small areas. Therefore, it is
+important to take several measurements at a site to account for this natural variability. Estimates for
+general Ksat class placement are sometimes made based on texture and bulk density. Further discussion,
+including classes of Ksat and estimation guidance used by the NCSS, are in chapter 3 of the Soil Survey
+Manual. Ksat class is used as a criterion in Soil Taxonomy for the Albaqualfs and Albaquults great groups.
+See infiltration.
+Saturation.—A condition of soil wetness characterized by zero or positive pressure in the soil water. This
+definition implies that all pores are filled with water (i.e., no entrapped air) which is generally not strictly
+the case in soil, although the condition likely occurs in some coarse textured soils. A minor amount of
+entrapped air is expected in most soils. For this reason, the term “satiation” (rather than “saturation”) is
+preferred for describing the wettest soil water state class (see chapter 3 of the Soil Survey Manual). The
+important point is that the water is not at negative tension (under suction). At saturation, free water will
+move from the soil matrix into an unlined auger hole. This can be observed in the field with
+piezometers. In Soil Taxonomy, saturation is one of the criteria for aquic conditions, aquic suborders,
+Oxyaquic and Ombroaquic subgroups, and the Aquisalids great group. See soil water state.
+Sequum.—A horizon sequence consisting of a B horizon and an associated overlying eluvial horizon.
+Most soils have one sequum, but some have two or more. A soil with two sequa that formed in the
+same material is said to be “bisequal.” See bisequum.
+Skeletal.—A term used in conjunction with some particle-size or substitute class terms at the family
+level for soils having 35 to 90 percent, by volume, rock fragments (e.g., sandy-skeletal, medial-skeletal).
+Artifacts that are 2 mm or more in size and both persistent and cohesive are included with rock
+fragments for this determination. The term “skeletal” is also used in micromorphology in a different
+sense when describing the microfabric of some soil materials (skeletal fabric or skeletal grains).
+Skeletan.—A specific type of ped and void surface feature consisting of clean sand or silt coatings. It
+may have formed by translocation and deposition of sand or silt from one horizon to another, or it may
+consist of material within a horizon from which finer particles have been removed from a surface,
+leaving clean sand or silt grains behind. Some skeletans are formed by reduction-oxidation processes
+and are described as “clay depletions,” a specific type of redoximorphic feature. The presence of
+skeletans is used as a criterion for interfingering of albic materials, for some Pale and Kandi great
+groups, and for some Glossic and Alfic subgroups. The terms “silt coats” (which are not discernable with
+10x lens) and “sand coats” (which are discernable with 10x lens), rather than “skeletans,” are preferred
+in profile descriptions.
+Slake.—In Soil Taxonomy, slaking is the disaggregation of coherent soil material when placed in water or
+another chemical agent to test for cementation. Susceptibility (or resistance) to slaking is used as a
+31
+
+criterion for some diagnostic horizons, such as a fragipan, duripan, petrocalcic horizon, or petrogypsic
+horizon, for densic and paralithic materials, and for others. Noncemented materials (such as a piece of a
+fragipan or densic material) will mostly slake, while cemented materials (such as a piece of a petrocalcic
+horizon, duripan, or paralithic material) will not slake in water. The agent specified in Soil Taxonomy for
+conducting the slake test varies by kind of cementing agent and includes water, dilute HCl, and hot KOH.
+Fragments that do not slake can be tested to determine their degree of cementation by the test
+procedures for rupture resistance described in chapter 3 of the Soil Survey Manual. Similar slake tests in
+water are also used with noncemented soil aggregates to measure their stability when wetted,
+especially in the context of assessing soil quality. Soil profile descriptions use the horizon suffix “m” to
+indicate cementation (e.g., Bqm).
+Slickenside.—A specific type of ped surface feature consisting of a shiny, commonly striated and/or
+grooved slip face surface caused by the movement of one ped surface past another. The soil movement
+is a result of soil swelling after wetting and the subsequent stress-induced shear failure. If there are sand
+grains present in the otherwise clayey matrix, they may create striations as the surfaces slip past one
+another. Slickensides are a diagnostic feature used as a criterion for the Vertisols order as well as Vertic
+subgroups in Soil Taxonomy. Soil profile descriptions use the horizon suffix symbol “ss” to indicate the
+presence of slickensides (e.g., Bss). Slickensides are considered to be pedogenic when associated with
+soil peds or features, such as wedges or bowls in Vertisols. The term “slickenside” is also used in a
+geogenic context when associated with tectonic or mass movement features, such as faults or slump
+blocks.
+Sodium fluoride pH.—A test using NaF to measure the pH of a soil sample; used to infer that poorly
+crystalline short-range order minerals (such as allophane and imogolite) are dominating the soil’s cationexchange complex. Commonly, these minerals are early weathering products of pyroclastic materials or
+they formed in spodic horizons in a cool, humid climate. An increase in NaF pH to more than 8.4 is a
+criterion for the isotic mineralogy class. The action of NaF on the poorly crystalline minerals releases
+hydroxide ions (OH–) to the soil solution and increases the pH significantly. It should be noted that free
+carbonates in the soil can also result in high NaF pH values without the presence of short-range order
+minerals. Therefore, testing with NaF pH for the isotic mineralogy class is not used for soils with free
+carbonates.
+Soil.—For purposes of soil survey and soil classification, soil is defined as a natural three-dimensional
+body comprised of solids (minerals and organic matter), liquid, and gases that occurs on the land surface
+(including shallow water areas), occupies space, and is characterized by one or both of the following: (1)
+horizons, or layers, that are distinguishable from the initial material as a result of additions, losses,
+transfers, and transformations of energy and matter; or (2) the ability to support rooted plants in a
+natural environment. For soil survey purposes, anything that is not soil is considered a miscellaneous
+area.
+Soil genesis.—The origin and development of the soil as determined by the combined action of the soilforming factors (parent material, relief, climate, organisms, and time). The original parent material is
+altered, and horizons and other morphological features develop in a soil profile. Pedology combines the
+fields of soil physics, chemistry, mineralogy, and biology to study the genesis of soils. Soil Taxonomy,
+through the use of diagnostic horizons and features, is designed to reflect current understanding of soil
+genesis but does not directly include theories of soil genesis in the criteria for classifying soils.
+Soil morphology.—The physical composition of a soil profile as expressed by the kinds, thickness, and
+arrangement of soil horizons and by other internal characteristics (such as texture, color, structure,
+consistence, pedogenic accumulations (or losses) of substances and porosity). Standards for describing
+32
+
+soil profiles are discussed in chapter 3 of the Soil Survey Manual. A major purpose of Soil Taxonomy is to
+group soils that exhibit similar morphology. See horizon nomenclature and micromorphology.
+Soil profile.—A more or less two-dimensional vertical cut through the soil on a plane at right angles to
+the soil surface. It is an exposure used for describing the kinds and arrangement of horizons making up
+the soil. See pedon.
+Soil separates.—The grouping, by size, of mineral soil particles that are less than 2.0 mm in equivalent
+diameter into discreet classes, which range from clay to very coarse sand. In soil survey the most
+commonly used set of classes is the USDA system. Other systems, such as the Unified and AASHO, are
+also recognized for specific uses. Laboratory measurements of the various soil separates making up a
+sample use a combination of differential settling in a water column (e.g., pipette method) and dry
+sieving. See texture class.
+Soil series.—The lowest level in Soil Taxonomy. All the soils of a series have horizons that are similar in
+composition, thickness, and arrangement. A soil series is a conceptual class defined to represent natural
+bodies of soils (polypedons) on the landscape. Soil series are defined by properties within the series
+control section as defined in Soil Taxonomy.
+Soil structure.—The arrangement of primary soil particles into natural aggregates (peds). The cohesive
+forces holding individual peds together is greater than the adhesive forces among peds. As a result, the
+surfaces of individual peds persist through successive wetting and drying cycles and the soil mass
+ruptures along these predetermined planes. Structure grade, size, and shape are described as indicated
+in chapter 3 of the Soil Survey Manual (e.g., weak medium subangular blocky). Some soil horizons are
+structureless and described as either single grain or massive. The development of structure is an
+important consequence of soil formation. See ped.
+Soil surface.—The horizontal plane consisting of the upper boundary of the soil with overlying nonsoil
+such as air or water. The horizon at the soil surface may be either mineral or organic. It does not include
+undecomposed plant materials. Some depth or thickness measurements used for classifying soils specify
+measurements that begins at the soil surface. See mineral soil surface.
+Soil water state.—The degree to which water is held by matrix suction within non-frozen individual
+horizons or layers in the soil. Osmotic potential is not considered in the analysis. Three general classes
+are used: dry, moist, and wet. Additionally, eight subclasses may be used. They are, from driest to
+wettest, very dry, moderately dry, slightly dry, slightly moist, moderately moist, very moist, nonsatiated,
+and satiated. The classes and subclasses are defined by the level of suction (in kPa) as indicated in
+chapter 3 of the Soil Survey Manual. The satiated class reflects the presence of free water. Ideally, soil
+water state is determined by instrumentation at the site (i.e., piezometers for the satiated condition and
+tensiometers for the other classes). Estimates of soil water state can be made using gravimetric water
+content and model-based curves as well as some physical tests (see discussion in chapter 3 of the Soil
+Survey Manual for details). See moisture state, saturation, and field capacity.
+Soluble salts.—Salts that are readily removed from the soil by water alone. In general, they are salts
+containing sodium, calcium, magnesium, potassium or bicarbonate chloride, and sulfate. They include
+the salts contributing to the overall electrical conductivity measured in a saturation extract (ECe). Soils
+containing appreciable soluble salts dominantly occur in semiarid or arid areas where normal leaching
+from precipitation is not sufficient to remove the salts from the profile. Diagnostic horizons that
+commonly contain accumulations of soluble salts include anhydritic, salic, natric, gypsic, and calcic
+horizons. Soil profile descriptions use horizon suffix symbols (such as z, n, y, or k) to indicate salt
+accumulation (e.g., Bz, Btn, Bky).
+33
+
+Solum.—The part of a soil profile that formed by pedogenic processes; commonly made up of horizons
+designated A, E, and B, but not including the underlying C or R horizon. The solum consists of a sequence
+of soil horizons that are related through the same cycle of pedogenic development. It includes horizons
+below a discontinuity if the lower horizons acquired some properties by currently active soil-forming
+processes. It therefore does not include a buried soil. The solum is not necessarily confined to the zone
+of major biological activity. Its genetic horizons may be expressed faintly or prominently. A solum does
+not have a defined maximum or minimum thickness. The identification of the exact limit of the solum in
+the soil is somewhat subjective. Although used to communicate information about soil profile
+development in a general way, the solum is purposely not used as a criterion anywhere in Soil Taxonomy
+due to its subjective interpretation. Many soil series descriptions, however, include a statement about
+solum thickness in their range in characteristics.
+Sphagnum.—A type of moss contributing to the formation of some organic soil materials. Sphagnum
+fibers are generally lighter in color than other moss fibers and are noted for their low bulk density. Due
+to their cellular structure, they have a very high water-holding capacity in both living and dead fibers,
+more than other organic materials. Fiber content originating from sphagnum is used as a part of the
+criteria in both the folistic and histic epipedons, in the identification of the control section in Histosols,
+and for Sphagnic great groups and subgroups. Sphagnum moss is used as a soil amendment in
+horticulture and landscaping applications, has been harvested as an energy source in the past
+(particularly in the United Kingdom), and has been used as an insulating material for buildings in some
+places in the Arctic.
+Spodic materials.—A diagnostic soil material consisting of an illuvial accumulation of active amorphous
+compounds composed of organic matter in complex with aluminum (with or without iron). Spodic
+materials commonly (but not always) accumulate in a horizon underlying an albic horizon. They are
+moderately acid or more strongly acid in reaction. Spodic materials impart unique properties to the soil,
+including a high cation-exchange capacity, a large surface area relative to its particle-size distribution,
+high water retention, reddish color, low pH, and a high content of organic carbon. Spodic materials are
+used as a criterion in the definition of the Spodosols order and the spodic horizon. Ortstein and some
+placic horizons are composed of spodic materials. Spodic materials are similar to andic soil materials;
+one significant difference is that spodic materials are illuvial in nature while andic soil materials formed
+in place.
+Stone line.—A more or less horizontal, linear concentration of rock fragments within the soil. Most
+commonly a stone line is made up of gravel or cobbles overlying material that was once subject to
+weathering, soil formation, and erosion before the overlying material was deposited. The concentrated
+lag of rock fragments that was originally at the soil surface now forms a stone line within the soil profile.
+Stone lines are generally thought to represent a buried erosional surface, where the land surface was
+eroded and later covered during a period of renewed deposition. They are considered as a form of
+evidence in identifying a lithologic discontinuity in a soil profile. See lithologic discontinuity.
+Strongly contrasting particle-size classes.—A set of terms used to classify soils that have two layers
+within the particle-size control section made up of particle-size classes (or substitute classes) that
+contrast strongly with each other (e.g., sandy over clayey). Each layer must be at least 12.5 cm thick, and
+the transition zone between them must be less than 12.5 cm thick. Water movement and rooting
+patterns are significantly affected in soils with abrupt changes in texture. It should be noted that new
+classes are added to the Keys to Soil Taxonomy as they are encountered and proposed. To recognize
+additional classes that are not currently in the keys requires a proposal for addition to Soil Taxonomy.
+See aniso class and particle-size class.
+
+34
+
+Subaqueous soil.—A term used to describe soils that are permanently submerged by relatively shallow
+water and that show some evidence of pedogenic development. They may be mineral or organic. The
+permanent nature of the submergence only allows for exposure to the air for a few hours daily at low
+tide. There is no seasonal dry period. Most subaqueous soils that have been recognized in soil surveys
+are in coastal marine or estuarine settings covered by salt or brackish water, but some are in freshwater
+areas. Suborders defined specifically for the classification of subaqueous soils were first recognized
+within the Entisols and Histosols orders in the 10th edition of the Keys to Soil Taxonomy (2010).
+Subgroup.—The category in Soil Taxonomy between the great group and family (the 4th level). Its
+intended use is for grouping soils within a great group that have properties shared by similar soils in
+other categories or that have unique properties not recognized in any other class. For general kinds of
+subgroups, see intergrade, extragrade, and Typic subgroup.
+Suborder.—The category in Soil Taxonomy between the order and great group (the 2nd level). Its
+intended use is for grouping soils within an order that have some key soil property that exerts a
+controlling influence over currently active soil-forming processes. This key property commonly consists
+of dynamic climatic controls such as the soil moisture or temperature regime, but in some cases includes
+the presence of specific diagnostic horizons, sandy textures that resist pedological development,
+stratified layers indicating relatively rapid rates of soil accretion from deposition, or significant
+accumulation of organic matter in the subsoil.
+Subsurface tier.—The middle of three zones making up the control section for classifying organic soils
+(Histosols and Histels). It is generally a zone 40 cm thick, beginning at the base of the overlying surface
+tier (commonly at a depth of 30 or 60 cm, depending on the kind of organic materials in the upper part
+of the soil). The concept of tiers is used in organic soils because they lack diagnostic horizons as defined
+for mineral soils. The depth and thickness of the tiers are more or less arbitrary. See surface tier and
+bottom tier.
+Sulfidic material.—A diagnostic soil material that is mineral or organic and has a significant amount of
+oxidizable sulfur in the form of elemental sulfur or sulfur compounds, such as pyrite or monosulfides.
+Sulfidic materials accumulate in settings that are permanently saturated, most commonly with brackish
+water, such as in coastal estuaries and at the mouth of rivers. These materials are also found in some
+freshwater settings where a source of sulfur is available. If the soil is drained or dredged and exposed to
+air, the oxidation process results in the formation of sulfuric acid. Soil profile descriptions use the
+horizon suffix “se” to indicate presence of sulfides (e.g., Oase). See acid sulfate soil.
+Surface mantle of new soil material.—A technical phrase used to describe a particular kind of recent
+surface deposit. The deposit is composed of mineral soil material at least 50 cm thick, has a zone at least
+7.5 cm thick at its base that fails the criteria for any diagnostic horizon, and is underlain by an older soil
+with a sequence of one or more pedogenically developed horizons. The presence of a surface mantle of
+new soil material is a requirement for recognizing a buried soil for purposes of soil classification. Where
+a surface mantle of new soil material overlies a buried soil, the soil profile essentially contains two soils,
+a newer one overlying an older one. Special care is needed to correctly classify such soils. Specific rules
+are provided in chapter 4 of the Keys to Soil Taxonomy. See buried soil and buried horizon.
+Surface tier.—The upper of three zones making up the control section used to classify organic soils
+(Histosols and Histels). It is generally either 30 or 60 cm thick, depending on the kind of organic
+materials in the upper part of the soil. The concept of tiers is used in organic soils because they lack
+diagnostic horizons as defined for mineral soils. The depth and thickness of the tiers are more or less
+arbitrary. See subsurface tier and bottom tier.
+
+35
+
+T
+Taxadjunct.—A correlation tool used to reconcile small differences between the range in properties
+allowed for a soil series and the properties exhibited by the typical pedon used to correlate and name a
+map unit component. The typical pedon falls within the concept of the soil series in nearly all of its
+characteristics. However, one or more differentiating characteristics present in the typical pedon are
+slightly outside the taxonomic class limits of the family or higher category for the named soil series. For
+practical reasons, the decision is made to identify the soil as a taxadjunct to the series rather than to
+recognize a new soil series. Soil Taxonomy does not provide rules for recognizing taxadjuncts.
+Taxadjuncts are discussed in the Soil Survey Manual. See variant.
+Texture class.—The proportions (by weight) of various size classes of soil separates (sand, silt, and clay)
+making up a soil sample. Definitions for 12 classes are provided in the Soil Survey Manual and depicted
+in the USDA textural triangle (sand, loamy sand, sandy loam, loam, etc.). The classes of sand, loamy
+sand, and sandy loam can each be further subdivided into four subclasses based on dominant sand size
+(very fine sand, fine sand, sand, coarse sand, etc.). Texture class modifiers for samples containing
+material >2.0 mm are used as appropriate (e.g., gravelly loam). In addition to the detailed classes
+described above, the texture classes can be grouped into generalized classes, such as sandy, loamy, and
+clayey, as described in the Soil Survey Manual. In the field, soil texture is estimated by tactile tests, such
+as feeling a moist sample and ribboning. Laboratory measurements of the various soil separates making
+up a sample use a combination of differential settling in a water column (e.g., pipette method) and dry
+sieving. Texture class is not the same as the particle-size class used to define soil families in Soil
+Taxonomy. See apparent field texture, soil separates, particle-size class (taxonomic), and particle-size
+distribution.
+Thapto (subgroup).—A taxonomic term used at the subgroup level in some soils to recognize buried
+soils or buried horizons. In several great groups of Aquents, Wassents, and Aquolls, Thapto-Histic
+subgroups are defined for soils having a buried Histosol or buried histic epipedon. In several great
+groups of Andisols, Thaptic subgroups are defined by soils that have a dark-colored buried layer with
+more than 3 percent organic carbon content. The term “buried” as used here does not necessarily imply
+that the technical definition of a buried soil defined in Soil Taxonomy is met. Thapto subgroups are not
+true extragrades, instead they infer a special kind of departure from the Typic subgroup.
+Tongues.—Lobe-shaped extensions of a horizon penetrating downward into the adjacent underlying
+horizon. Examples include penetrations of an albic horizon into an argillic or spodic horizon, a mollic
+epipedon into a cambic horizon, and a calcic horizon into the underlying C horizon. Although tongues
+are commonly described in soil profile descriptions for penetrations that are deeper than their width,
+there is no formal definition of what constitutes a tongue. The first edition of Soil Taxonomy included a
+diagnostic feature for a specific kind of tongue, i.e., tonguing of albic materials, that had a definition
+specifying width that varied by texture. This diagnostic featured was later dropped (Keys to Soil
+Taxonomy, 5th edition, 1992); that specific kind of tongue was included within the definition of
+interfingering of albic materials. Horizons that have more than just a few tongues are commonly
+described with an irregular topography class for the lower boundary.
+Toposequence.—A hillslope sequence of adjacent, related soils that formed in the same parent
+material. The characteristics of the soils differ primarily due to their topographic position. See catena.
+Transitional horizon.—A soil horizon whose dominant properties reflect one type of master horizon but
+which has subordinate properties characteristic of another type of master horizon. Two capital letters
+are used for the horizon designation, such as “AB” or “BC,” with the first symbol being the dominant of
+36
+
+the two horizon types. Transitional horizons are commonly recognized in a position between two kinds
+of horizons where the horizon characteristics are transitioning from one kind of horizon to another, but
+they can also be recognized when one of the presumed kinds of horizons is no longer present (e.g., BCB-R). See combination horizon and horizon nomenclature.
+Typic (subgroup).—The subgroup that contains all the soils that do not meet the criteria defined for the
+other subgroups within a great group. These soils are not necessarily the most extensive soils nor do
+they necessarily represent the central concept of the great group. In all cases however, the Typic
+subgroup is the last subgroup listed in the key to subgroups within that particular great group. This was
+not always the case. In the first edition of Soil Taxonomy, the keys to subgroups were constructed in
+such a way that the Typic subgroup was listed first and defined by its required properties; all the other
+subgroups were defined by how they differed from the Typic subgroup. This format had two significant
+consequences. First, many subgroups were defined with negatively worded statements indicating they
+were lacking some feature required for the Typic subgroup. This wording proved to be confusing for
+many readers, especially those for whom English was not their first language. Second, it was possible
+that some soils could not be classified with the keys because they did not fit the definitions of any listed
+subgroup. Therefore, beginning with the 4th edition of the Keys to Soil Taxonomy (1990), the keys to
+subgroups were rearranged and rewritten to follow a pattern using positively worded statements to
+describe the properties required for each subgroup. The Typic subgroup was moved to the last position
+in the key and simply defined as “all other” members of the great group. As a result, wording of the keys
+was easier to understand. In addition, any soil not meeting the criteria for any preceding subgroup
+would, by default, fall into the Typic subgroup. In cases where this is unsatisfactory, a new subgroup
+may be proposed.
+Typical pedon.—A specific pedon description chosen to represent a map unit component as it occurs in
+a soil survey area. It is used in the correlation process to classify, name, and interpret the component.
+The pedon description, along with information about the soil’s overall range in characteristics, landscape
+setting, and other pertinent information, is included in the soil survey publication and/or database. The
+typical pedon is not a composite description based on a collection of pedon descriptions, but rather it is
+a real pedon with a physical location that can be revisited (also called a type location). See correlation,
+soil.
+
+U
+Undifferentiated group (map unit).—A map unit consisting of two or more major soil components that
+are not consistently associated geographically and therefore do not always occur together in the same
+map unit delineation. These components are included as members of the same map unit because use
+and management considerations for each soil are the same or very similar for common uses. Generally,
+they are included together because some common feature outside of the soil itself, such as very steep
+slopes, extreme stoniness, or frequent flooding of long duration, is an overriding consideration for use
+and management.
+
+V
+Variant.—A now obsolete correlation tool that was used in the NCSS prior to 1988 to assign an existing
+series name to a soil component that had characteristics significantly outside the limits of any existing
+series and was less than 2,000 acres (about 800 hectares) in extent. The word “variant” was appended
+37
+
+to the name of a series that was otherwise considered closely related to the soil component (e.g., Cecil
+variant). This was done to avoid the work of establishing a new series for soils thought to be of limited
+extent. Variants can be encountered in soil survey reports correlated prior to 1988, but today there is no
+minimum extent required for a new series. See taxadjunct.
+Variegated color pattern – An intricate, multicolored pattern in soils that is not associated with
+concentrations, ped surface features, or redoximorphic features. The pattern is similar to mottles, but
+has no dominant matrix colors. The colors are commonly lithochromic in nature. See mottles.
+
+W
+Weatherable minerals.—Mineral species that are considered “weatherable” in a humid climate.
+Examples are 2:1 phyllosilicates, allophane, feldspars, and dolomite. The definition, as used in Soil
+Taxonomy, is intended to include only those minerals that are unstable in a humid climate and not
+minerals, such as quartz and 1:1 lattice clays, that are more resistant to weathering than calcite. Calcite,
+carbonate aggregates, anhydrite, gypsum, and halite are not considered weatherable minerals in the
+context of Soil Taxonomy because they are mobile in the soil and may be recharged in soils that are
+otherwise strongly weathered (e.g., by falling dust or by evaporative wicking processes above a water
+table). For soil classification purposes, weatherable minerals are determined by petrographic analysis
+(grain counts) of grains 0.02 to 2.0 mm in size (coarse silt to very coarse sand) or other grain size as
+specified in the Keys to Soil Taxonomy. Soil Taxonomy does not contain a list of weatherable minerals. It
+refers to the Soil Survey Laboratory Information Manual (SSIR 45, 2011; see table 7.5.2). See resistant
+minerals.
+Weighted average.—A simple mathematical calculation used to determine the average amount of a soil
+constituent (e.g., percent clay) within a specified part of the soil (commonly the particle-size control
+section). It is useful because soils are typically described and sampled in the field according to individual
+genetic horizons and layers, which rarely coincide exactly with the control section depths specified in
+Soil Taxonomy. A weighted average is calculated by summing the product of the measured value of the
+constituent times thickness for each layer within the control section and dividing by the total thickness
+of the control section. It is a way to simulate the mixing of multiple samples and allows one to obtain a
+single average value for the constituent of interest. Many criteria in Soil Taxonomy are based on a
+weighted average value.
+Whole soil.—Soil material that includes all particle-size fractions, up to and including boulders, that
+have maximum horizontal dimensions less than those of the pedon. Many chemical and physical criteria
+are specifically determined only for the fine-earth (<2.0 mm) fraction of the soil. Some, however,
+particularly rock fragment content, are determined on a whole soil basis. See fine-earth fraction.
+
+38
+
+

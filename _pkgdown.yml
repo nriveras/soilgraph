@@ -1,0 +1,104 @@
+url: https://nriveras.github.io/soilgraph
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#6B4226"
+    border-radius: 0.3rem
+
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [search, github]
+  components:
+    articles:
+      text: Articles
+      menu:
+        - text: Getting Started
+          href: articles/getting-started.html
+        - text: Graphical Engines
+          href: articles/graphical-engines.html
+        - text: Soil Data Model
+          href: articles/soil-data-model.html
+        - text: Rendering Examples Gallery
+          href: articles/rendering-examples.html
+
+articles:
+  - title: Tutorials
+    navbar: ~
+    contents:
+      - getting-started
+      - graphical-engines
+  - title: Reference
+    contents:
+      - soil-data-model
+      - rendering-examples
+
+reference:
+  - title: Core Data Structures
+    desc: Create and validate soil profile objects.
+    contents:
+      - new_soil_horizon
+      - new_soil_profile
+      - validate_soil_profile
+
+  - title: Description Parsing
+    desc: Parse field description tables into structured soil data.
+    contents:
+      - derive_soil_horizons
+      - soil_profile_from_table
+
+  - title: Visualization
+    desc: Plot soil profiles from objects or field description tables.
+    contents:
+      - plot_soil_profile
+      - plot_soil_profile_fragments
+      - plot_soil_profile_advanced
+      - plot_soil_description
+      - plot_soil_description_fragments
+
+  - title: Data Import / Export
+    desc: Read and write soil profiles in `.soil.json` format.
+    contents:
+      - read_soil_json
+      - write_soil_json
+
+  - title: Graphics Engine — Boundaries
+    desc: >
+      Generate irregular horizon boundary lines encoding shape
+      (smooth, wavy, irregular, broken, discontinuous) and grade
+      (abrupt, clear, gradual, diffuse).
+    contents:
+      - generate_boundary_path
+      - generate_boundary_distortion
+      - compute_boundary_smoothing
+      - build_boundary_paths
+      - layer_horizon_boundaries
+      - build_boundary_transition_zones
+      - layer_boundary_transition_zones
+      - create_boundary_encoding
+
+  - title: Graphics Engine — Coarse Fragments
+    desc: >
+      Generate irregular polygon shapes for rock fragments encoding
+      type, size, abundance, and cementation grade.
+    contents:
+      - generate_fragment_shape
+      - build_fragment_polygons
+      - generate_horizon_fragments
+      - layer_coarse_fragments
+      - coarse_fragment_count
+      - coarse_grade_to_alpha
+      - coarse_size_to_marker
+      - normalize_fragment_type
+      - normalized_fragment_color
+      - create_fragment_encoding
+
+  - title: Visualization Utilities
+    desc: Themes, palettes, and helpers for soil profile graphics.
+    contents:
+      - build_horizon_plot_data
+      - describe_soil_profile
+      - theme_soil_profile
+      - get_horizon_palette
+      - get_contrasting_text_color
+      - is_valid_color

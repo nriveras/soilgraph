@@ -1,0 +1,36 @@
+Package: soilgraph
+Title: Soil Profile Visualization from Field Descriptions
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Nicolás",
+        family = "Riveras-Muñoz",
+        email = "contact@nriveras.com",
+        role = c("aut", "cre")
+    ))
+Description: Parse free-text soil field descriptions into structured data,
+    export profiles to a standardised JSON schema, and render publication-ready
+    visualisations with irregular coarse-fragment and horizon-boundary engines
+    powered by 'ggplot2'. Follows Soil Taxonomy (USDA) vocabulary for texture,
+    moisture, colour, boundary grade and shape, and coarse fragment properties.
+License: GPL (>= 3)
+URL: https://nriveras.github.io/soilgraph
+BugReports: https://github.com/nriveras/soilgraph/-/issues
+Depends:
+    R (>= 4.1.0)
+Imports:
+    ggplot2 (>= 3.4.0),
+    grDevices,
+    jsonlite,
+    rlang,
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr

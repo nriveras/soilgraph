@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 
 soilgraph ships with three **graphical engines** that convert soil morphological
 properties into visual attributes:
-nbsp;
+
 | Engine | Encodes | Visual output |
 |---|---|---|
 | **Coarse Fragment Engine** | type, size, abundance, cementation grade | Irregular polygons |
@@ -278,14 +278,22 @@ Grade controls **line thickness** and **dash pattern**:
 boundary_profile <- new_soil_profile(
   site_id = "Boundary-Types",
   horizons = list(
-    new_soil_horizon(0, 15, label = "Abrupt / Smooth", color = "#A0826D",
-      boundary_grade = "abrupt", boundary_shape = "smooth"),
-    new_soil_horizon(15, 30, label = "Clear / Wavy", color = "#9B7D66",
-      boundary_grade = "clear", boundary_shape = "wavy"),
-    new_soil_horizon(30, 50, label = "Gradual / Irregular", color = "#96795F",
-      boundary_grade = "gradual", boundary_shape = "irregular"),
-    new_soil_horizon(50, 75, label = "Diffuse / Broken", color = "#917558",
-      boundary_grade = "diffuse", boundary_shape = "broken")
+    new_soil_horizon(0, 15,
+      label = "Abrupt / Smooth", color = "#A0826D",
+      boundary_grade = "abrupt", boundary_shape = "smooth"
+    ),
+    new_soil_horizon(15, 30,
+      label = "Clear / Wavy", color = "#9B7D66",
+      boundary_grade = "clear", boundary_shape = "wavy"
+    ),
+    new_soil_horizon(30, 50,
+      label = "Gradual / Irregular", color = "#96795F",
+      boundary_grade = "gradual", boundary_shape = "irregular"
+    ),
+    new_soil_horizon(50, 75,
+      label = "Diffuse / Broken", color = "#917558",
+      boundary_grade = "diffuse", boundary_shape = "broken"
+    )
   )
 )
 

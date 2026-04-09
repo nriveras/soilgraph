@@ -1,13 +1,17 @@
 test_that("JSON round-trip preserves all fields", {
-  h1 <- new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
+  h1 <- new_soil_horizon(0, 18,
+    label = "Ap", color = "#5C4033",
     texture = "silt loam", moisture = "moist",
     boundary_grade = "clear", boundary_shape = "smooth",
     coarse_abundance = "few", coarse_type = "gravel",
     coarse_grade = "weak", coarse_size = "fine",
-    notes = "Round-trip test horizon")
-  h2 <- new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
+    notes = "Round-trip test horizon"
+  )
+  h2 <- new_soil_horizon(18, 52,
+    label = "Bt1", color = "#8A5A44",
     texture = "clay loam", boundary_grade = "gradual",
-    boundary_shape = "wavy")
+    boundary_shape = "wavy"
+  )
 
   profile <- new_soil_profile(
     site_id = "roundtrip-test",
@@ -73,7 +77,8 @@ test_that("write_soil_json creates valid JSON", {
 test_that("JSON round-trip with metadata", {
   h <- new_soil_horizon(0, 30, label = "A")
   p <- new_soil_profile("meta-test", list(h),
-    metadata = list(country = "USA", elevation = 350))
+    metadata = list(country = "USA", elevation = 350)
+  )
 
   tmp <- tempfile(fileext = ".soil.json")
   on.exit(unlink(tmp), add = TRUE)

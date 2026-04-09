@@ -8,11 +8,12 @@ Authors@R: c(
         email = "contact@nriveras.com",
         role = c("aut", "cre")
     ))
-Description: Parse free-text soil field descriptions into structured data,
-    export profiles to a standardised JSON schema, and render publication-ready
-    visualisations with irregular coarse-fragment and horizon-boundary engines
-    powered by 'ggplot2'. Follows Soil Taxonomy (USDA) vocabulary for texture,
-    moisture, colour, boundary grade and shape, and coarse fragment properties.
+Description: Build structured soil profile descriptions following a
+    standardised field specification, export them to a versioned JSON schema,
+    and render publication-ready visualisations with irregular coarse-fragment
+    and horizon-boundary engines powered by 'ggplot2'. Follows Soil Taxonomy
+    (USDA) vocabulary for texture, moisture, colour, boundary grade and shape,
+    and coarse fragment properties.
 License: GPL (>= 3)
 URL: https://nriveras.github.io/soilgraph,
     https://github.com/nriveras/soilgraph
@@ -23,9 +24,11 @@ Imports:
     ggplot2 (>= 3.4.0),
     grDevices,
     jsonlite,
+    lifecycle,
     rlang,
     stats
 Suggests:
+    devtools,
     knitr,
     lintr,
     rmarkdown,

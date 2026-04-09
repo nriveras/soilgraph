@@ -36,18 +36,24 @@ profile_1 <- new_soil_profile(
   site_id = "Hapludalf-CL",
   classification = list(system = "Soil Taxonomy", taxon = "Typic Hapludalf"),
   horizons = list(
-    new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
+    new_soil_horizon(0, 18,
+      label = "Ap", color = "#5C4033",
       texture = "silt loam", boundary_grade = "clear", boundary_shape = "smooth",
       coarse_type = "gravel", coarse_abundance = "few",
-      coarse_grade = "weak", coarse_size = "fine"),
-    new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
+      coarse_grade = "weak", coarse_size = "fine"
+    ),
+    new_soil_horizon(18, 52,
+      label = "Bt1", color = "#8A5A44",
       texture = "clay loam", boundary_grade = "gradual", boundary_shape = "wavy",
       coarse_type = "cobble", coarse_abundance = "common",
-      coarse_grade = "moderate", coarse_size = "medium"),
-    new_soil_horizon(52, 95, label = "Bt2", color = "#A66A4C",
+      coarse_grade = "moderate", coarse_size = "medium"
+    ),
+    new_soil_horizon(52, 95,
+      label = "Bt2", color = "#A66A4C",
       texture = "clay", boundary_grade = "diffuse", boundary_shape = "irregular",
       coarse_type = "stone", coarse_abundance = "many",
-      coarse_grade = "strong", coarse_size = "coarse")
+      coarse_grade = "strong", coarse_size = "coarse"
+    )
   )
 )
 
@@ -64,14 +70,22 @@ profile_2 <- new_soil_profile(
   site_id = "Sandy-Profile",
   classification = list(system = "Soil Taxonomy", taxon = "Typic Quartzipsamment"),
   horizons = list(
-    new_soil_horizon(0, 20, label = "A", color = "#C2A878",
-      texture = "sand", boundary_grade = "clear", boundary_shape = "smooth"),
-    new_soil_horizon(20, 55, label = "C1", color = "#D4BC8E",
-      texture = "sand", boundary_grade = "gradual", boundary_shape = "smooth"),
-    new_soil_horizon(55, 100, label = "C2", color = "#E0CCA0",
-      texture = "sand", boundary_grade = "diffuse", boundary_shape = "smooth"),
-    new_soil_horizon(100, 150, label = "C3", color = "#E8D8B0",
-      texture = "loamy sand", boundary_grade = "diffuse", boundary_shape = "smooth")
+    new_soil_horizon(0, 20,
+      label = "A", color = "#C2A878",
+      texture = "sand", boundary_grade = "clear", boundary_shape = "smooth"
+    ),
+    new_soil_horizon(20, 55,
+      label = "C1", color = "#D4BC8E",
+      texture = "sand", boundary_grade = "gradual", boundary_shape = "smooth"
+    ),
+    new_soil_horizon(55, 100,
+      label = "C2", color = "#E0CCA0",
+      texture = "sand", boundary_grade = "diffuse", boundary_shape = "smooth"
+    ),
+    new_soil_horizon(100, 150,
+      label = "C3", color = "#E8D8B0",
+      texture = "loamy sand", boundary_grade = "diffuse", boundary_shape = "smooth"
+    )
   )
 )
 
@@ -93,14 +107,18 @@ profile_3 <- new_soil_profile(
   site_id = "Colluvial-01",
   classification = list(system = "Field description", taxon = NULL),
   horizons = list(
-    new_soil_horizon(0, 12, label = "A", color = "#3D2B1F",
+    new_soil_horizon(0, 12,
+      label = "A", color = "#3D2B1F",
       texture = "loam", boundary_grade = "abrupt", boundary_shape = "irregular",
       coarse_type = "channer", coarse_abundance = "common",
-      coarse_grade = "strong", coarse_size = "small"),
-    new_soil_horizon(12, 45, label = "C", color = "#6B5A4E",
+      coarse_grade = "strong", coarse_size = "small"
+    ),
+    new_soil_horizon(12, 45,
+      label = "C", color = "#6B5A4E",
       texture = "sandy loam", boundary_grade = "clear", boundary_shape = "broken",
       coarse_type = "boulder", coarse_abundance = "abundant",
-      coarse_grade = "very strong", coarse_size = "very coarse")
+      coarse_grade = "very strong", coarse_size = "very coarse"
+    )
   )
 )
 
@@ -142,14 +160,22 @@ Four grade × shape combinations with transition zones:
 profile_5 <- new_soil_profile(
   site_id = "Boundary-Demo",
   horizons = list(
-    new_soil_horizon(0, 15, label = "Abrupt\nSmooth", color = "#A0826D",
-      boundary_grade = "abrupt", boundary_shape = "smooth"),
-    new_soil_horizon(15, 30, label = "Clear\nWavy", color = "#9B7D66",
-      boundary_grade = "clear", boundary_shape = "wavy"),
-    new_soil_horizon(30, 50, label = "Gradual\nIrregular", color = "#96795F",
-      boundary_grade = "gradual", boundary_shape = "irregular"),
-    new_soil_horizon(50, 75, label = "Diffuse\nBroken", color = "#917558",
-      boundary_grade = "diffuse", boundary_shape = "broken")
+    new_soil_horizon(0, 15,
+      label = "Abrupt\nSmooth", color = "#A0826D",
+      boundary_grade = "abrupt", boundary_shape = "smooth"
+    ),
+    new_soil_horizon(15, 30,
+      label = "Clear\nWavy", color = "#9B7D66",
+      boundary_grade = "clear", boundary_shape = "wavy"
+    ),
+    new_soil_horizon(30, 50,
+      label = "Gradual\nIrregular", color = "#96795F",
+      boundary_grade = "gradual", boundary_shape = "irregular"
+    ),
+    new_soil_horizon(50, 75,
+      label = "Diffuse\nBroken", color = "#917558",
+      boundary_grade = "diffuse", boundary_shape = "broken"
+    )
   )
 )
 

@@ -24,8 +24,8 @@ knitr::opts_chunk$set(
 **soilgraph** provides tools for structuring soil profile descriptions, exporting
 them to JSON, and generating profile visualizations. A typical workflow is:
 
-1. Prepare a two-column field description table (**Depth** + **description**).
-2. Parse descriptions into a structured soil profile.
+1. Prepare a structured table of horizon properties (or load a `.soil.json` file).
+2. Build a `soil_profile` object.
 3. Visualize the profile.
 4. Export to the `.soil.json` format for archival and exchange.
 
@@ -33,62 +33,42 @@ them to JSON, and generating profile visualizations. A typical workflow is:
 library(soilgraph)
 ```
 
-## Creating a field description table
+## Creating a structured horizon table
 
-Field notes are represented as a data frame with a `Depth` column containing depth
-ranges (e.g. `"0-18 cm"`) and a `description` column with natural language
-descriptions:
+The recommended approach is to enter your horizon data as a data frame with
+explicit columns. At minimum you need `Top` and `Bottom` depths; all other
+fields are optional:
 
-```{r field-notes}
-field_notes <- data.frame(
-  Depth = c("0-18 cm", "18-52 cm", "52-95 cm"),
-  description = c(
-    "Ap dark brown silt loam moist clear smooth few subangular weak fragments with granular structure",
-    "Bt1 reddish brown clay loam slightly moist gradual wavy common rounded moderate fragments with clay films",
-    "Bt2 brown clay dry diffuse irregular many subrounded strong fragments with strong blocky structure"
-  )
+```{r structured-table}
+horizons_df <- data.frame(
+  Top = c(0, 18, 52),
+  Bottom = c(18, 52, 95),
+  Horizon = c("Ap", "Bt1", "Bt2"),
+  Texture = c("silt loam", "clay loam", "clay"),
+  Color = c("#5C4033", "#8A5A44", "#A66A4C"),
+  Moisture = c("moist", "slightly moist", "dry"),
+  BoundaryGrade = c("clear", "gradual", "diffuse"),
+  BoundaryShape = c("smooth", "wavy", "irregular"),
+  CoarseAbundance = c("few", "common", "many"),
+  CoarseShape = c("subangular", "rounded", "subrounded"),
+  CoarseGrade = c("weak", "moderate", "strong"),
+  stringsAsFactors = FALSE
 )
-field_notes
+horizons_df
 ```
 
-## Parsing descriptions
-
-`derive_soil_horizons()` extracts horizon properties (texture, color, moisture,
-boundary, coarse fragments) from the description text and returns a tidy table:
-
-```{r derive}
-horizons <- derive_soil_horizons(field_notes)
-horizons
-```
-
-The parser recognizes two input modes:
-
-- **Depth ranges**: `"0-18 cm"`, `"18-52 cm"`, `"52-95 cm"`
-- **Top depths only**: `"0"`, `"18"`, `"52"` — requires a `profile_bottom` argument.
-
-```{r top-depth-mode}
-top_depth_notes <- data.frame(
-  Depth = c("0", "18", "52"),
-  description = c(
-    "Ap dark brown silt loam moist clear smooth",
-    "Bt1 reddish brown clay loam gradual wavy",
-    "Bt2 brown clay dry diffuse irregular"
-  )
-)
-
-horizons_top <- derive_soil_horizons(top_depth_notes, profile_bottom = 95)
-horizons_top[, c("Horizon", "Top", "Bottom", "Texture", "Color")]
-```
+Both `PascalCase` (`BoundaryGrade`) and `snake_case` (`boundary_grade`) column
+names are recognized.
 
 ## Building a soil profile object
 
-`soil_profile_from_table()` converts a field notes table into a `soil_profile`
+`soil_profile_from_table()` converts a horizon table into a `soil_profile`
 object, which is the primary data structure used by all plotting and export
 functions:
 
 ```{r build-profile}
 profile <- soil_profile_from_table(
-  field_notes,
+  horizons_df,
   site_id = "pedon-001",
   classification = list(
     system = "Soil Taxonomy",
@@ -101,12 +81,18 @@ profile <- soil_profile_from_table(
 You can also build profiles manually from individual horizons:
 
 ```{r manual-profile}
-h1 <- new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
-  texture = "silt loam", boundary_grade = "clear", boundary_shape = "smooth")
-h2 <- new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
-  texture = "clay loam", boundary_grade = "gradual", boundary_shape = "wavy")
-h3 <- new_soil_horizon(52, 95, label = "Bt2", color = "#A66A4C",
-  texture = "clay", boundary_grade = "diffuse", boundary_shape = "irregular")
+h1 <- new_soil_horizon(0, 18,
+  label = "Ap", color = "#5C4033",
+  texture = "silt loam", boundary_grade = "clear", boundary_shape = "smooth"
+)
+h2 <- new_soil_horizon(18, 52,
+  label = "Bt1", color = "#8A5A44",
+  texture = "clay loam", boundary_grade = "gradual", boundary_shape = "wavy"
+)
+h3 <- new_soil_horizon(52, 95,
+  label = "Bt2", color = "#A66A4C",
+  texture = "clay", boundary_grade = "diffuse", boundary_shape = "irregular"
+)
 
 profile_manual <- new_soil_profile(
   site_id = "pedon-001",
@@ -146,12 +132,13 @@ The advanced renderer uses polygon-based fragments and irregular boundary lines:
 plot_soil_profile_advanced(profile, seed = 42)
 ```
 
-### Plotting directly from field notes
+### Plotting directly from structured tables
 
-For quick visualization without creating objects manually:
+For quick visualization you can go from table to plot in two steps:
 
-```{r plot-description, fig.cap = "Plot directly from field description table."}
-plot_soil_description(field_notes, site_id = "pedon-001")
+```{r plot-from-table, fig.cap = "Plot from a structured table."}
+quick_profile <- soil_profile_from_table(horizons_df, site_id = "pedon-001")
+plot_soil_profile(quick_profile)
 ```
 
 ## Exporting and importing JSON
@@ -192,3 +179,45 @@ plot_soil_profile(example_profile)
 - Learn about the advanced graphical engines in `vignette("graphical-engines")`.
 - Explore the soil data model and supported vocabulary in `vignette("soil-data-model")`.
 - Browse a gallery of rendering examples in `vignette("rendering-examples")`.
+
+## Migrating from the free-text parser
+
+Prior versions of soilgraph offered `derive_soil_horizons()` and
+`plot_soil_description()` to extract soil properties from free-text descriptions.
+These functions are now **deprecated**. The recommended migration is
+straightforward:
+
+**Before (deprecated):**
+
+```r
+field_notes <- data.frame(
+  Depth = c("0-18 cm", "18-52 cm"),
+  description = c(
+    "Ap dark brown silt loam moist clear smooth",
+    "Bt1 reddish brown clay loam gradual wavy"
+  )
+)
+profile <- soil_profile_from_table(field_notes, site_id = "pedon-001")
+plot_soil_description(field_notes, site_id = "pedon-001")
+```
+
+**After (structured):**
+
+```r
+horizons_df <- data.frame(
+  Top = c(0, 18),
+  Bottom = c(18, 52),
+  Horizon = c("Ap", "Bt1"),
+  Texture = c("silt loam", "clay loam"),
+  Color = c("#5C4033", "#8A5A44"),
+  Moisture = c("moist", NA),
+  BoundaryGrade = c("clear", "gradual"),
+  BoundaryShape = c("smooth", "wavy"),
+  stringsAsFactors = FALSE
+)
+profile <- soil_profile_from_table(horizons_df, site_id = "pedon-001")
+plot_soil_profile(profile)
+```
+
+The structured approach is more explicit, more reliable, and lets you control
+exactly which properties are recorded for each horizon.

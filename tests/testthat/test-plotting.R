@@ -6,17 +6,21 @@ test_that("plot_soil_profile returns ggplot", {
 })
 
 test_that("plot_soil_profile_fragments returns ggplot", {
-  h1 <- new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
+  h1 <- new_soil_horizon(0, 18,
+    label = "Ap", color = "#5C4033",
     coarse_abundance = "few", coarse_type = "gravel",
-    coarse_grade = "weak", coarse_size = "fine")
-  h2 <- new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
+    coarse_grade = "weak", coarse_size = "fine"
+  )
+  h2 <- new_soil_horizon(18, 52,
+    label = "Bt1", color = "#8A5A44",
     coarse_abundance = "common", coarse_type = "cobble",
-    coarse_grade = "moderate", coarse_size = "medium")
+    coarse_grade = "moderate", coarse_size = "medium"
+  )
   p <- new_soil_profile("test", list(h1, h2))
   expect_s3_class(plot_soil_profile_fragments(p, seed = 1), "ggplot")
 })
 
-test_that("plot_soil_description returns ggplot", {
+test_that("plot_soil_description emits deprecation warning", {
   notes <- data.frame(
     Depth = c("0-18 cm", "18-52 cm"),
     description = c(
@@ -24,10 +28,13 @@ test_that("plot_soil_description returns ggplot", {
       "Bt1 reddish brown clay loam gradual wavy"
     )
   )
-  expect_s3_class(plot_soil_description(notes, site_id = "test"), "ggplot")
+  expect_warning(
+    plot_soil_description(notes, site_id = "test"),
+    "deprecated"
+  )
 })
 
-test_that("plot_soil_description_fragments returns ggplot", {
+test_that("plot_soil_description_fragments emits deprecation warning", {
   notes <- data.frame(
     Depth = c("0-18 cm", "18-52 cm"),
     description = c(
@@ -35,9 +42,9 @@ test_that("plot_soil_description_fragments returns ggplot", {
       "Bt1 reddish brown clay loam gradual wavy common rounded moderate fragments"
     )
   )
-  expect_s3_class(
+  expect_warning(
     plot_soil_description_fragments(notes, site_id = "test", seed = 1),
-    "ggplot"
+    "deprecated"
   )
 })
 
@@ -105,15 +112,19 @@ test_that("describe_soil_profile returns character string", {
 })
 
 test_that("build_horizon_plot_data returns expected columns", {
-  h1 <- new_soil_horizon(0, 20, label = "A", color = "#5C4033",
+  h1 <- new_soil_horizon(0, 20,
+    label = "A", color = "#5C4033",
     boundary_grade = "clear", boundary_shape = "smooth",
-    coarse_abundance = "few", coarse_type = "gravel")
+    coarse_abundance = "few", coarse_type = "gravel"
+  )
   p <- new_soil_profile("test", list(h1))
   hd <- build_horizon_plot_data(p)
   expect_s3_class(hd, "data.frame")
-  expected_cols <- c("horizon_index", "label", "top", "bottom", "fill",
+  expected_cols <- c(
+    "horizon_index", "label", "top", "bottom", "fill",
     "midpoint", "boundary_shape", "boundary_grade",
-    "coarse_abundance", "coarse_type")
+    "coarse_abundance", "coarse_type"
+  )
   for (col in expected_cols) {
     expect_true(col %in% names(hd), info = paste("missing column:", col))
   }

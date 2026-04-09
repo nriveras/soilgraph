@@ -1,6 +1,7 @@
 # soilgraph — Copilot Instructions
 
-These rules apply to all Copilot interactions in this repository.
+- These rules apply to all Copilot interactions in this repository.
+- Don't re-read files you've already read in this session unless I ask you to. Minimize calls to tools and work with what you already have in context.
 
 ## Development Workflow
 

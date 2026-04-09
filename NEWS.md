@@ -13,6 +13,12 @@
 
 ## New features
 
+* `plot_soil_profile_fragments()` and `plot_soil_profile_advanced()` now render
+  horizon fills as stitched polygons that follow boundary engine paths, so
+  boundary topography and distinctness shape the fill geometry directly instead
+  of being shown only as overlay lines. Transition zones for gradual/diffuse
+  contacts are now path-following ribbons rather than fixed-height rectangles.
+
 * `soil_profile_from_table()` now accepts **structured data frames** with
   explicit columns (`Top`, `Bottom`, `Horizon`, `Texture`, `Color`,
   `BoundaryGrade`, `BoundaryShape`, `CoarseAbundance`, etc.) as the primary

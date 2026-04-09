@@ -23,3 +23,5 @@ src/*.dll
 
 # Pre-commit
 .precommit/
+/doc/
+/Meta/

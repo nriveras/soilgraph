@@ -20,6 +20,25 @@ test_that("plot_soil_profile_fragments returns ggplot", {
   expect_s3_class(plot_soil_profile_fragments(p, seed = 1), "ggplot")
 })
 
+test_that("plot_soil_profile_fragments uses polygon horizons", {
+  h1 <- new_soil_horizon(0, 18,
+    label = "Ap", color = "#5C4033",
+    boundary_shape = "wavy", boundary_grade = "clear"
+  )
+  h2 <- new_soil_horizon(18, 52,
+    label = "Bt1", color = "#8A5A44"
+  )
+  p <- new_soil_profile("test-poly", list(h1, h2))
+
+  layer_classes <- vapply(
+    plot_soil_profile_fragments(p, seed = 1)$layers,
+    function(layer) class(layer$geom)[1],
+    character(1)
+  )
+
+  expect_true("GeomPolygon" %in% layer_classes)
+})
+
 test_that("plot_soil_description emits deprecation warning", {
   notes <- data.frame(
     Depth = c("0-18 cm", "18-52 cm"),
@@ -55,6 +74,25 @@ test_that("single-horizon profile plots without error", {
   suppressWarnings(expect_s3_class(
     plot_soil_profile_advanced(p, seed = 1), "ggplot"
   ))
+})
+
+test_that("plot_soil_profile_advanced uses polygon horizons", {
+  h1 <- new_soil_horizon(0, 20,
+    label = "A", color = "#5C4033",
+    boundary_shape = "wavy", boundary_grade = "gradual"
+  )
+  h2 <- new_soil_horizon(20, 50,
+    label = "B", color = "#8A5A44"
+  )
+  p <- new_soil_profile("test-advanced-poly", list(h1, h2))
+
+  layer_classes <- vapply(
+    plot_soil_profile_advanced(p, seed = 1)$layers,
+    function(layer) class(layer$geom)[1],
+    character(1)
+  )
+
+  expect_true("GeomPolygon" %in% layer_classes)
 })
 
 test_that("profile with no coarse fragments renders in fragment mode", {

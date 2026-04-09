@@ -197,6 +197,100 @@ build_boundary_paths <- function(horizon_data, seed = 1) {
   do.call(rbind, boundary_rows)
 }
 
+#' Build horizon polygons that follow boundary paths
+#'
+#' Uses adjacent boundary paths to construct closed polygons for each horizon.
+#' Polygon top edges follow the upper boundary and bottom edges follow the lower
+#' boundary, producing shaped fills that match rendered contacts.
+#'
+#' @param horizon_data Data frame with horizon properties from `build_horizon_plot_data()`
+#' @param boundary_data Optional data frame from `build_boundary_paths()`
+#' @param minimum_thickness Minimum vertical separation between top and bottom edges
+#'   in centimeters (default: 0.02)
+#'
+#' @return Data frame with polygon coordinates for `geom_polygon()`
+#' @keywords internal
+# nolint next: object_length_linter.
+build_horizon_polygons <- function(
+    horizon_data,
+    boundary_data = NULL,
+    minimum_thickness = 0.02) {
+  if (nrow(horizon_data) == 0) {
+    return(data.frame())
+  }
+
+  if (is.null(boundary_data)) {
+    boundary_data <- build_boundary_paths(horizon_data)
+  }
+
+  x_vals <- seq(0, 1, length.out = 200)
+  horizon_count <- nrow(horizon_data)
+
+  get_boundary <- function(index) {
+    boundary_id <- paste0("b", index)
+    boundary <- boundary_data[boundary_data$boundary_id == boundary_id, ]
+
+    if (nrow(boundary) == 0) {
+      return(NULL)
+    }
+
+    boundary <- boundary[order(boundary$x), c("x", "y")]
+    rownames(boundary) <- NULL
+    boundary
+  }
+
+  polygon_rows <- lapply(seq_len(horizon_count), function(index) {
+    top_boundary <- if (index == 1) {
+      data.frame(x = x_vals, y = rep(horizon_data$top[[index]], length(x_vals)))
+    } else {
+      get_boundary(index - 1)
+    }
+
+    bottom_boundary <- if (index == horizon_count) {
+      data.frame(x = x_vals, y = rep(horizon_data$bottom[[index]], length(x_vals)))
+    } else {
+      get_boundary(index)
+    }
+
+    if (is.null(top_boundary)) {
+      top_boundary <- data.frame(x = x_vals, y = rep(horizon_data$top[[index]], length(x_vals)))
+    }
+    if (is.null(bottom_boundary)) {
+      bottom_boundary <- data.frame(x = x_vals, y = rep(horizon_data$bottom[[index]], length(x_vals)))
+    }
+
+    # Keep horizons from collapsing where adjacent boundaries get very close.
+    if (length(top_boundary$y) == length(bottom_boundary$y)) {
+      bottom_boundary$y <- pmax(bottom_boundary$y, top_boundary$y + minimum_thickness)
+    }
+
+    polygon_id <- paste0("h", horizon_data$horizon_index[[index]])
+
+    rbind(
+      data.frame(
+        x = bottom_boundary$x,
+        y = bottom_boundary$y,
+        horizon_index = horizon_data$horizon_index[[index]],
+        label = horizon_data$label[[index]],
+        fill = horizon_data$fill[[index]],
+        polygon_id = polygon_id,
+        stringsAsFactors = FALSE
+      ),
+      data.frame(
+        x = rev(top_boundary$x),
+        y = rev(top_boundary$y),
+        horizon_index = horizon_data$horizon_index[[index]],
+        label = horizon_data$label[[index]],
+        fill = horizon_data$fill[[index]],
+        polygon_id = polygon_id,
+        stringsAsFactors = FALSE
+      )
+    )
+  })
+
+  do.call(rbind, polygon_rows)
+}
+
 #' Render boundary lines as ggplot2 geometries
 #'
 #' Creates appropriate graphical layers for displaying horizon boundaries,
@@ -262,6 +356,11 @@ build_boundary_transition_zones <- function(horizon_data, seed = 1) {
     return(data.frame())
   }
 
+  boundary_data <- build_boundary_paths(horizon_data, seed = seed)
+  if (nrow(boundary_data) == 0) {
+    return(data.frame())
+  }
+
   zone_rows <- lapply(seq_len(nrow(horizon_data) - 1), function(index) {
     grade <- tolower(horizon_data$boundary_grade[[index]] %||% "clear")
 
@@ -276,14 +375,34 @@ build_boundary_transition_zones <- function(horizon_data, seed = 1) {
       return(NULL)
     }
 
-    boundary_depth <- horizon_data$bottom[[index]]
+    boundary_id <- paste0("b", index)
+    boundary <- boundary_data[boundary_data$boundary_id == boundary_id, c("x", "y")]
 
-    data.frame(
-      boundary_id = paste0("zone", index),
-      ymin = boundary_depth,
-      ymax = boundary_depth + zone_height,
-      zone_alpha = 0.08,
-      stringsAsFactors = FALSE
+    if (nrow(boundary) == 0) {
+      return(NULL)
+    }
+
+    zone_id <- paste0("zone", index)
+    lower <- boundary
+    lower$y <- lower$y + zone_height
+
+    rbind(
+      data.frame(
+        boundary_id = zone_id,
+        x = boundary$x,
+        y = boundary$y,
+        zone_alpha = 0.08,
+        zone_grade = grade,
+        stringsAsFactors = FALSE
+      ),
+      data.frame(
+        boundary_id = zone_id,
+        x = rev(lower$x),
+        y = rev(lower$y),
+        zone_alpha = 0.08,
+        zone_grade = grade,
+        stringsAsFactors = FALSE
+      )
     )
   })
 
@@ -311,13 +430,12 @@ layer_boundary_transition_zones <- function(zone_data) {
   .data <- rlang::.data
 
   list(
-    ggplot2::geom_rect(
+    ggplot2::geom_polygon(
       data = zone_data,
       ggplot2::aes(
-        xmin = 0,
-        xmax = 1,
-        ymin = .data$ymin,
-        ymax = .data$ymax,
+        x = .data$x,
+        y = .data$y,
+        group = .data$boundary_id,
         alpha = .data$zone_alpha
       ),
       fill = "#8B7355",

@@ -126,9 +126,10 @@ plot_soil_profile_fragments(profile, seed = 42)
 
 ### Advanced visualization
 
-The advanced renderer uses polygon-based fragments and irregular boundary lines:
+The advanced renderer uses polygon-based fragments and shaped horizon fills,
+where horizon edges follow encoded boundary topography/distinctness:
 
-```{r plot-advanced, fig.cap = "Advanced profile with polygon fragments, boundaries, and transition zones."}
+```{r plot-advanced, fig.cap = "Advanced profile with polygon fragments, shaped horizon edges, and transition ribbons."}
 plot_soil_profile_advanced(profile, seed = 42)
 ```
 

@@ -27,7 +27,7 @@ properties into visual attributes:
 | Engine | Encodes | Visual output |
 |---|---|---|
 | **Coarse Fragment Engine** | type, size, abundance, cementation grade | Irregular polygons |
-| **Horizon Boundary Engine** | shape (topography), grade (distinctness) | Irregular boundary lines |
+| **Horizon Boundary Engine** | shape (topography), grade (distinctness) | Irregular polygon edges |
 | **Visualization Utilities** | color, palette, theme, encoding | Themes and helpers |
 
 
@@ -84,7 +84,7 @@ plot_soil_profile(profile)
 plot_soil_profile_fragments(profile, seed = 42)
 ```
 
-```{r advanced-full, fig.cap = "Advanced rendering with polygon fragments, boundary lines, and transition zones."}
+```{r advanced-full, fig.cap = "Advanced rendering with polygon fragments, shaped horizon edges, and transition ribbons."}
 plot_soil_profile_advanced(profile, seed = 42)
 ```
 
@@ -102,7 +102,7 @@ plot_soil_profile_advanced(
 )
 ```
 
-```{r boundaries-only, fig.cap = "Boundaries and transition zones only — fragments disabled."}
+```{r boundaries-only, fig.cap = "Shaped horizon boundaries and transition ribbons only — fragments disabled."}
 plot_soil_profile_advanced(
   profile,
   show_fragments = FALSE,
@@ -253,7 +253,7 @@ plot_soil_profile_advanced(size_profile, show_boundaries = FALSE, seed = 42)
 
 ### Boundary shapes (topography)
 
-Shape determines the **distortion pattern** of the boundary line:
+Shape determines the **distortion pattern** of shared horizon polygon edges:
 
 | Shape | Pattern | Distortion |
 |-------|---------|------------|
@@ -265,14 +265,14 @@ Shape determines the **distortion pattern** of the boundary line:
 
 ### Boundary grades (distinctness)
 
-Grade controls **line thickness** and **dash pattern**:
+Grade controls the **amplitude and smoothing** of edge distortion:
 
-| Grade | Line width | Line type |
-|-------|-----------|-----------|
-| abrupt | 0.8 | solid |
-| clear | 0.5 | solid |
-| gradual | 0.35 | dashed |
-| diffuse | 0.2 | dotted |
+| Grade | Distortion scale | Edge character |
+|-------|------------------|----------------|
+| abrupt | 1.00 | strongest contrast |
+| clear | 0.70 | moderate contrast |
+| gradual | 0.40 | soft contrast |
+| diffuse | 0.15 | very soft contrast |
 
 ```{r boundary-properties, fig.height = 8, fig.cap = "Boundary grade and shape combinations."}
 boundary_profile <- new_soil_profile(
@@ -308,9 +308,9 @@ plot_soil_profile_advanced(
 
 ### Transition zones
 
-Gradual and diffuse boundaries generate transparent transition zones that blend
-adjacent horizon colors. Enable them with `show_transition_zones = TRUE`
-(the default).
+Gradual and diffuse boundaries generate transparent transition ribbons that
+follow the same irregular boundary paths. Enable them with
+`show_transition_zones = TRUE` (the default).
 
 ## Seed reproducibility
 
@@ -342,6 +342,10 @@ head(horizon_data[, c("label", "top", "bottom", "fill", "boundary_shape", "coars
 boundary_paths <- soilgraph:::build_boundary_paths(horizon_data, seed = 42)
 head(boundary_paths)
 
+# Build horizon polygons that follow adjacent boundaries
+horizon_polys <- soilgraph:::build_horizon_polygons(horizon_data, boundary_paths)
+head(horizon_polys)
+
 # Generate fragment polygons
 fragment_polys <- soilgraph:::build_fragment_polygons(profile, seed = 42)
 head(fragment_polys)
@@ -356,7 +360,7 @@ The three graphical engines translate soil morphological properties into
 consistent visual encodings:
 
 - **Fragments**: type → shape, size → scale, abundance → count, grade → alpha
-- **Boundaries**: shape → distortion pattern, grade → line weight & dash
+- **Boundaries**: shape → edge distortion pattern, grade → smoothing/amplitude
 - **Utilities**: color validation, palette generation, contrast detection, theming
 
 All engines are deterministic (seeded), composable (toggle independently), and

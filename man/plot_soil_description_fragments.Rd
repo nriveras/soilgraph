@@ -31,18 +31,10 @@ plot_soil_description_fragments(
 A \code{ggplot2} object.
 }
 \description{
-Plot a field description table with encoded coarse fragment properties
-}
-\examples{
-\donttest{
-field_notes <- data.frame(
-  Depth = c("0-18 cm", "18-52 cm", "52-95 cm"),
-  description = c(
-    "Ap dark brown silt loam moist clear smooth few subangular weak fragments",
-    "Bt1 reddish brown clay loam gradual wavy common rounded moderate fragments",
-    "Bt2 brown clay diffuse irregular many subrounded strong fragments"
-  )
-)
-plot_soil_description_fragments(field_notes, site_id = "pedon-001")
-}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
+
+\code{plot_soil_description_fragments()} is deprecated because it relies on the
+free-text parser. Build a \code{soil_profile} from a structured table with
+\code{\link[=soil_profile_from_table]{soil_profile_from_table()}} and pass it to \code{\link[=plot_soil_profile_fragments]{plot_soil_profile_fragments()}} or
+\code{\link[=plot_soil_profile_advanced]{plot_soil_profile_advanced()}} instead.
 }

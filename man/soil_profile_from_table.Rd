@@ -2,7 +2,7 @@
 % Please edit documentation in R/parse_description.R
 \name{soil_profile_from_table}
 \alias{soil_profile_from_table}
-\title{Build a soil profile from a two-column field description table}
+\title{Build a soil profile from a tabular description}
 \usage{
 soil_profile_from_table(
   data,
@@ -13,12 +13,16 @@ soil_profile_from_table(
 )
 }
 \arguments{
-\item{data}{A data frame with \code{Depth} and \code{description} columns.}
+\item{data}{A data frame. Preferred: structured columns such as \code{Top},
+\code{Bottom}, \code{Horizon}, \code{Texture}, \code{Color}, \code{Moisture}, \code{BoundaryGrade},
+\code{BoundaryShape}, \code{CoarseAbundance}, \code{CoarseShape}, \code{CoarseGrade},
+\code{CoarseType}, \code{CoarseSize}, \code{CoarseColor}, \code{CoarsePercent}, \code{Notes}.
+Legacy: \code{Depth} and \code{description} columns only.}
 
 \item{site_id}{Profile identifier. Defaults to \code{"soil-profile"}.}
 
 \item{profile_bottom}{Optional terminal depth in centimeters. Required when
-\code{Depth} contains top depths rather than depth ranges.}
+using the legacy \code{Depth}/\code{description} format with top depths only.}
 
 \item{classification}{A named list describing the classification system and taxon.}
 
@@ -28,5 +32,26 @@ soil_profile_from_table(
 A \code{soil_profile} object.
 }
 \description{
-Build a soil profile from a two-column field description table
+Converts a data frame of horizon properties into a \code{soil_profile} object.
+The primary workflow uses a \strong{structured table} whose columns correspond
+directly to soil properties (\code{Top}, \code{Bottom}, \code{Texture}, \code{Color}, etc.).
+}
+\details{
+A legacy pathway is maintained for data frames that contain only \code{Depth} and
+\code{description} columns (the free-text parser workflow). This pathway emits a
+deprecation warning and will be removed in a future release.
+}
+\examples{
+# Structured table workflow (preferred)
+horizons_df <- data.frame(
+  Top = c(0, 18, 52),
+  Bottom = c(18, 52, 95),
+  Horizon = c("Ap", "Bt1", "Bt2"),
+  Texture = c("silt loam", "clay loam", "clay"),
+  Color = c("#5C4033", "#8A5A44", "#A66A4C"),
+  BoundaryGrade = c("clear", "gradual", "diffuse"),
+  BoundaryShape = c("smooth", "wavy", "irregular"),
+  stringsAsFactors = FALSE
+)
+profile <- soil_profile_from_table(horizons_df, site_id = "pedon-001")
 }

@@ -32,6 +32,7 @@ repos:
 
       # Regenerate roxygen documentation if needed
       - id: roxygenize
+        additional_dependencies: [ggplot2, jsonlite]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0

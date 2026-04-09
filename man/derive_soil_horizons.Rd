@@ -19,5 +19,11 @@ A data frame with derived \code{Horizon}, \code{Top}, \code{Bottom}, \code{Textu
 \code{CoarseSize}, \code{CoarseColor}, \code{CoarsePercent}, and \code{Notes} columns.
 }
 \description{
-Derive horizons from a two-column field description table
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
+
+\code{derive_soil_horizons()} is deprecated because the free-text parser is
+fragile and redundant when structured input is available. Use
+\code{\link[=soil_profile_from_table]{soil_profile_from_table()}} with a structured data frame containing explicit
+columns (\code{Top}, \code{Bottom}, \code{Texture}, \code{Color}, etc.) instead. See
+\code{vignette("getting-started")} for migration examples.
 }

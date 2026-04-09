@@ -1,84 +1,87 @@
 # Soilgraph
 
-The usual way to clasify soils is by pit description. In this sence, there are 2 main systems of classifying soils:
-+ Soil Taxonomy: Developed by the USDA for The United States of America, and widelly adopted in the Americas, Asia, Oceania and Africa.
-+ World Reference Base for Soil Resources (WRB): FAO, used more in Europe. Focus is soil as a physical medium.
+The usual way to classify soils is by pit description. There are two main classification systems:
++ **Soil Taxonomy**: Developed by the USDA, widely adopted in the Americas, Asia, Oceania and Africa.
++ **World Reference Base for Soil Resources (WRB)**: FAO, used more in Europe. Focus is soil as a physical medium.
 
 The current package can:
-+ Create a vector database of soil description systems or other way to integrate it in a systematic way.
-+ Create an standard to store soil description (Initially just Soil Taxonomy system, then WRB). `.soil.json` with standarized fields based in the models.
-+ Automate creation of `.soil.json` based in field data. Even handwriten. Usually not every property is note, because some of them can be infered based in other more general and easy to survey.
-+ Graphical visualization of the soil profile based in the `.soil.json` object. Create a visual interpretation based in description criteria translated to visual hints.
-    + Coarse fragment engine can generate irregular elements based in description, with different shape, size, abundance, degree.
-    + Horizon limit engine can generate irregular elements based in description, with different shape and degree.
-+ Tidy description creation.
++ Define a **standardised field specification** for soil profile descriptions (JSON Schema + tabular format).
++ Store and exchange soil descriptions in the `.soil.json` format.
++ Build structured profiles from **explicit tabular data** or from `.soil.json` files.
++ Render publication-ready **visualisations** of soil profiles with graphical engines for irregular horizon boundaries and coarse fragments.
 
-# Implementation
-+ Initial implementation will be done in R, with C++ in case of needing speed in calculation. Further plans to develope a python equivalent.
-    + Standard package development structure.
-    + Documentation with `Roxygen`
-    + testing with `testthat`
-    + visualization based in last version of `ggplot2`
-+ test-driven development: for each functionality, a test sould be writen first.
+## Package scope
 
-# Current MVP
-+ R package scaffold with `DESCRIPTION`, `NAMESPACE`, `R/`, `tests/`, and `inst/`
-+ Structured soil objects for horizons and full profiles
-+ Validation for depth ordering and horizon overlap
-+ `.soil.json` read and write helpers
-+ Basic soil profile visualization using `ggplot2`
-+ Example `.soil.json` payload in `inst/extdata/example.soil.json`
-+ Parser workflow from only `Depth` and `description`
+soilgraph focuses on two responsibilities:
 
-# Main workflow
+| Responsibility | Entry points |
+|---|---|
+| **Standardise** a soil description specification | `soil_profile_from_table()`, `read_soil_json()`, `write_soil_json()`, JSON Schema |
+| **Visualise** soil profiles from structured data | `plot_soil_profile()`, `plot_soil_profile_fragments()`, `plot_soil_profile_advanced()` |
+
+> **Note:** The free-text description parser (`derive_soil_horizons()`) and the
+> convenience wrappers `plot_soil_description()` / `plot_soil_description_fragments()`
+> are **deprecated** as of the current development version. Users should prepare
+> structured data (explicit columns or `.soil.json`) instead of relying on
+> regex-based text extraction. See the migration examples below.
+
+# Main workflow (structured table — preferred)
+
 ```r
 library(soilgraph)
 
-field_notes <- data.frame(
-    Depth = c("0-18 cm", "18-52 cm", "52-95 cm"),
-    description = c(
-        "Ap dark brown silt loam moist clear smooth few subangular weak fragments with granular structure",
-        "Bt1 reddish brown clay loam slightly moist gradual wavy common rounded moderate fragments with clay films",
-        "Bt2 brown clay dry diffuse irregular many subrounded strong fragments with strong blocky structure"
-    )
+horizons_df <- data.frame(
+    Top = c(0, 18, 52),
+    Bottom = c(18, 52, 95),
+    Horizon = c("Ap", "Bt1", "Bt2"),
+    Texture = c("silt loam", "clay loam", "clay"),
+    Color = c("#5C4033", "#8A5A44", "#A66A4C"),
+    Moisture = c("moist", "slightly moist", "dry"),
+    BoundaryGrade = c("clear", "gradual", "diffuse"),
+    BoundaryShape = c("smooth", "wavy", "irregular"),
+    CoarseAbundance = c("few", "common", "many"),
+    CoarseShape = c("subangular", "rounded", "subrounded"),
+    CoarseGrade = c("weak", "moderate", "strong"),
+    stringsAsFactors = FALSE
 )
 
-derive_soil_horizons(field_notes)
+profile <- soil_profile_from_table(
+    horizons_df,
+    site_id = "pedon-001",
+    classification = list(system = "Soil Taxonomy", taxon = "Typic Hapludalf")
+)
 
-profile <- soil_profile_from_table(field_notes, site_id = "pedon-001")
-plot_soil_description(field_notes, site_id = "pedon-001")
+plot_soil_profile(profile)
+plot_soil_profile_advanced(profile, seed = 42)
 
 write_soil_json(profile, "example.soil.json")
 ```
 
-# Supported input modes
-+ Depth ranges in each row, such as `0-18 cm` and `18-52 cm`
-+ Top depths only, such as `0`, `18`, `52`, with an explicit `profile_bottom`
+# JSON workflow
 
-# Top-depth example
 ```r
-field_notes <- data.frame(
-    Depth = c("0", "18", "52"),
-    description = c(
-        "Ap dark brown silt loam moist",
-        "Bt1 reddish brown clay loam slightly moist",
-        "Bt2 brown clay dry"
-    )
-)
-
-derive_soil_horizons(field_notes, profile_bottom = 95)
-plot_soil_description(field_notes, site_id = "pedon-002", profile_bottom = 95)
+# Read a .soil.json file
+profile <- read_soil_json("example.soil.json")
+plot_soil_profile_advanced(profile)
 ```
 
-# Derived columns
-+ `Horizon`: inferred horizon label, or generated fallback labels
-+ `Top` and `Bottom`: parsed numeric depth boundaries in centimeters
-+ `Texture`, `Moisture`, and `Color`: rule-based fields extracted from `description`
-+ `BoundaryGrade` and `BoundaryShape`: horizon limit distinctness and topography
-+ `CoarseAbundance`, `CoarseShape`, and `CoarseGrade`: coarse fragment descriptors
-+ `Notes`: remaining free text after structured tokens are removed
+# Manual horizon construction
+
+```r
+h1 <- new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
+    texture = "silt loam", boundary_grade = "clear", boundary_shape = "smooth")
+h2 <- new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
+    texture = "clay loam", boundary_grade = "gradual", boundary_shape = "wavy")
+h3 <- new_soil_horizon(52, 95, label = "Bt2", color = "#A66A4C",
+    texture = "clay", boundary_grade = "diffuse", boundary_shape = "irregular")
+
+profile <- new_soil_profile("pedon-001", list(h1, h2, h3),
+    classification = list(system = "Soil Taxonomy", taxon = "Typic Hapludalf"))
+
+plot_soil_profile_advanced(profile, seed = 42)
+```
 
 # Field specification
-+ See the field schema document in `docs/soil-description-fields.md`.
 
-
+See the field schema document in `docs-source/soil-description-fields.md` and
+the versioned JSON Schema in `inst/extdata/soil-profile.schema.json`.

@@ -188,7 +188,7 @@ plot_soil_profile_advanced(
     show_transition_zones = TRUE
 )
 
-# Fragments-only visualization  
+# Fragments-only visualization
 plot_soil_profile_advanced(
     profile,
     show_boundaries = FALSE,

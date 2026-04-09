@@ -35,40 +35,39 @@ new_soil_horizon <- function(
     coarse_size = NULL,
     coarse_color = NULL,
     coarse_percent = NULL,
-    notes = NULL
-) {
-    top <- validate_depth_value(top, "top")
-    bottom <- validate_depth_value(bottom, "bottom")
+    notes = NULL) {
+  top <- validate_depth_value(top, "top")
+  bottom <- validate_depth_value(bottom, "bottom")
 
-    if (top < 0) {
-        stop("`top` must be greater than or equal to 0.", call. = FALSE)
-    }
+  if (top < 0) {
+    stop("`top` must be greater than or equal to 0.", call. = FALSE)
+  }
 
-    if (bottom <= top) {
-        stop("`bottom` must be greater than `top`.", call. = FALSE)
-    }
+  if (bottom <= top) {
+    stop("`bottom` must be greater than `top`.", call. = FALSE)
+  }
 
-    horizon <- list(
-        top = top,
-        bottom = bottom,
-        label = validate_optional_string(label, "label"),
-        texture = validate_optional_string(texture, "texture"),
-        color = validate_optional_string(color, "color"),
-        moisture = validate_optional_string(moisture, "moisture"),
-        boundary_grade = validate_optional_string(boundary_grade, "boundary_grade"),
-        boundary_shape = validate_optional_string(boundary_shape, "boundary_shape"),
-        coarse_abundance = validate_optional_string(coarse_abundance, "coarse_abundance"),
-        coarse_shape = validate_optional_string(coarse_shape, "coarse_shape"),
-        coarse_grade = validate_optional_string(coarse_grade, "coarse_grade"),
-        coarse_type = validate_optional_string(coarse_type, "coarse_type"),
-        coarse_size = validate_optional_string(coarse_size, "coarse_size"),
-        coarse_color = validate_optional_string(coarse_color, "coarse_color"),
-        coarse_percent = validate_optional_number(coarse_percent, "coarse_percent", min = 0, max = 100),
-        notes = validate_optional_string(notes, "notes")
-    )
+  horizon <- list(
+    top = top,
+    bottom = bottom,
+    label = validate_optional_string(label, "label"),
+    texture = validate_optional_string(texture, "texture"),
+    color = validate_optional_string(color, "color"),
+    moisture = validate_optional_string(moisture, "moisture"),
+    boundary_grade = validate_optional_string(boundary_grade, "boundary_grade"),
+    boundary_shape = validate_optional_string(boundary_shape, "boundary_shape"),
+    coarse_abundance = validate_optional_string(coarse_abundance, "coarse_abundance"),
+    coarse_shape = validate_optional_string(coarse_shape, "coarse_shape"),
+    coarse_grade = validate_optional_string(coarse_grade, "coarse_grade"),
+    coarse_type = validate_optional_string(coarse_type, "coarse_type"),
+    coarse_size = validate_optional_string(coarse_size, "coarse_size"),
+    coarse_color = validate_optional_string(coarse_color, "coarse_color"),
+    coarse_percent = validate_optional_number(coarse_percent, "coarse_percent", min = 0, max = 100),
+    notes = validate_optional_string(notes, "notes")
+  )
 
-    class(horizon) <- c("soil_horizon", "list")
-    horizon
+  class(horizon) <- c("soil_horizon", "list")
+  horizon
 }
 
 #' Construct a soil profile
@@ -85,42 +84,41 @@ new_soil_profile <- function(
     site_id,
     horizons,
     classification = list(system = "Soil Taxonomy", taxon = NULL),
-    metadata = list()
-) {
-    site_id <- validate_required_string(site_id, "site_id")
+    metadata = list()) {
+  site_id <- validate_required_string(site_id, "site_id")
 
-    if (!is.list(horizons) || length(horizons) == 0) {
-        stop("`horizons` must be a non-empty list.", call. = FALSE)
-    }
+  if (!is.list(horizons) || length(horizons) == 0) {
+    stop("`horizons` must be a non-empty list.", call. = FALSE)
+  }
 
-    if (!all(vapply(horizons, inherits, logical(1), what = "soil_horizon"))) {
-        stop("Every element in `horizons` must be a `soil_horizon`.", call. = FALSE)
-    }
+  if (!all(vapply(horizons, inherits, logical(1), what = "soil_horizon"))) {
+    stop("Every element in `horizons` must be a `soil_horizon`.", call. = FALSE)
+  }
 
-    if (!is.list(classification)) {
-        stop("`classification` must be a list.", call. = FALSE)
-    }
+  if (!is.list(classification)) {
+    stop("`classification` must be a list.", call. = FALSE)
+  }
 
-    if (!is.list(metadata) || (length(metadata) > 0 && is.null(names(metadata)))) {
-        stop("`metadata` must be a named list.", call. = FALSE)
-    }
+  if (!is.list(metadata) || (length(metadata) > 0 && is.null(names(metadata)))) {
+    stop("`metadata` must be a named list.", call. = FALSE)
+  }
 
-    profile <- list(
-        schema_version = "0.1.0",
-        site_id = site_id,
-        classification = list(
-            system = validate_required_string(
-                classification$system %||% "Soil Taxonomy",
-                "classification$system"
-            ),
-            taxon = validate_optional_string(classification$taxon, "classification$taxon")
-        ),
-        metadata = metadata,
-        horizons = horizons
-    )
+  profile <- list(
+    schema_version = "0.1.0",
+    site_id = site_id,
+    classification = list(
+      system = validate_required_string(
+        if (is.null(classification$system)) "Soil Taxonomy" else classification$system,
+        "classification$system"
+      ),
+      taxon = validate_optional_string(classification$taxon, "classification$taxon")
+    ),
+    metadata = metadata,
+    horizons = horizons
+  )
 
-    class(profile) <- c("soil_profile", "list")
-    validate_soil_profile(profile)
+  class(profile) <- c("soil_profile", "list")
+  validate_soil_profile(profile)
 }
 
 #' Validate a soil profile
@@ -138,79 +136,79 @@ new_soil_profile <- function(
 #' profile <- new_soil_profile("test", list(h1, h2))
 #' validate_soil_profile(profile)
 validate_soil_profile <- function(profile) {
-    if (!inherits(profile, "soil_profile")) {
-        stop("`profile` must be a `soil_profile`.", call. = FALSE)
-    }
+  if (!inherits(profile, "soil_profile")) {
+    stop("`profile` must be a `soil_profile`.", call. = FALSE)
+  }
 
-    if (!is.list(profile$horizons) || length(profile$horizons) == 0) {
-        stop("`profile$horizons` must be a non-empty list.", call. = FALSE)
-    }
+  if (!is.list(profile$horizons) || length(profile$horizons) == 0) {
+    stop("`profile$horizons` must be a non-empty list.", call. = FALSE)
+  }
 
-    tops <- vapply(profile$horizons, function(horizon) horizon$top, numeric(1))
-    bottoms <- vapply(profile$horizons, function(horizon) horizon$bottom, numeric(1))
+  tops <- vapply(profile$horizons, function(horizon) horizon$top, numeric(1))
+  bottoms <- vapply(profile$horizons, function(horizon) horizon$bottom, numeric(1))
 
-    if (is.unsorted(tops, strictly = FALSE)) {
-        stop("Horizon top depths must be sorted from shallow to deep.", call. = FALSE)
-    }
+  if (is.unsorted(tops, strictly = FALSE)) {
+    stop("Horizon top depths must be sorted from shallow to deep.", call. = FALSE)
+  }
 
-    if (any(bottoms <= tops)) {
-        stop("Each horizon must have `bottom` greater than `top`.", call. = FALSE)
-    }
+  if (any(bottoms <= tops)) {
+    stop("Each horizon must have `bottom` greater than `top`.", call. = FALSE)
+  }
 
-    if (length(tops) > 1 && any(tops[-1] < bottoms[-length(bottoms)])) {
-        stop("Horizons cannot overlap.", call. = FALSE)
-    }
+  if (length(tops) > 1 && any(tops[-1] < bottoms[-length(bottoms)])) {
+    stop("Horizons cannot overlap.", call. = FALSE)
+  }
 
-    invisible(profile)
+  invisible(profile)
 }
 
 validate_depth_value <- function(value, name) {
-    if (!is.numeric(value) || length(value) != 1 || is.na(value)) {
-        stop(sprintf("`%s` must be a single numeric value.", name), call. = FALSE)
-    }
+  if (!is.numeric(value) || length(value) != 1 || is.na(value)) {
+    stop(sprintf("`%s` must be a single numeric value.", name), call. = FALSE)
+  }
 
-    as.numeric(value)
+  as.numeric(value)
 }
 
 validate_required_string <- function(value, name) {
-    value <- validate_optional_string(value, name)
+  value <- validate_optional_string(value, name)
 
-    if (is.null(value)) {
-        stop(sprintf("`%s` must be a non-empty string.", name), call. = FALSE)
-    }
+  if (is.null(value)) {
+    stop(sprintf("`%s` must be a non-empty string.", name), call. = FALSE)
+  }
 
-    value
+  value
 }
 
 validate_optional_string <- function(value, name) {
-    if (is.null(value)) {
-        return(NULL)
-    }
+  if (is.null(value)) {
+    return(NULL)
+  }
 
-    if (!is.character(value) || length(value) != 1 || is.na(value)) {
-        stop(sprintf("`%s` must be a single string or `NULL`.", name), call. = FALSE)
-    }
+  if (!is.character(value) || length(value) != 1 || is.na(value)) {
+    stop(sprintf("`%s` must be a single string or `NULL`.", name), call. = FALSE)
+  }
 
-    value <- trimws(value)
-    if (!nzchar(value)) {
-        stop(sprintf("`%s` must be a non-empty string when provided.", name), call. = FALSE)
-    }
+  value <- trimws(value)
+  if (!nzchar(value)) {
+    stop(sprintf("`%s` must be a non-empty string when provided.", name), call. = FALSE)
+  }
 
-    value
+  value
 }
 
 validate_optional_number <- function(value, name, min = -Inf, max = Inf) {
-    if (is.null(value)) {
-        return(NULL)
-    }
+  if (is.null(value)) {
+    return(NULL)
+  }
 
-    if (!is.numeric(value) || length(value) != 1 || is.na(value)) {
-        stop(sprintf("`%s` must be a single numeric value or `NULL`.", name), call. = FALSE)
-    }
+  if (!is.numeric(value) || length(value) != 1 || is.na(value)) {
+    stop(sprintf("`%s` must be a single numeric value or `NULL`.", name), call. = FALSE)
+  }
 
-    if (value < min || value > max) {
-        stop(sprintf("`%s` must be between %s and %s.", name, min, max), call. = FALSE)
-    }
+  if (value < min || value > max) {
+    stop(sprintf("`%s` must be between %s and %s.", name, min, max), call. = FALSE)
+  }
 
-    as.numeric(value)
+  as.numeric(value)
 }

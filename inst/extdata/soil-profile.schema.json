@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nriveras.github.io/soilgraph/soil-profile.schema.json",
+  "title": "Soil Profile",
+  "description": "soilgraph soil profile description schema v0.2.0",
+  "type": "object",
+  "required": ["schema_version", "site_id", "classification", "horizons"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.0",
+      "description": "Schema version identifier."
+    },
+    "site_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique site or pedon identifier."
+    },
+    "classification": {
+      "type": "object",
+      "required": ["system"],
+      "properties": {
+        "system": {
+          "type": "string",
+          "description": "Classification system name (e.g. Soil Taxonomy, WRB)."
+        },
+        "taxon": {
+          "type": ["string", "null"],
+          "description": "Taxon name within the classification system."
+        }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Arbitrary key-value pairs for site-level metadata (country, slope, land use, etc.).",
+      "additionalProperties": true
+    },
+    "horizons": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Ordered list of horizon records from top to bottom.",
+      "items": {
+        "$ref": "#/$defs/horizon"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "horizon": {
+      "type": "object",
+      "required": ["top", "bottom"],
+      "properties": {
+        "top": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Top depth in centimeters."
+        },
+        "bottom": {
+          "type": "number",
+          "description": "Bottom depth in centimeters. Must be greater than top."
+        },
+        "label": {
+          "type": ["string", "null"],
+          "description": "Horizon designation (e.g. Ap, Bt1, Bw)."
+        },
+        "texture": {
+          "type": ["string", "null"],
+          "description": "Texture class (e.g. silt loam, clay, sandy loam)."
+        },
+        "color": {
+          "type": ["string", "null"],
+          "description": "Display color as a hex code (e.g. #5C4033) or R color name."
+        },
+        "moisture": {
+          "type": ["string", "null"],
+          "description": "Moisture state (e.g. dry, moist, wet, saturated)."
+        },
+        "boundary_grade": {
+          "type": ["string", "null"],
+          "description": "Horizon boundary distinctness.",
+          "enum": [null, "very abrupt", "abrupt", "clear", "gradual", "diffuse"]
+        },
+        "boundary_shape": {
+          "type": ["string", "null"],
+          "description": "Horizon boundary topography.",
+          "enum": [null, "smooth", "wavy", "irregular", "broken", "discontinuous"]
+        },
+        "coarse_abundance": {
+          "type": ["string", "null"],
+          "description": "Coarse fragment abundance class.",
+          "enum": [null, "very few", "few", "common", "many", "abundant"]
+        },
+        "coarse_shape": {
+          "type": ["string", "null"],
+          "description": "Coarse fragment shape.",
+          "enum": [null, "angular", "subangular", "subrounded", "rounded", "platy", "flat"]
+        },
+        "coarse_grade": {
+          "type": ["string", "null"],
+          "description": "Coarse fragment cementation grade.",
+          "enum": [null, "very weak", "weak", "moderate", "strong", "very strong"]
+        },
+        "coarse_type": {
+          "type": ["string", "null"],
+          "description": "Coarse fragment type.",
+          "enum": [null, "gravel", "cobble", "stone", "boulder", "channer", "flagstone"]
+        },
+        "coarse_size": {
+          "type": ["string", "null"],
+          "description": "Coarse fragment size class.",
+          "enum": [null, "very fine", "fine", "small", "medium", "coarse", "large", "very coarse"]
+        },
+        "coarse_color": {
+          "type": ["string", "null"],
+          "description": "Coarse fragment color as a hex code or R color name."
+        },
+        "coarse_percent": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Coarse fragment volume percentage (0-100)."
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Free-text notes for this horizon."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

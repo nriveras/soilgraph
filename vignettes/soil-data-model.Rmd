@@ -109,10 +109,16 @@ h <- new_soil_horizon(
 str(h, max.level = 1)
 ```
 
-## Parsing natural language descriptions
+## Parsing natural language descriptions (deprecated)
 
-`derive_soil_horizons()` extracts structured data from free-text field
-descriptions. The parser uses keyword dictionaries to recognize properties.
+> **Note:** `derive_soil_horizons()` and the free-text parser are deprecated.
+> The recommended approach is to provide structured data directly via
+> `soil_profile_from_table()` with explicit columns. See
+> `vignette("getting-started")` for the migration path.
+
+`derive_soil_horizons()` extracted structured data from free-text field
+descriptions. The parser used keyword dictionaries to recognize properties.
+This section is retained for reference only.
 
 ### Supported input formats
 

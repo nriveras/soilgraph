@@ -19,12 +19,16 @@ Plot a soil profile with encoded coarse fragment properties
 }
 \examples{
 \donttest{
-h1 <- new_soil_horizon(0, 18, label = "Ap", color = "#5C4033",
+h1 <- new_soil_horizon(0, 18,
+  label = "Ap", color = "#5C4033",
   coarse_abundance = "few", coarse_shape = "subangular",
-  coarse_grade = "weak", coarse_type = "gravel")
-h2 <- new_soil_horizon(18, 52, label = "Bt1", color = "#8A5A44",
+  coarse_grade = "weak", coarse_type = "gravel"
+)
+h2 <- new_soil_horizon(18, 52,
+  label = "Bt1", color = "#8A5A44",
   coarse_abundance = "common", coarse_shape = "rounded",
-  coarse_grade = "moderate", coarse_type = "cobble")
+  coarse_grade = "moderate", coarse_type = "cobble"
+)
 profile <- new_soil_profile("pedon-001", list(h1, h2))
 plot_soil_profile_fragments(profile)
 }

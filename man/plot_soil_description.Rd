@@ -28,18 +28,10 @@ plot_soil_description(
 A \code{ggplot2} object.
 }
 \description{
-Plot a soil profile from a two-column field description table
-}
-\examples{
-\donttest{
-field_notes <- data.frame(
-  Depth = c("0-18 cm", "18-52 cm", "52-95 cm"),
-  description = c(
-    "Ap dark brown silt loam moist clear smooth",
-    "Bt1 reddish brown clay loam slightly moist gradual wavy",
-    "Bt2 brown clay dry diffuse irregular"
-  )
-)
-plot_soil_description(field_notes, site_id = "pedon-001")
-}
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
+
+\code{plot_soil_description()} is deprecated because it relies on the free-text
+parser. Build a \code{soil_profile} from a structured table with
+\code{\link[=soil_profile_from_table]{soil_profile_from_table()}} and pass it to \code{\link[=plot_soil_profile]{plot_soil_profile()}} or
+\code{\link[=plot_soil_profile_advanced]{plot_soil_profile_advanced()}} instead.
 }

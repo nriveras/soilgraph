@@ -40,12 +40,14 @@ test_that("soil_profile_from_table accepts underscore column names", {
     Horizon = c("A", "B"),
     boundary_grade = c("clear", "gradual"),
     boundary_shape = c("smooth", "wavy"),
+    boundary_thickness_cm = c(2, 9),
     coarse_abundance = c("few", "common"),
     stringsAsFactors = FALSE
   )
 
   profile <- soil_profile_from_table(horizons_df, site_id = "underscore-test")
   expect_equal(profile$horizons[[1]]$boundary_grade, "clear")
+  expect_equal(profile$horizons[[2]]$boundary_thickness_cm, 9)
   expect_equal(profile$horizons[[2]]$coarse_abundance, "common")
 })
 

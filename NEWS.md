@@ -13,6 +13,18 @@
 
 ## New features
 
+* Added optional `boundary_thickness_cm` on `new_soil_horizon()` to control
+  the vertical transition distance at horizon contacts. When omitted, a default
+  thickness is derived from `boundary_grade` (`abrupt` = 1, `clear` = 3,
+  `gradual` = 10, `diffuse` = 20 cm). Boundary distortion amplitude and
+  transition-zone ribbons now scale with this thickness.
+
+* `plot_soil_profile_fragments()` and `plot_soil_profile_advanced()` now render
+  horizon fills as stitched polygons that follow boundary engine paths, so
+  boundary topography and distinctness shape the fill geometry directly instead
+  of being shown only as overlay lines. Transition zones for gradual/diffuse
+  contacts are now path-following ribbons rather than fixed-height rectangles.
+
 * `soil_profile_from_table()` now accepts **structured data frames** with
   explicit columns (`Top`, `Bottom`, `Horizon`, `Texture`, `Color`,
   `BoundaryGrade`, `BoundaryShape`, `CoarseAbundance`, etc.) as the primary

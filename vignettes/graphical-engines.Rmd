@@ -27,7 +27,7 @@ properties into visual attributes:
 | Engine | Encodes | Visual output |
 |---|---|---|
 | **Coarse Fragment Engine** | type, size, abundance, cementation grade | Irregular polygons |
-| **Horizon Boundary Engine** | shape (topography), grade (distinctness) | Irregular boundary lines |
+| **Horizon Boundary Engine** | shape (topography), grade (distinctness) | Irregular polygon edges |
 | **Visualization Utilities** | color, palette, theme, encoding | Themes and helpers |
 
 
@@ -35,6 +35,24 @@ The primary entry point is `plot_soil_profile_advanced()`, which combines all
 three engines in a single call.
 
 ```{r load}
+if (!requireNamespace("soilgraph", quietly = TRUE)) {
+  if (!requireNamespace("devtools", quietly = TRUE)) {
+    stop(
+      "Package 'soilgraph' is not installed. Install it, or install 'devtools' ",
+      "and render from the repository so the package can be loaded from source."
+    )
+  }
+
+  pkg_root_candidates <- c(".", "..")
+  pkg_root <- pkg_root_candidates[file.exists(file.path(pkg_root_candidates, "DESCRIPTION"))][1]
+
+  if (is.na(pkg_root)) {
+    stop("Could not find package root containing DESCRIPTION.")
+  }
+
+  devtools::load_all(path = pkg_root, quiet = TRUE)
+}
+
 library(soilgraph)
 ```
 
@@ -84,7 +102,7 @@ plot_soil_profile(profile)
 plot_soil_profile_fragments(profile, seed = 42)
 ```
 
-```{r advanced-full, fig.cap = "Advanced rendering with polygon fragments, boundary lines, and transition zones."}
+```{r advanced-full, fig.cap = "Advanced rendering with polygon fragments, shaped horizon edges, and transition ribbons."}
 plot_soil_profile_advanced(profile, seed = 42)
 ```
 
@@ -102,7 +120,7 @@ plot_soil_profile_advanced(
 )
 ```
 
-```{r boundaries-only, fig.cap = "Boundaries and transition zones only — fragments disabled."}
+```{r boundaries-only, fig.cap = "Shaped horizon boundaries and transition ribbons only — fragments disabled."}
 plot_soil_profile_advanced(
   profile,
   show_fragments = FALSE,
@@ -253,7 +271,7 @@ plot_soil_profile_advanced(size_profile, show_boundaries = FALSE, seed = 42)
 
 ### Boundary shapes (topography)
 
-Shape determines the **distortion pattern** of the boundary line:
+Shape determines the **distortion pattern** of shared horizon polygon edges:
 
 | Shape | Pattern | Distortion |
 |-------|---------|------------|
@@ -265,14 +283,14 @@ Shape determines the **distortion pattern** of the boundary line:
 
 ### Boundary grades (distinctness)
 
-Grade controls **line thickness** and **dash pattern**:
+Grade controls the **amplitude and smoothing** of edge distortion:
 
-| Grade | Line width | Line type |
-|-------|-----------|-----------|
-| abrupt | 0.8 | solid |
-| clear | 0.5 | solid |
-| gradual | 0.35 | dashed |
-| diffuse | 0.2 | dotted |
+| Grade | Distortion scale | Edge character |
+|-------|------------------|----------------|
+| abrupt | 1.00 | strongest contrast |
+| clear | 0.70 | moderate contrast |
+| gradual | 0.40 | soft contrast |
+| diffuse | 0.15 | very soft contrast |
 
 ```{r boundary-properties, fig.height = 8, fig.cap = "Boundary grade and shape combinations."}
 boundary_profile <- new_soil_profile(
@@ -306,11 +324,51 @@ plot_soil_profile_advanced(
 )
 ```
 
+### High-amplitude boundary case
+
+The example below shows a contact with a large transition thickness and abrupt
+distinctness. This produces strong vertical excursions in the boundary trace,
+which can look like waves with height greater than their apparent width.
+
+```{r boundary-high-amplitude, fig.height = 7.5, fig.cap = "High-amplitude boundary case using boundary_thickness_cm = 16."}
+high_amp_profile <- new_soil_profile(
+  site_id = "High-Amplitude-Boundary",
+  horizons = list(
+    new_soil_horizon(
+      0,
+      28,
+      label = "A",
+      color = "#8F6A52",
+      boundary_shape = "irregular",
+      boundary_grade = "abrupt",
+      boundary_thickness_cm = 16
+    ),
+    new_soil_horizon(
+      28,
+      70,
+      label = "Bt",
+      color = "#A57A5E",
+      boundary_shape = "wavy",
+      boundary_grade = "clear",
+      boundary_thickness_cm = 4
+    )
+  )
+)
+
+plot_soil_profile_advanced(
+  high_amp_profile,
+  show_fragments = FALSE,
+  show_boundaries = TRUE,
+  show_transition_zones = TRUE,
+  seed = 42
+)
+```
+
 ### Transition zones
 
-Gradual and diffuse boundaries generate transparent transition zones that blend
-adjacent horizon colors. Enable them with `show_transition_zones = TRUE`
-(the default).
+Gradual and diffuse boundaries generate transparent transition ribbons that
+follow the same irregular boundary paths. Enable them with
+`show_transition_zones = TRUE` (the default).
 
 ## Seed reproducibility
 
@@ -342,6 +400,10 @@ head(horizon_data[, c("label", "top", "bottom", "fill", "boundary_shape", "coars
 boundary_paths <- soilgraph:::build_boundary_paths(horizon_data, seed = 42)
 head(boundary_paths)
 
+# Build horizon polygons that follow adjacent boundaries
+horizon_polys <- soilgraph:::build_horizon_polygons(horizon_data, boundary_paths)
+head(horizon_polys)
+
 # Generate fragment polygons
 fragment_polys <- soilgraph:::build_fragment_polygons(profile, seed = 42)
 head(fragment_polys)
@@ -356,7 +418,7 @@ The three graphical engines translate soil morphological properties into
 consistent visual encodings:
 
 - **Fragments**: type → shape, size → scale, abundance → count, grade → alpha
-- **Boundaries**: shape → distortion pattern, grade → line weight & dash
+- **Boundaries**: shape → edge distortion pattern, grade → smoothing/amplitude
 - **Utilities**: color validation, palette generation, contrast detection, theming
 
 All engines are deterministic (seeded), composable (toggle independently), and

@@ -11,7 +11,8 @@ build_horizon_plot_data(profile)
 }
 \value{
 Data frame with columns: horizon_index, label, top, bottom, fill,
-midpoint, boundary_shape, boundary_grade, coarse_abundance, coarse_grade,
+midpoint, boundary_shape, boundary_grade, boundary_thickness_cm,
+coarse_abundance, coarse_grade,
 coarse_type, coarse_size, coarse_color, coarse_percent
 }
 \description{

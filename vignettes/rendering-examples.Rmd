@@ -23,6 +23,24 @@ This gallery shows a variety of soil profile renderings using the soilgraph
 graphical engines. Each example includes the code and rendered plot.
 
 ```{r load}
+if (!requireNamespace("soilgraph", quietly = TRUE)) {
+  if (!requireNamespace("devtools", quietly = TRUE)) {
+    stop(
+      "Package 'soilgraph' is not installed. Install it, or install 'devtools' ",
+      "and render from the repository so the package can be loaded from source."
+    )
+  }
+
+  pkg_root_candidates <- c(".", "..")
+  pkg_root <- pkg_root_candidates[file.exists(file.path(pkg_root_candidates, "DESCRIPTION"))][1]
+
+  if (is.na(pkg_root)) {
+    stop("Could not find package root containing DESCRIPTION.")
+  }
+
+  devtools::load_all(path = pkg_root, quiet = TRUE)
+}
+
 library(soilgraph)
 ```
 
@@ -62,7 +80,7 @@ plot_soil_profile_advanced(profile_1, seed = 42)
 
 ## 2. Deep sandy profile
 
-A deep sandy soil with few fragments and smooth boundaries — a clean,
+A deep sandy soil with few fragments and smooth polygon edges — a clean,
 minimal rendering:
 
 ```{r sandy, fig.height = 8, fig.cap = "Deep sandy profile with smooth boundaries."}
@@ -154,7 +172,7 @@ plot_soil_profile_advanced(profile_4, show_boundaries = FALSE, seed = 42)
 
 ## 5. Boundary showcase
 
-Four grade × shape combinations with transition zones:
+Four grade x shape combinations showing edge distortion and transition ribbons:
 
 ```{r boundary-showcase, fig.height = 8, fig.cap = "Boundary grade and shape demonstration."}
 profile_5 <- new_soil_profile(
@@ -188,7 +206,21 @@ plot_soil_profile_advanced(
 )
 ```
 
-## 6. Fragment abundance gradient
+## 6. Flat-edge fallback
+
+Disable shaped contacts to render flat horizon edges in advanced mode:
+
+```{r flat-fallback, fig.cap = "Advanced renderer with shaped boundaries disabled (flat fallback)."}
+plot_soil_profile_advanced(
+  profile_5,
+  show_fragments = FALSE,
+  show_boundaries = FALSE,
+  show_transition_zones = TRUE,
+  seed = 42
+)
+```
+
+## 7. Fragment abundance gradient
 
 From very few to abundant fragments in identical horizons:
 
@@ -215,7 +247,7 @@ profile_6 <- new_soil_profile(
 plot_soil_profile_advanced(profile_6, show_boundaries = FALSE, seed = 42)
 ```
 
-## 7. From field notes to advanced plot
+## 8. From field notes to advanced plot
 
 End-to-end workflow — field notes parsed and rendered with advanced engines:
 
@@ -238,7 +270,7 @@ profile_7 <- soil_profile_from_table(
 plot_soil_profile_advanced(profile_7, seed = 42)
 ```
 
-## 8. Seed variation
+## 9. Seed variation
 
 Same profile rendered with three different seeds — structures differ but properties
 are preserved:

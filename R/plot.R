@@ -110,6 +110,7 @@ plot_soil_profile_fragments <- function(profile, seed = 1) {
 
   horizon_data <- build_horizon_plot_data(profile)
   boundary_data <- build_boundary_paths(horizon_data, seed = seed)
+  horizon_polygons <- build_horizon_polygons(horizon_data, boundary_data = boundary_data)
   fragment_data <- build_fragment_layout(horizon_data, seed = seed)
 
   fragment_shape_values <- c(
@@ -122,28 +123,17 @@ plot_soil_profile_fragments <- function(profile, seed = 1) {
   )
 
   plot <- ggplot2::ggplot() +
-    ggplot2::geom_rect(
-      data = horizon_data,
+    ggplot2::geom_polygon(
+      data = horizon_polygons,
       ggplot2::aes(
-        xmin = 0,
-        xmax = 1,
-        ymin = .data$top,
-        ymax = .data$bottom,
+        x = .data$x,
+        y = .data$y,
+        group = .data$polygon_id,
         fill = .data$fill
       ),
       color = "#2F241D",
-      linewidth = 0.3
+      linewidth = 0.15
     )
-
-  if (nrow(boundary_data) > 0) {
-    plot <- plot +
-      ggplot2::geom_path(
-        data = boundary_data,
-        ggplot2::aes(x = .data$x, y = .data$y, group = .data$boundary_id),
-        color = "#1B1B1B",
-        linewidth = 0.5
-      )
-  }
 
   plot <- plot +
     ggplot2::geom_text(
@@ -203,7 +193,8 @@ plot_soil_profile_fragments <- function(profile, seed = 1) {
 #'
 #' @param profile A `soil_profile` object.
 #' @param show_fragments Logical: whether to render coarse fragments as polygons.
-#' @param show_boundaries Logical: whether to render boundary transitions.
+#' @param show_boundaries Logical: whether horizon fills should follow encoded
+#'   boundary shapes (TRUE) or use flat contacts (FALSE).
 #' @param show_transition_zones Logical: whether to show gradual/diffuse transition zones.
 #' @param seed Random seed for deterministic rendering.
 #'
@@ -219,35 +210,33 @@ plot_soil_profile_advanced <- function(
   .data <- rlang::.data
 
   horizon_data <- build_horizon_plot_data(profile)
+  boundary_data <- if (show_boundaries) {
+    build_boundary_paths(horizon_data, seed = seed)
+  } else {
+    data.frame()
+  }
+  horizon_polygons <- build_horizon_polygons(horizon_data, boundary_data = boundary_data)
 
   # Starting plot with horizon backgrounds
   plot <- ggplot2::ggplot() +
-    ggplot2::geom_rect(
-      data = horizon_data,
+    ggplot2::geom_polygon(
+      data = horizon_polygons,
       ggplot2::aes(
-        xmin = 0,
-        xmax = 1,
-        ymin = .data$top,
-        ymax = .data$bottom,
+        x = .data$x,
+        y = .data$y,
+        group = .data$polygon_id,
         fill = .data$fill
       ),
       color = "#2F241D",
-      linewidth = 0.3
+      linewidth = 0.15
     ) +
     ggplot2::scale_fill_identity()
 
   # Add transition zones if requested
-  if (show_transition_zones) {
+  if (show_transition_zones && show_boundaries) {
     zone_data <- build_boundary_transition_zones(horizon_data, seed = seed)
     zone_layers <- layer_boundary_transition_zones(zone_data)
     plot <- plot + zone_layers
-  }
-
-  # Add boundary lines if requested
-  if (show_boundaries) {
-    boundary_data <- build_boundary_paths(horizon_data, seed = seed)
-    boundary_layers <- layer_horizon_boundaries(boundary_data)
-    plot <- plot + boundary_layers
   }
 
   # Add coarse fragment polygons if requested

@@ -21,6 +21,24 @@ level carries its own set of properties. This article documents the supported
 fields, vocabularies, and the `.soil.json` storage format.
 
 ```{r load}
+if (!requireNamespace("soilgraph", quietly = TRUE)) {
+  if (!requireNamespace("devtools", quietly = TRUE)) {
+    stop(
+      "Package 'soilgraph' is not installed. Install it, or install 'devtools' ",
+      "and render from the repository so the package can be loaded from source."
+    )
+  }
+
+  pkg_root_candidates <- c(".", "..")
+  pkg_root <- pkg_root_candidates[file.exists(file.path(pkg_root_candidates, "DESCRIPTION"))][1]
+
+  if (is.na(pkg_root)) {
+    stop("Could not find package root containing DESCRIPTION.")
+  }
+
+  devtools::load_all(path = pkg_root, quiet = TRUE)
+}
+
 library(soilgraph)
 ```
 
@@ -75,6 +93,7 @@ supported fields:
 |-------|------|-------------------|
 | `boundary_grade` | string | `abrupt`, `clear`, `gradual`, `diffuse` |
 | `boundary_shape` | string | `smooth`, `wavy`, `irregular`, `broken`, `discontinuous` |
+| `boundary_thickness_cm` | numeric | Optional transition thickness in cm; defaults by grade (`1`, `3`, `10`, `20`) |
 
 ### Coarse fragments
 
@@ -97,6 +116,7 @@ h <- new_soil_horizon(
   moisture = "moist",
   boundary_grade = "clear",
   boundary_shape = "smooth",
+  boundary_thickness_cm = 4,
   coarse_abundance = "few",
   coarse_shape = "subangular",
   coarse_grade = "weak",

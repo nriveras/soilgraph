@@ -20,6 +20,25 @@ test_that("plot_soil_profile_fragments returns ggplot", {
   expect_s3_class(plot_soil_profile_fragments(p, seed = 1), "ggplot")
 })
 
+test_that("plot_soil_profile_fragments uses polygon horizons", {
+  h1 <- new_soil_horizon(0, 18,
+    label = "Ap", color = "#5C4033",
+    boundary_shape = "wavy", boundary_grade = "clear"
+  )
+  h2 <- new_soil_horizon(18, 52,
+    label = "Bt1", color = "#8A5A44"
+  )
+  p <- new_soil_profile("test-poly", list(h1, h2))
+
+  layer_classes <- vapply(
+    plot_soil_profile_fragments(p, seed = 1)$layers,
+    function(layer) class(layer$geom)[1],
+    character(1)
+  )
+
+  expect_true("GeomPolygon" %in% layer_classes)
+})
+
 test_that("plot_soil_description emits deprecation warning", {
   notes <- data.frame(
     Depth = c("0-18 cm", "18-52 cm"),
@@ -55,6 +74,25 @@ test_that("single-horizon profile plots without error", {
   suppressWarnings(expect_s3_class(
     plot_soil_profile_advanced(p, seed = 1), "ggplot"
   ))
+})
+
+test_that("plot_soil_profile_advanced uses polygon horizons", {
+  h1 <- new_soil_horizon(0, 20,
+    label = "A", color = "#5C4033",
+    boundary_shape = "wavy", boundary_grade = "gradual"
+  )
+  h2 <- new_soil_horizon(20, 50,
+    label = "B", color = "#8A5A44"
+  )
+  p <- new_soil_profile("test-advanced-poly", list(h1, h2))
+
+  layer_classes <- vapply(
+    plot_soil_profile_advanced(p, seed = 1)$layers,
+    function(layer) class(layer$geom)[1],
+    character(1)
+  )
+
+  expect_true("GeomPolygon" %in% layer_classes)
 })
 
 test_that("profile with no coarse fragments renders in fragment mode", {
@@ -122,12 +160,42 @@ test_that("build_horizon_plot_data returns expected columns", {
   expect_s3_class(hd, "data.frame")
   expected_cols <- c(
     "horizon_index", "label", "top", "bottom", "fill",
-    "midpoint", "boundary_shape", "boundary_grade",
+    "midpoint", "boundary_shape", "boundary_grade", "boundary_thickness_cm",
     "coarse_abundance", "coarse_type"
   )
   for (col in expected_cols) {
     expect_true(col %in% names(hd), info = paste("missing column:", col))
   }
+})
+
+test_that("boundary thickness defaults follow boundary grade", {
+  h1 <- new_soil_horizon(0, 20, label = "A", boundary_grade = "abrupt")
+  h2 <- new_soil_horizon(20, 50, label = "B", boundary_grade = "diffuse")
+  p <- new_soil_profile("thickness-defaults", list(h1, h2))
+
+  hd <- build_horizon_plot_data(p)
+  expect_equal(hd$boundary_thickness_cm[[1]], 1)
+  expect_equal(hd$boundary_thickness_cm[[2]], 20)
+})
+
+test_that("explicit boundary thickness overrides grade-derived defaults", {
+  h1 <- new_soil_horizon(
+    0,
+    20,
+    label = "A",
+    boundary_grade = "abrupt",
+    boundary_shape = "wavy",
+    boundary_thickness_cm = 12
+  )
+  h2 <- new_soil_horizon(20, 50, label = "B")
+  p <- new_soil_profile("thickness-override", list(h1, h2))
+
+  hd <- build_horizon_plot_data(p)
+  expect_equal(hd$boundary_thickness_cm[[1]], 12)
+
+  boundary <- build_boundary_paths(hd, seed = 1)
+  b1 <- boundary[boundary$boundary_id == "b1", ]
+  expect_true(max(abs(b1$y - h1$bottom)) > 1)
 })
 
 test_that("create_fragment_encoding returns list with mappings", {

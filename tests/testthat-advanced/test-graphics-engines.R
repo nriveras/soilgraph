@@ -154,6 +154,40 @@ test_that("build_boundary_paths generates boundary data", {
   expect_true(all(c("boundary_id", "x", "y", "boundary_shape", "boundary_grade") %in% names(boundaries)))
 })
 
+test_that("build_horizon_polygons builds closed path-following polygons", {
+  profile <- new_soil_profile(
+    site_id = "test",
+    horizons = list(
+      new_soil_horizon(
+        top = 0,
+        bottom = 20,
+        label = "A",
+        color = "#8B7355",
+        boundary_shape = "wavy",
+        boundary_grade = "clear"
+      ),
+      new_soil_horizon(
+        top = 20,
+        bottom = 50,
+        label = "B",
+        color = "#A0826D"
+      )
+    )
+  )
+
+  horizon_data <- build_horizon_plot_data(profile)
+  boundaries <- build_boundary_paths(horizon_data, seed = 42)
+  polygons <- build_horizon_polygons(horizon_data, boundary_data = boundaries)
+
+  expect_true(is.data.frame(polygons))
+  expect_true(nrow(polygons) > 0)
+  expect_true(all(c("x", "y", "fill", "polygon_id", "horizon_index") %in% names(polygons)))
+  expect_identical(length(unique(polygons$polygon_id)), 2L)
+
+  horizon_one <- polygons[polygons$polygon_id == "h1", ]
+  expect_true(length(unique(horizon_one$y)) > 1)
+})
+
 test_that("build_boundary_transition_zones creates appropriate zones", {
   profile <- new_soil_profile(
     site_id = "test",
@@ -183,9 +217,9 @@ test_that("build_boundary_transition_zones creates appropriate zones", {
   zones <- build_boundary_transition_zones(horizon_data, seed = 42)
 
   expect_true(is.data.frame(zones))
-  # Should have 2 zones (between horizons)
-  expect_identical(nrow(zones), 2L)
-  expect_true(all(c("boundary_id", "ymin", "ymax", "zone_alpha") %in% names(zones)))
+  expect_true(nrow(zones) > 0)
+  expect_identical(length(unique(zones$boundary_id)), 2L)
+  expect_true(all(c("boundary_id", "x", "y", "zone_alpha", "zone_grade") %in% names(zones)))
 })
 
 test_that("plot_soil_profile_advanced renders without error", {

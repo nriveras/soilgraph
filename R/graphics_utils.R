@@ -28,7 +28,8 @@ is_valid_color <- function(value) {
 #' @param profile A `soil_profile` object
 #'
 #' @return Data frame with columns: horizon_index, label, top, bottom, fill,
-#'   midpoint, boundary_shape, boundary_grade, coarse_abundance, coarse_grade,
+#'   midpoint, boundary_shape, boundary_grade, boundary_thickness_cm,
+#'   coarse_abundance, coarse_grade,
 #'   coarse_type, coarse_size, coarse_color, coarse_percent
 #' @keywords internal
 build_horizon_plot_data <- function(profile) {
@@ -70,6 +71,16 @@ build_horizon_plot_data <- function(profile) {
       function(horizon) tolower(horizon$boundary_grade %||% "clear"),
       character(1)
     ),
+    boundary_thickness_cm = vapply(
+      profile$horizons,
+      function(horizon) {
+        resolve_boundary_thickness_cm(
+          grade = horizon$boundary_grade %||% "clear",
+          thickness_cm = horizon$boundary_thickness_cm
+        )
+      },
+      numeric(1)
+    ),
     coarse_abundance = vapply(
       profile$horizons,
       function(horizon) tolower(horizon$coarse_abundance %||% "few"),
@@ -105,6 +116,32 @@ build_horizon_plot_data <- function(profile) {
 
   data$midpoint <- (data$top + data$bottom) / 2
   data
+}
+
+#' Resolve boundary transition thickness
+#'
+#' Converts optional boundary thickness inputs to a numeric value in centimeters,
+#' falling back to conventional defaults from boundary grade.
+#'
+#' @param grade Character boundary grade.
+#' @param thickness_cm Optional numeric thickness in centimeters.
+#'
+#' @return Numeric boundary thickness in centimeters.
+#' @keywords internal
+resolve_boundary_thickness_cm <- function(grade = "clear", thickness_cm = NULL) {
+  if (!is.null(thickness_cm) && is.finite(thickness_cm) && thickness_cm >= 0) {
+    return(as.numeric(thickness_cm))
+  }
+
+  grade <- tolower(grade %||% "clear")
+
+  switch(grade,
+    "abrupt" = 1,
+    "clear" = 3,
+    "gradual" = 10,
+    "diffuse" = 20,
+    3
+  )
 }
 
 #' Generate a description of soil profile visualization

@@ -17,7 +17,8 @@ plot_soil_profile_advanced(
 
 \item{show_fragments}{Logical: whether to render coarse fragments as polygons.}
 
-\item{show_boundaries}{Logical: whether to render boundary transitions.}
+\item{show_boundaries}{Logical: whether horizon fills should follow encoded
+boundary shapes (TRUE) or use flat contacts (FALSE).}
 
 \item{show_transition_zones}{Logical: whether to show gradual/diffuse transition zones.}
 

@@ -324,6 +324,46 @@ plot_soil_profile_advanced(
 )
 ```
 
+### High-amplitude boundary case
+
+The example below shows a contact with a large transition thickness and abrupt
+distinctness. This produces strong vertical excursions in the boundary trace,
+which can look like waves with height greater than their apparent width.
+
+```{r boundary-high-amplitude, fig.height = 7.5, fig.cap = "High-amplitude boundary case using boundary_thickness_cm = 16."}
+high_amp_profile <- new_soil_profile(
+  site_id = "High-Amplitude-Boundary",
+  horizons = list(
+    new_soil_horizon(
+      0,
+      28,
+      label = "A",
+      color = "#8F6A52",
+      boundary_shape = "irregular",
+      boundary_grade = "abrupt",
+      boundary_thickness_cm = 16
+    ),
+    new_soil_horizon(
+      28,
+      70,
+      label = "Bt",
+      color = "#A57A5E",
+      boundary_shape = "wavy",
+      boundary_grade = "clear",
+      boundary_thickness_cm = 4
+    )
+  )
+)
+
+plot_soil_profile_advanced(
+  high_amp_profile,
+  show_fragments = FALSE,
+  show_boundaries = TRUE,
+  show_transition_zones = TRUE,
+  seed = 42
+)
+```
+
 ### Transition zones
 
 Gradual and diffuse boundaries generate transparent transition ribbons that

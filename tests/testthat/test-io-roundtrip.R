@@ -3,6 +3,7 @@ test_that("JSON round-trip preserves all fields", {
     label = "Ap", color = "#5C4033",
     texture = "silt loam", moisture = "moist",
     boundary_grade = "clear", boundary_shape = "smooth",
+    boundary_thickness_cm = 4,
     coarse_abundance = "few", coarse_type = "gravel",
     coarse_grade = "weak", coarse_size = "fine",
     notes = "Round-trip test horizon"
@@ -36,6 +37,7 @@ test_that("JSON round-trip preserves all fields", {
   expect_equal(reloaded$horizons[[1]]$texture, "silt loam")
   expect_equal(reloaded$horizons[[1]]$color, "#5C4033")
   expect_equal(reloaded$horizons[[1]]$boundary_grade, "clear")
+  expect_equal(reloaded$horizons[[1]]$boundary_thickness_cm, 4)
   expect_equal(reloaded$horizons[[1]]$coarse_type, "gravel")
   expect_equal(reloaded$horizons[[1]]$notes, "Round-trip test horizon")
   expect_equal(reloaded$horizons[[2]]$label, "Bt1")

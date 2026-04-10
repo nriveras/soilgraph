@@ -13,6 +13,7 @@ new_soil_horizon(
   moisture = NULL,
   boundary_grade = NULL,
   boundary_shape = NULL,
+  boundary_thickness_cm = NULL,
   coarse_abundance = NULL,
   coarse_shape = NULL,
   coarse_grade = NULL,
@@ -39,6 +40,8 @@ new_soil_horizon(
 \item{boundary_grade}{Optional horizon boundary distinctness.}
 
 \item{boundary_shape}{Optional horizon boundary topography.}
+
+\item{boundary_thickness_cm}{Optional boundary transition thickness in centimeters.}
 
 \item{coarse_abundance}{Optional coarse fragment abundance.}
 

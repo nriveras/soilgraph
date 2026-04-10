@@ -8,6 +8,7 @@ generate_boundary_path(
   depth_cm,
   boundary_shape = "smooth",
   boundary_grade = "clear",
+  thickness_cm = NULL,
   x_range = c(0, 1),
   seed = 1,
   boundary_id = "boundary"
@@ -19,6 +20,8 @@ generate_boundary_path(
 \item{boundary_shape}{Character: "smooth", "wavy", "irregular", "broken", "discontinuous"}
 
 \item{boundary_grade}{Character: "abrupt", "clear", "gradual", "diffuse"}
+
+\item{thickness_cm}{Optional boundary transition thickness in centimeters.}
 
 \item{x_range}{Numeric vector of length 2: x-coordinate range (default: 0 to 1)}
 

@@ -12,6 +12,7 @@
 #' @param depth_cm Numeric depth value (y-coordinate) of the boundary
 #' @param boundary_shape Character: "smooth", "wavy", "irregular", "broken", "discontinuous"
 #' @param boundary_grade Character: "abrupt", "clear", "gradual", "diffuse"
+#' @param thickness_cm Optional boundary transition thickness in centimeters.
 #' @param x_range Numeric vector of length 2: x-coordinate range (default: 0 to 1)
 #' @param seed Random seed for reproducible generation
 #' @param boundary_id Character: unique identifier for the boundary
@@ -22,11 +23,16 @@ generate_boundary_path <- function(
     depth_cm,
     boundary_shape = "smooth",
     boundary_grade = "clear",
+    thickness_cm = NULL,
     x_range = c(0, 1),
     seed = 1,
     boundary_id = "boundary") {
   boundary_shape <- tolower(boundary_shape %||% "smooth")
   boundary_grade <- tolower(boundary_grade %||% "clear")
+  thickness_cm <- resolve_boundary_thickness_cm(
+    grade = boundary_grade,
+    thickness_cm = thickness_cm
+  )
 
   # Generate base x-coordinates
   n_points <- 200
@@ -37,6 +43,7 @@ generate_boundary_path <- function(
   shape_distortion <- generate_boundary_distortion(
     x_vals = x_vals,
     shape = boundary_shape,
+    amplitude_cm = thickness_cm,
     seed = seed
   )
 
@@ -55,6 +62,7 @@ generate_boundary_path <- function(
     boundary_id = boundary_id,
     boundary_shape = boundary_shape,
     boundary_grade = boundary_grade,
+    boundary_thickness_cm = thickness_cm,
     stringsAsFactors = FALSE
   )
 }
@@ -63,20 +71,22 @@ generate_boundary_path <- function(
 #'
 #' @param x_vals Numeric vector of x-coordinates
 #' @param shape Character: boundary shape type
+#' @param amplitude_cm Numeric transition thickness scale in centimeters
 #' @param seed Random seed
 #'
 #' @return Numeric vector of y-distortions
 #' @keywords internal
-generate_boundary_distortion <- function(x_vals, shape = "smooth", seed = 1) {
+generate_boundary_distortion <- function(x_vals, shape = "smooth", amplitude_cm = 3, seed = 1) {
   n <- length(x_vals)
   distortion <- rep(0, n)
+  amplitude_cm <- max(as.numeric(amplitude_cm %||% 0), 0)
 
   if (identical(shape, "smooth")) {
     # No distortion
     distortion <- rep(0, n)
   } else if (identical(shape, "wavy")) {
     # Smooth, regular waves
-    distortion <- 0.6 * sin(seq(0, 8 * pi, length.out = n))
+    distortion <- 0.4 * amplitude_cm * sin(seq(0, 8 * pi, length.out = n))
   } else if (identical(shape, "irregular")) {
     # Irregular with noise
     set.seed(seed)
@@ -84,13 +94,15 @@ generate_boundary_distortion <- function(x_vals, shape = "smooth", seed = 1) {
     raw_noise <- stats::rnorm(n, mean = 0, sd = 0.08)
     distortion <- cumsum(raw_noise)
     distortion <- distortion - mean(distortion)
-    distortion <- distortion * (0.7 / max(abs(distortion)))
+    if (max(abs(distortion)) > 0) {
+      distortion <- distortion * ((0.5 * amplitude_cm) / max(abs(distortion)))
+    }
   } else if (identical(shape, "broken")) {
     # Sharp, discontinuous changes
     set.seed(seed)
     # Create segments with random offsets
     segment_length <- as.integer(n / 8)
-    segment_offsets <- stats::rnorm(8, 0, 0.4)
+    segment_offsets <- stats::rnorm(8, 0, 0.6 * amplitude_cm)
 
     for (i in seq_along(segment_offsets)) {
       start_idx <- (i - 1) * segment_length + 1
@@ -99,7 +111,7 @@ generate_boundary_distortion <- function(x_vals, shape = "smooth", seed = 1) {
     }
 
     # Add small noise within segments
-    distortion <- distortion + stats::rnorm(n, 0, 0.05)
+    distortion <- distortion + stats::rnorm(n, 0, 0.08 * amplitude_cm)
   } else if (identical(shape, "discontinuous")) {
     # Patchy, intermittent discontinuities
     set.seed(seed)
@@ -108,11 +120,11 @@ generate_boundary_distortion <- function(x_vals, shape = "smooth", seed = 1) {
     positions <- sample(seq(1, n - patch_size), 4, replace = FALSE)
 
     for (pos in positions) {
-      patch_depth <- stats::rnorm(1, 0.5, 0.2)
+      patch_depth <- stats::rnorm(1, 0.5 * amplitude_cm, 0.2 * amplitude_cm)
       distortion[pos:(pos + patch_size - 1)] <- patch_depth
     }
 
-    distortion <- distortion + stats::rnorm(n, 0, 0.03)
+    distortion <- distortion + stats::rnorm(n, 0, 0.06 * amplitude_cm)
   }
 
   distortion
@@ -184,11 +196,13 @@ build_boundary_paths <- function(horizon_data, seed = 1) {
     depth <- horizon_data$bottom[[index]]
     shape <- horizon_data$boundary_shape[[index]]
     grade <- horizon_data$boundary_grade[[index]]
+    thickness <- horizon_data$boundary_thickness_cm[[index]]
 
     generate_boundary_path(
       depth_cm = depth,
       boundary_shape = shape,
       boundary_grade = grade,
+      thickness_cm = thickness,
       seed = seed + index,
       boundary_id = paste0("b", index)
     )
@@ -363,17 +377,22 @@ build_boundary_transition_zones <- function(horizon_data, seed = 1) {
 
   zone_rows <- lapply(seq_len(nrow(horizon_data) - 1), function(index) {
     grade <- tolower(horizon_data$boundary_grade[[index]] %||% "clear")
-
-    # Only create zones for gradual/diffuse boundaries
-    zone_height <- switch(grade,
-      "gradual" = 2.5,
-      "diffuse" = 5.0,
-      0 # no zone for abrupt/clear
+    thickness_cm <- resolve_boundary_thickness_cm(
+      grade = grade,
+      thickness_cm = horizon_data$boundary_thickness_cm[[index]]
     )
 
-    if (zone_height <= 0) {
+    if (thickness_cm <= 0) {
       return(NULL)
     }
+
+    zone_alpha <- switch(grade,
+      "abrupt" = 0.03,
+      "clear" = 0.05,
+      "gradual" = 0.08,
+      "diffuse" = 0.12,
+      0.05
+    )
 
     boundary_id <- paste0("b", index)
     boundary <- boundary_data[boundary_data$boundary_id == boundary_id, c("x", "y")]
@@ -383,15 +402,17 @@ build_boundary_transition_zones <- function(horizon_data, seed = 1) {
     }
 
     zone_id <- paste0("zone", index)
+    upper <- boundary
     lower <- boundary
-    lower$y <- lower$y + zone_height
+    upper$y <- upper$y - (thickness_cm / 2)
+    lower$y <- lower$y + (thickness_cm / 2)
 
     rbind(
       data.frame(
         boundary_id = zone_id,
-        x = boundary$x,
-        y = boundary$y,
-        zone_alpha = 0.08,
+        x = upper$x,
+        y = upper$y,
+        zone_alpha = zone_alpha,
         zone_grade = grade,
         stringsAsFactors = FALSE
       ),
@@ -399,7 +420,7 @@ build_boundary_transition_zones <- function(horizon_data, seed = 1) {
         boundary_id = zone_id,
         x = rev(lower$x),
         y = rev(lower$y),
-        zone_alpha = 0.08,
+        zone_alpha = zone_alpha,
         zone_grade = grade,
         stringsAsFactors = FALSE
       )

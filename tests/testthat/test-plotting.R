@@ -160,12 +160,42 @@ test_that("build_horizon_plot_data returns expected columns", {
   expect_s3_class(hd, "data.frame")
   expected_cols <- c(
     "horizon_index", "label", "top", "bottom", "fill",
-    "midpoint", "boundary_shape", "boundary_grade",
+    "midpoint", "boundary_shape", "boundary_grade", "boundary_thickness_cm",
     "coarse_abundance", "coarse_type"
   )
   for (col in expected_cols) {
     expect_true(col %in% names(hd), info = paste("missing column:", col))
   }
+})
+
+test_that("boundary thickness defaults follow boundary grade", {
+  h1 <- new_soil_horizon(0, 20, label = "A", boundary_grade = "abrupt")
+  h2 <- new_soil_horizon(20, 50, label = "B", boundary_grade = "diffuse")
+  p <- new_soil_profile("thickness-defaults", list(h1, h2))
+
+  hd <- build_horizon_plot_data(p)
+  expect_equal(hd$boundary_thickness_cm[[1]], 1)
+  expect_equal(hd$boundary_thickness_cm[[2]], 20)
+})
+
+test_that("explicit boundary thickness overrides grade-derived defaults", {
+  h1 <- new_soil_horizon(
+    0,
+    20,
+    label = "A",
+    boundary_grade = "abrupt",
+    boundary_shape = "wavy",
+    boundary_thickness_cm = 12
+  )
+  h2 <- new_soil_horizon(20, 50, label = "B")
+  p <- new_soil_profile("thickness-override", list(h1, h2))
+
+  hd <- build_horizon_plot_data(p)
+  expect_equal(hd$boundary_thickness_cm[[1]], 12)
+
+  boundary <- build_boundary_paths(hd, seed = 1)
+  b1 <- boundary[boundary$boundary_id == "b1", ]
+  expect_true(max(abs(b1$y - h1$bottom)) > 1)
 })
 
 test_that("create_fragment_encoding returns list with mappings", {

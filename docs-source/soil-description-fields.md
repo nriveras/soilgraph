@@ -80,6 +80,7 @@ Each horizon object should include:
 
 - boundary_grade: String or null
 - boundary_shape: String or null
+- boundary_thickness_cm: Number or null
 
 Suggested boundary_grade vocabulary:
 - abrupt
@@ -93,6 +94,12 @@ Suggested boundary_shape vocabulary:
 - irregular
 - broken
 - discontinuous
+
+Suggested default boundary_thickness_cm values when missing:
+- abrupt: 1
+- clear: 3
+- gradual: 10
+- diffuse: 20
 
 ### Redox and Wetness Features
 

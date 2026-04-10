@@ -93,6 +93,7 @@ supported fields:
 |-------|------|-------------------|
 | `boundary_grade` | string | `abrupt`, `clear`, `gradual`, `diffuse` |
 | `boundary_shape` | string | `smooth`, `wavy`, `irregular`, `broken`, `discontinuous` |
+| `boundary_thickness_cm` | numeric | Optional transition thickness in cm; defaults by grade (`1`, `3`, `10`, `20`) |
 
 ### Coarse fragments
 
@@ -115,6 +116,7 @@ h <- new_soil_horizon(
   moisture = "moist",
   boundary_grade = "clear",
   boundary_shape = "smooth",
+  boundary_thickness_cm = 4,
   coarse_abundance = "few",
   coarse_shape = "subangular",
   coarse_grade = "weak",

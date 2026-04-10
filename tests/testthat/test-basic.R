@@ -22,6 +22,13 @@ test_that("Basic horizon creation works", {
   expect_true(inherits(h, "soil_horizon"))
 })
 
+test_that("Boundary thickness validation rejects negative values", {
+  expect_error(
+    new_soil_horizon(0, 10, label = "A", boundary_thickness_cm = -1),
+    "boundary_thickness_cm"
+  )
+})
+
 test_that("Basic profile creation works", {
   h <- new_soil_horizon(0, 10, label = "A")
   p <- new_soil_profile("TEST", list(h))

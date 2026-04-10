@@ -4,12 +4,19 @@
 \alias{generate_boundary_distortion}
 \title{Generate positional distortion for boundary shape}
 \usage{
-generate_boundary_distortion(x_vals, shape = "smooth", seed = 1)
+generate_boundary_distortion(
+  x_vals,
+  shape = "smooth",
+  amplitude_cm = 3,
+  seed = 1
+)
 }
 \arguments{
 \item{x_vals}{Numeric vector of x-coordinates}
 
 \item{shape}{Character: boundary shape type}
+
+\item{amplitude_cm}{Numeric transition thickness scale in centimeters}
 
 \item{seed}{Random seed}
 }

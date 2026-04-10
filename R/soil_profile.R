@@ -8,6 +8,7 @@
 #' @param moisture Optional moisture state.
 #' @param boundary_grade Optional horizon boundary distinctness.
 #' @param boundary_shape Optional horizon boundary topography.
+#' @param boundary_thickness_cm Optional boundary transition thickness in centimeters.
 #' @param coarse_abundance Optional coarse fragment abundance.
 #' @param coarse_shape Optional coarse fragment shape.
 #' @param coarse_grade Optional coarse fragment grade.
@@ -28,6 +29,7 @@ new_soil_horizon <- function(
     moisture = NULL,
     boundary_grade = NULL,
     boundary_shape = NULL,
+    boundary_thickness_cm = NULL,
     coarse_abundance = NULL,
     coarse_shape = NULL,
     coarse_grade = NULL,
@@ -56,6 +58,11 @@ new_soil_horizon <- function(
     moisture = validate_optional_string(moisture, "moisture"),
     boundary_grade = validate_optional_string(boundary_grade, "boundary_grade"),
     boundary_shape = validate_optional_string(boundary_shape, "boundary_shape"),
+    boundary_thickness_cm = validate_optional_number(
+      boundary_thickness_cm,
+      "boundary_thickness_cm",
+      min = 0
+    ),
     coarse_abundance = validate_optional_string(coarse_abundance, "coarse_abundance"),
     coarse_shape = validate_optional_string(coarse_shape, "coarse_shape"),
     coarse_grade = validate_optional_string(coarse_grade, "coarse_grade"),

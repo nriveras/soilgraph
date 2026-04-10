@@ -258,6 +258,7 @@ build_profile_from_structured <- function(data, site_id, classification, metadat
   moisture_idx <- col_index("moisture")
   boundary_grade_idx <- col_index("boundarygrade") %||% col_index("boundary_grade")
   boundary_shape_idx <- col_index("boundaryshape") %||% col_index("boundary_shape")
+  boundary_thickness_idx <- col_index("boundarythicknesscm") %||% col_index("boundary_thickness_cm")
   coarse_abundance_idx <- col_index("coarseabundance") %||% col_index("coarse_abundance")
   coarse_shape_idx <- col_index("coarseshape") %||% col_index("coarse_shape")
   coarse_grade_idx <- col_index("coarsegrade") %||% col_index("coarse_grade")
@@ -293,6 +294,7 @@ build_profile_from_structured <- function(data, site_id, classification, metadat
       moisture = get_val(index, moisture_idx),
       boundary_grade = get_val(index, boundary_grade_idx),
       boundary_shape = get_val(index, boundary_shape_idx),
+      boundary_thickness_cm = get_num(index, boundary_thickness_idx),
       coarse_abundance = get_val(index, coarse_abundance_idx),
       coarse_shape = get_val(index, coarse_shape_idx),
       coarse_grade = get_val(index, coarse_grade_idx),

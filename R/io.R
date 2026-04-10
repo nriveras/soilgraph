@@ -45,6 +45,7 @@ read_soil_json <- function(path) {
       moisture = horizon$moisture,
       boundary_grade = horizon$boundary_grade,
       boundary_shape = horizon$boundary_shape,
+      boundary_thickness_cm = horizon$boundary_thickness_cm,
       coarse_abundance = horizon$coarse_abundance,
       coarse_shape = horizon$coarse_shape,
       coarse_grade = horizon$coarse_grade,

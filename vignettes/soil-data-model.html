@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Soil Description Data Model</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Soil Description Data Model</h1>
+
+
+
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>soilgraph uses a two-level data model: <strong>profiles</strong>
+contain <strong>horizons</strong>. Each level carries its own set of
+properties. This article documents the supported fields, vocabularies,
+and the <code>.soil.json</code> storage format.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;soilgraph&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;devtools&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>    <span class="fu">stop</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>      <span class="st">&quot;Package &#39;soilgraph&#39; is not installed. Install it, or install &#39;devtools&#39; &quot;</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>      <span class="st">&quot;and render from the repository so the package can be loaded from source.&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>    )</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>  }</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>  pkg_root_candidates <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>, <span class="st">&quot;..&quot;</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>  pkg_root <span class="ot">&lt;-</span> pkg_root_candidates[<span class="fu">file.exists</span>(<span class="fu">file.path</span>(pkg_root_candidates, <span class="st">&quot;DESCRIPTION&quot;</span>))][<span class="dv">1</span>]</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(pkg_root)) {</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">&quot;Could not find package root containing DESCRIPTION.&quot;</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>  }</span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>  devtools<span class="sc">::</span><span class="fu">load_all</span>(<span class="at">path =</span> pkg_root, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a>}</span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a><span class="fu">library</span>(soilgraph)</span></code></pre></div>
+</div>
+<div id="profile-level-fields" class="section level2">
+<h2>Profile-level fields</h2>
+<p>A <code>soil_profile</code> object stores site-level metadata
+alongside a list of horizons: nbsp; | Field | Type | Required |
+Description | |——-|——|———-|————-| | <code>schema_version</code> | string
+| auto | Schema version (currently <code>&quot;0.1.0&quot;</code>) | |
+<code>site_id</code> | string | yes | Unique site identifier | |
+<code>classification$system</code> | string | yes | Classification
+system (<code>&quot;Soil Taxonomy&quot;</code>, <code>&quot;WRB&quot;</code>) | |
+<code>classification$taxon</code> | string | no | Taxon name
+(e.g. <code>&quot;Typic Hapludalf&quot;</code>) | | <code>metadata</code> | named
+list | no | Arbitrary key-value pairs (country, land use, slope, etc.)
+|</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>profile <span class="ot">&lt;-</span> <span class="fu">new_soil_profile</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>  <span class="at">site_id =</span> <span class="st">&quot;pedon-042&quot;</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>  <span class="at">horizons =</span> <span class="fu">list</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>    <span class="fu">new_soil_horizon</span>(<span class="dv">0</span>, <span class="dv">25</span>, <span class="at">label =</span> <span class="st">&quot;A&quot;</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>    <span class="fu">new_soil_horizon</span>(<span class="dv">25</span>, <span class="dv">60</span>, <span class="at">label =</span> <span class="st">&quot;Bw&quot;</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>  ),</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>  <span class="at">classification =</span> <span class="fu">list</span>(<span class="at">system =</span> <span class="st">&quot;WRB&quot;</span>, <span class="at">taxon =</span> <span class="st">&quot;Haplic Cambisol&quot;</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>  <span class="at">metadata =</span> <span class="fu">list</span>(<span class="at">country =</span> <span class="st">&quot;Chile&quot;</span>, <span class="at">slope_percent =</span> <span class="dv">8</span>, <span class="at">land_use =</span> <span class="st">&quot;forest&quot;</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>)</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>profile<span class="sc">$</span>site_id</span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="co">#&gt; [1] &quot;pedon-042&quot;</span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a>profile<span class="sc">$</span>classification</span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a><span class="co">#&gt; $system</span></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a><span class="co">#&gt; [1] &quot;WRB&quot;</span></span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="co">#&gt; $taxon</span></span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a><span class="co">#&gt; [1] &quot;Haplic Cambisol&quot;</span></span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a>profile<span class="sc">$</span>metadata</span>
+<span id="cb2-20"><a href="#cb2-20" tabindex="-1"></a><span class="co">#&gt; $country</span></span>
+<span id="cb2-21"><a href="#cb2-21" tabindex="-1"></a><span class="co">#&gt; [1] &quot;Chile&quot;</span></span>
+<span id="cb2-22"><a href="#cb2-22" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb2-23"><a href="#cb2-23" tabindex="-1"></a><span class="co">#&gt; $slope_percent</span></span>
+<span id="cb2-24"><a href="#cb2-24" tabindex="-1"></a><span class="co">#&gt; [1] 8</span></span>
+<span id="cb2-25"><a href="#cb2-25" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb2-26"><a href="#cb2-26" tabindex="-1"></a><span class="co">#&gt; $land_use</span></span>
+<span id="cb2-27"><a href="#cb2-27" tabindex="-1"></a><span class="co">#&gt; [1] &quot;forest&quot;</span></span></code></pre></div>
+</div>
+<div id="horizon-level-fields" class="section level2">
+<h2>Horizon-level fields</h2>
+<p>Each <code>soil_horizon</code> carries morphological properties. The
+table below lists all supported fields:</p>
+<div id="core-morphology" class="section level3">
+<h3>Core morphology</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>top</code></td>
+<td>numeric</td>
+<td>Top depth (cm) — <strong>required</strong></td>
+</tr>
+<tr class="even">
+<td><code>bottom</code></td>
+<td>numeric</td>
+<td>Bottom depth (cm) — <strong>required</strong></td>
+</tr>
+<tr class="odd">
+<td><code>label</code></td>
+<td>string</td>
+<td>Horizon designation (e.g. <code>&quot;Ap&quot;</code>,
+<code>&quot;Bt1&quot;</code>)</td>
+</tr>
+<tr class="even">
+<td><code>texture</code></td>
+<td>string</td>
+<td>Texture class (<code>&quot;silt loam&quot;</code>, <code>&quot;clay&quot;</code>,
+etc.)</td>
+</tr>
+<tr class="odd">
+<td><code>color</code></td>
+<td>string</td>
+<td>Display color — hex code or R colour name</td>
+</tr>
+<tr class="even">
+<td><code>moisture</code></td>
+<td>string</td>
+<td>Moisture state (<code>&quot;dry&quot;</code>, <code>&quot;moist&quot;</code>,
+<code>&quot;wet&quot;</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>notes</code></td>
+<td>string</td>
+<td>Free-text notes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="horizon-boundary" class="section level3">
+<h3>Horizon boundary</h3>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="18%" />
+<col width="59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Recognized values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>boundary_grade</code></td>
+<td>string</td>
+<td><code>abrupt</code>, <code>clear</code>, <code>gradual</code>,
+<code>diffuse</code></td>
+</tr>
+<tr class="even">
+<td><code>boundary_shape</code></td>
+<td>string</td>
+<td><code>smooth</code>, <code>wavy</code>, <code>irregular</code>,
+<code>broken</code>, <code>discontinuous</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="coarse-fragments" class="section level3">
+<h3>Coarse fragments</h3>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="18%" />
+<col width="59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Recognized values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>coarse_abundance</code></td>
+<td>string</td>
+<td><code>very few</code>, <code>few</code>, <code>common</code>,
+<code>many</code>, <code>abundant</code></td>
+</tr>
+<tr class="even">
+<td><code>coarse_shape</code></td>
+<td>string</td>
+<td><code>angular</code>, <code>subangular</code>,
+<code>subrounded</code>, <code>rounded</code>, <code>flat</code></td>
+</tr>
+<tr class="odd">
+<td><code>coarse_grade</code></td>
+<td>string</td>
+<td><code>very weak</code>, <code>weak</code>, <code>moderate</code>,
+<code>strong</code>, <code>very strong</code></td>
+</tr>
+<tr class="even">
+<td><code>coarse_type</code></td>
+<td>string</td>
+<td><code>gravel</code>, <code>cobble</code>, <code>stone</code>,
+<code>boulder</code>, <code>channer</code>, <code>flagstone</code></td>
+</tr>
+<tr class="odd">
+<td><code>coarse_size</code></td>
+<td>string</td>
+<td><code>very fine</code>, <code>fine</code>, <code>small</code>,
+<code>medium</code>, <code>coarse</code>, <code>large</code>,
+<code>very coarse</code></td>
+</tr>
+<tr class="even">
+<td><code>coarse_color</code></td>
+<td>string</td>
+<td>Fragment color — hex code or R colour name</td>
+</tr>
+<tr class="odd">
+<td><code>coarse_percent</code></td>
+<td>numeric</td>
+<td>Volume percentage (0–100)</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>h <span class="ot">&lt;-</span> <span class="fu">new_soil_horizon</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  <span class="at">top =</span> <span class="dv">0</span>, <span class="at">bottom =</span> <span class="dv">18</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="at">label =</span> <span class="st">&quot;Ap&quot;</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>  <span class="at">texture =</span> <span class="st">&quot;silt loam&quot;</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">&quot;#5C4033&quot;</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>  <span class="at">moisture =</span> <span class="st">&quot;moist&quot;</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>  <span class="at">boundary_grade =</span> <span class="st">&quot;clear&quot;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>  <span class="at">boundary_shape =</span> <span class="st">&quot;smooth&quot;</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>  <span class="at">coarse_abundance =</span> <span class="st">&quot;few&quot;</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>  <span class="at">coarse_shape =</span> <span class="st">&quot;subangular&quot;</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>  <span class="at">coarse_grade =</span> <span class="st">&quot;weak&quot;</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>  <span class="at">coarse_type =</span> <span class="st">&quot;gravel&quot;</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>  <span class="at">coarse_size =</span> <span class="st">&quot;fine&quot;</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a>  <span class="at">coarse_color =</span> <span class="st">&quot;#1B1B1B&quot;</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a>  <span class="at">coarse_percent =</span> <span class="dv">5</span>,</span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a>  <span class="at">notes =</span> <span class="st">&quot;Granular structure, abundant roots&quot;</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a>)</span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="fu">str</span>(h, <span class="at">max.level =</span> <span class="dv">1</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="co">#&gt; List of 16</span></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="co">#&gt;  $ top             : num 0</span></span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="co">#&gt;  $ bottom          : num 18</span></span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="co">#&gt;  $ label           : chr &quot;Ap&quot;</span></span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="co">#&gt;  $ texture         : chr &quot;silt loam&quot;</span></span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a><span class="co">#&gt;  $ color           : chr &quot;#5C4033&quot;</span></span>
+<span id="cb3-25"><a href="#cb3-25" tabindex="-1"></a><span class="co">#&gt;  $ moisture        : chr &quot;moist&quot;</span></span>
+<span id="cb3-26"><a href="#cb3-26" tabindex="-1"></a><span class="co">#&gt;  $ boundary_grade  : chr &quot;clear&quot;</span></span>
+<span id="cb3-27"><a href="#cb3-27" tabindex="-1"></a><span class="co">#&gt;  $ boundary_shape  : chr &quot;smooth&quot;</span></span>
+<span id="cb3-28"><a href="#cb3-28" tabindex="-1"></a><span class="co">#&gt;  $ coarse_abundance: chr &quot;few&quot;</span></span>
+<span id="cb3-29"><a href="#cb3-29" tabindex="-1"></a><span class="co">#&gt;  $ coarse_shape    : chr &quot;subangular&quot;</span></span>
+<span id="cb3-30"><a href="#cb3-30" tabindex="-1"></a><span class="co">#&gt;  $ coarse_grade    : chr &quot;weak&quot;</span></span>
+<span id="cb3-31"><a href="#cb3-31" tabindex="-1"></a><span class="co">#&gt;  $ coarse_type     : chr &quot;gravel&quot;</span></span>
+<span id="cb3-32"><a href="#cb3-32" tabindex="-1"></a><span class="co">#&gt;  $ coarse_size     : chr &quot;fine&quot;</span></span>
+<span id="cb3-33"><a href="#cb3-33" tabindex="-1"></a><span class="co">#&gt;  $ coarse_color    : chr &quot;#1B1B1B&quot;</span></span>
+<span id="cb3-34"><a href="#cb3-34" tabindex="-1"></a><span class="co">#&gt;  $ coarse_percent  : num 5</span></span>
+<span id="cb3-35"><a href="#cb3-35" tabindex="-1"></a><span class="co">#&gt;  $ notes           : chr &quot;Granular structure, abundant roots&quot;</span></span>
+<span id="cb3-36"><a href="#cb3-36" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;class&quot;)= chr [1:2] &quot;soil_horizon&quot; &quot;list&quot;</span></span></code></pre></div>
+</div>
+</div>
+<div id="parsing-natural-language-descriptions-deprecated" class="section level2">
+<h2>Parsing natural language descriptions (deprecated)</h2>
+<blockquote>
+<p><strong>Note:</strong> <code>derive_soil_horizons()</code> and the
+free-text parser are deprecated. The recommended approach is to provide
+structured data directly via <code>soil_profile_from_table()</code> with
+explicit columns. See <code>vignette(&quot;getting-started&quot;)</code> for the
+migration path.</p>
+</blockquote>
+<p><code>derive_soil_horizons()</code> extracted structured data from
+free-text field descriptions. The parser used keyword dictionaries to
+recognize properties. This section is retained for reference only.</p>
+<div id="supported-input-formats" class="section level3">
+<h3>Supported input formats</h3>
+<p><strong>Depth ranges</strong> (e.g. <code>&quot;0-18 cm&quot;</code>):</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>notes_range <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  <span class="at">Depth =</span> <span class="fu">c</span>(<span class="st">&quot;0-18 cm&quot;</span>, <span class="st">&quot;18-52 cm&quot;</span>, <span class="st">&quot;52-95 cm&quot;</span>),</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="at">description =</span> <span class="fu">c</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>    <span class="st">&quot;Ap dark brown silt loam moist clear smooth few subangular weak fragments&quot;</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>    <span class="st">&quot;Bt1 reddish brown clay loam slightly moist gradual wavy common rounded moderate fragments&quot;</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>    <span class="st">&quot;Bt2 brown clay dry diffuse irregular many subrounded strong fragments&quot;</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>  )</span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>)</span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="fu">derive_soil_horizons</span>(notes_range)</span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt; Warning: `derive_soil_horizons()` is deprecated. Use</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt; `soil_profile_from_table()` with a structured data frame instead. See</span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt; `vignette(&#39;getting-started&#39;)` for migration examples.</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>result[, <span class="fu">c</span>(<span class="st">&quot;Horizon&quot;</span>, <span class="st">&quot;Top&quot;</span>, <span class="st">&quot;Bottom&quot;</span>, <span class="st">&quot;Texture&quot;</span>, <span class="st">&quot;Color&quot;</span>, <span class="st">&quot;BoundaryGrade&quot;</span>)]</span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="co">#&gt;   Horizon Top Bottom   Texture   Color BoundaryGrade</span></span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a><span class="co">#&gt; 1      Ap   0     18 silt loam #5C4033         clear</span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a><span class="co">#&gt; 2     Bt1  18     52 clay loam #7B3F2A       gradual</span></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">#&gt; 3     Bt2  52     95      clay #8B5A2B       diffuse</span></span></code></pre></div>
+<p><strong>Top depths only</strong> (requires
+<code>profile_bottom</code>):</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>notes_top <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>  <span class="at">Depth =</span> <span class="fu">c</span>(<span class="st">&quot;0&quot;</span>, <span class="st">&quot;18&quot;</span>, <span class="st">&quot;52&quot;</span>),</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  <span class="at">description =</span> <span class="fu">c</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>    <span class="st">&quot;Ap dark brown silt loam moist&quot;</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>    <span class="st">&quot;Bt1 reddish brown clay loam slightly moist&quot;</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>    <span class="st">&quot;Bt2 brown clay dry&quot;</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>  )</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>)</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>result_top <span class="ot">&lt;-</span> <span class="fu">derive_soil_horizons</span>(notes_top, <span class="at">profile_bottom =</span> <span class="dv">95</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt; Warning: `derive_soil_horizons()` is deprecated. Use</span></span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="co">#&gt; `soil_profile_from_table()` with a structured data frame instead. See</span></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="co">#&gt; `vignette(&#39;getting-started&#39;)` for migration examples.</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>result_top[, <span class="fu">c</span>(<span class="st">&quot;Horizon&quot;</span>, <span class="st">&quot;Top&quot;</span>, <span class="st">&quot;Bottom&quot;</span>)]</span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co">#&gt;   Horizon Top Bottom</span></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a><span class="co">#&gt; 1      Ap   0     18</span></span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a><span class="co">#&gt; 2     Bt1  18     52</span></span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a><span class="co">#&gt; 3     Bt2  52     95</span></span></code></pre></div>
+</div>
+<div id="recognized-vocabulary" class="section level3">
+<h3>Recognized vocabulary</h3>
+<p>The parser matches against built-in dictionaries. Here are the main
+categories:</p>
+<p><strong>Texture classes</strong>: sandy clay, sandy clay loam, sandy
+loam, loamy sand, silt loam, silty clay, silty clay loam, clay loam,
+clay, loam, silt, sand.</p>
+<p><strong>Moisture states</strong>: dry, slightly moist, moist,
+wet.</p>
+<p><strong>Color names</strong>: dark brown, reddish brown, brown,
+yellowish brown, olive brown, gray, dark gray, dark reddish brown, red,
+yellowish red, dark yellowish brown, pale brown, light brownish gray,
+very dark gray, very dark brown, black, white.</p>
+<p><strong>Boundary grades</strong>: abrupt, clear, gradual,
+diffuse.</p>
+<p><strong>Boundary shapes</strong>: smooth, wavy, irregular, broken,
+discontinuous.</p>
+<p><strong>Coarse fragment terms</strong>: abundance (very few, few,
+common, many, abundant), shape (angular, subangular, subrounded,
+rounded, flat), grade (very weak, weak, moderate, strong, very
+strong).</p>
+</div>
+</div>
+<div id="the-.soil.json-format" class="section level2">
+<h2>The <code>.soil.json</code> format</h2>
+<p>Profiles are serialized to a standardized JSON schema. The format
+includes the full profile structure with all horizons and metadata.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>profile_full <span class="ot">&lt;-</span> <span class="fu">soil_profile_from_table</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>  notes_range,</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>  <span class="at">site_id =</span> <span class="st">&quot;pedon-001&quot;</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>  <span class="at">classification =</span> <span class="fu">list</span>(<span class="at">system =</span> <span class="st">&quot;Soil Taxonomy&quot;</span>, <span class="at">taxon =</span> <span class="st">&quot;Typic Hapludalf&quot;</span>),</span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>  <span class="at">metadata =</span> <span class="fu">list</span>(<span class="at">country =</span> <span class="st">&quot;Chile&quot;</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a>)</span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; Warning: Passing a Depth/description table to `soil_profile_from_table()` is</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt; deprecated. Provide a structured data frame with explicit columns (Top, Bottom,</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; Horizon, Texture, Color, ...) instead. See `vignette(&#39;getting-started&#39;)` for</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; migration examples.</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a>tmp <span class="ot">&lt;-</span> <span class="fu">tempfile</span>(<span class="at">fileext =</span> <span class="st">&quot;.soil.json&quot;</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="fu">write_soil_json</span>(profile_full, tmp)</span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">readLines</span>(tmp), <span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co">#&gt; {</span></span>
+<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="co">#&gt;   &quot;schema_version&quot;: &quot;0.1.0&quot;,</span></span>
+<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a><span class="co">#&gt;   &quot;site_id&quot;: &quot;pedon-001&quot;,</span></span>
+<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a><span class="co">#&gt;   &quot;classification&quot;: {</span></span>
+<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a><span class="co">#&gt;     &quot;system&quot;: &quot;Soil Taxonomy&quot;,</span></span>
+<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a><span class="co">#&gt;     &quot;taxon&quot;: &quot;Typic Hapludalf&quot;</span></span>
+<span id="cb6-21"><a href="#cb6-21" tabindex="-1"></a><span class="co">#&gt;   },</span></span>
+<span id="cb6-22"><a href="#cb6-22" tabindex="-1"></a><span class="co">#&gt;   &quot;metadata&quot;: {</span></span>
+<span id="cb6-23"><a href="#cb6-23" tabindex="-1"></a><span class="co">#&gt;     &quot;country&quot;: &quot;Chile&quot;</span></span>
+<span id="cb6-24"><a href="#cb6-24" tabindex="-1"></a><span class="co">#&gt;   },</span></span>
+<span id="cb6-25"><a href="#cb6-25" tabindex="-1"></a><span class="co">#&gt;   &quot;horizons&quot;: [</span></span>
+<span id="cb6-26"><a href="#cb6-26" tabindex="-1"></a><span class="co">#&gt;     {</span></span>
+<span id="cb6-27"><a href="#cb6-27" tabindex="-1"></a><span class="co">#&gt;       &quot;top&quot;: 0,</span></span>
+<span id="cb6-28"><a href="#cb6-28" tabindex="-1"></a><span class="co">#&gt;       &quot;bottom&quot;: 18,</span></span>
+<span id="cb6-29"><a href="#cb6-29" tabindex="-1"></a><span class="co">#&gt;       &quot;label&quot;: &quot;Ap&quot;,</span></span>
+<span id="cb6-30"><a href="#cb6-30" tabindex="-1"></a><span class="co">#&gt;       &quot;texture&quot;: &quot;silt loam&quot;,</span></span>
+<span id="cb6-31"><a href="#cb6-31" tabindex="-1"></a><span class="co">#&gt;       &quot;color&quot;: &quot;#5C4033&quot;,</span></span>
+<span id="cb6-32"><a href="#cb6-32" tabindex="-1"></a><span class="co">#&gt;       &quot;moisture&quot;: &quot;moist&quot;,</span></span>
+<span id="cb6-33"><a href="#cb6-33" tabindex="-1"></a><span class="co">#&gt;       &quot;boundary_grade&quot;: &quot;clear&quot;,</span></span>
+<span id="cb6-34"><a href="#cb6-34" tabindex="-1"></a><span class="co">#&gt;       &quot;boundary_shape&quot;: &quot;smooth&quot;,</span></span>
+<span id="cb6-35"><a href="#cb6-35" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_abundance&quot;: &quot;few&quot;,</span></span>
+<span id="cb6-36"><a href="#cb6-36" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_shape&quot;: &quot;subangular&quot;,</span></span>
+<span id="cb6-37"><a href="#cb6-37" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_grade&quot;: &quot;weak&quot;,</span></span>
+<span id="cb6-38"><a href="#cb6-38" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_type&quot;: null,</span></span>
+<span id="cb6-39"><a href="#cb6-39" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_size&quot;: null,</span></span>
+<span id="cb6-40"><a href="#cb6-40" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_color&quot;: null,</span></span>
+<span id="cb6-41"><a href="#cb6-41" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_percent&quot;: null,</span></span>
+<span id="cb6-42"><a href="#cb6-42" tabindex="-1"></a><span class="co">#&gt;       &quot;notes&quot;: &quot;fragments&quot;</span></span>
+<span id="cb6-43"><a href="#cb6-43" tabindex="-1"></a><span class="co">#&gt;     },</span></span>
+<span id="cb6-44"><a href="#cb6-44" tabindex="-1"></a><span class="co">#&gt;     {</span></span>
+<span id="cb6-45"><a href="#cb6-45" tabindex="-1"></a><span class="co">#&gt;       &quot;top&quot;: 18,</span></span>
+<span id="cb6-46"><a href="#cb6-46" tabindex="-1"></a><span class="co">#&gt;       &quot;bottom&quot;: 52,</span></span>
+<span id="cb6-47"><a href="#cb6-47" tabindex="-1"></a><span class="co">#&gt;       &quot;label&quot;: &quot;Bt1&quot;,</span></span>
+<span id="cb6-48"><a href="#cb6-48" tabindex="-1"></a><span class="co">#&gt;       &quot;texture&quot;: &quot;clay loam&quot;,</span></span>
+<span id="cb6-49"><a href="#cb6-49" tabindex="-1"></a><span class="co">#&gt;       &quot;color&quot;: &quot;#7B3F2A&quot;,</span></span>
+<span id="cb6-50"><a href="#cb6-50" tabindex="-1"></a><span class="co">#&gt;       &quot;moisture&quot;: &quot;slightly moist&quot;,</span></span>
+<span id="cb6-51"><a href="#cb6-51" tabindex="-1"></a><span class="co">#&gt;       &quot;boundary_grade&quot;: &quot;gradual&quot;,</span></span>
+<span id="cb6-52"><a href="#cb6-52" tabindex="-1"></a><span class="co">#&gt;       &quot;boundary_shape&quot;: &quot;wavy&quot;,</span></span>
+<span id="cb6-53"><a href="#cb6-53" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_abundance&quot;: &quot;common&quot;,</span></span>
+<span id="cb6-54"><a href="#cb6-54" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_shape&quot;: &quot;rounded&quot;,</span></span>
+<span id="cb6-55"><a href="#cb6-55" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_grade&quot;: &quot;moderate&quot;,</span></span>
+<span id="cb6-56"><a href="#cb6-56" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_type&quot;: null,</span></span>
+<span id="cb6-57"><a href="#cb6-57" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_size&quot;: null,</span></span>
+<span id="cb6-58"><a href="#cb6-58" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_color&quot;: null,</span></span>
+<span id="cb6-59"><a href="#cb6-59" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_percent&quot;: null,</span></span>
+<span id="cb6-60"><a href="#cb6-60" tabindex="-1"></a><span class="co">#&gt;       &quot;notes&quot;: &quot;fragments&quot;</span></span>
+<span id="cb6-61"><a href="#cb6-61" tabindex="-1"></a><span class="co">#&gt;     },</span></span>
+<span id="cb6-62"><a href="#cb6-62" tabindex="-1"></a><span class="co">#&gt;     {</span></span>
+<span id="cb6-63"><a href="#cb6-63" tabindex="-1"></a><span class="co">#&gt;       &quot;top&quot;: 52,</span></span>
+<span id="cb6-64"><a href="#cb6-64" tabindex="-1"></a><span class="co">#&gt;       &quot;bottom&quot;: 95,</span></span>
+<span id="cb6-65"><a href="#cb6-65" tabindex="-1"></a><span class="co">#&gt;       &quot;label&quot;: &quot;Bt2&quot;,</span></span>
+<span id="cb6-66"><a href="#cb6-66" tabindex="-1"></a><span class="co">#&gt;       &quot;texture&quot;: &quot;clay&quot;,</span></span>
+<span id="cb6-67"><a href="#cb6-67" tabindex="-1"></a><span class="co">#&gt;       &quot;color&quot;: &quot;#8B5A2B&quot;,</span></span>
+<span id="cb6-68"><a href="#cb6-68" tabindex="-1"></a><span class="co">#&gt;       &quot;moisture&quot;: &quot;dry&quot;,</span></span>
+<span id="cb6-69"><a href="#cb6-69" tabindex="-1"></a><span class="co">#&gt;       &quot;boundary_grade&quot;: &quot;diffuse&quot;,</span></span>
+<span id="cb6-70"><a href="#cb6-70" tabindex="-1"></a><span class="co">#&gt;       &quot;boundary_shape&quot;: &quot;irregular&quot;,</span></span>
+<span id="cb6-71"><a href="#cb6-71" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_abundance&quot;: &quot;many&quot;,</span></span>
+<span id="cb6-72"><a href="#cb6-72" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_shape&quot;: &quot;subrounded&quot;,</span></span>
+<span id="cb6-73"><a href="#cb6-73" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_grade&quot;: &quot;strong&quot;,</span></span>
+<span id="cb6-74"><a href="#cb6-74" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_type&quot;: null,</span></span>
+<span id="cb6-75"><a href="#cb6-75" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_size&quot;: null,</span></span>
+<span id="cb6-76"><a href="#cb6-76" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_color&quot;: null,</span></span>
+<span id="cb6-77"><a href="#cb6-77" tabindex="-1"></a><span class="co">#&gt;       &quot;coarse_percent&quot;: null,</span></span>
+<span id="cb6-78"><a href="#cb6-78" tabindex="-1"></a><span class="co">#&gt;       &quot;notes&quot;: &quot;fragments&quot;</span></span>
+<span id="cb6-79"><a href="#cb6-79" tabindex="-1"></a><span class="co">#&gt;     }</span></span>
+<span id="cb6-80"><a href="#cb6-80" tabindex="-1"></a><span class="co">#&gt;   ]</span></span>
+<span id="cb6-81"><a href="#cb6-81" tabindex="-1"></a><span class="co">#&gt; }</span></span></code></pre></div>
+<div id="example-.soil.json-structure" class="section level3">
+<h3>Example <code>.soil.json</code> structure</h3>
+<p>The bundled example file demonstrates the complete schema:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>json_path <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">&quot;extdata&quot;</span>, <span class="st">&quot;example.soil.json&quot;</span>, <span class="at">package =</span> <span class="st">&quot;soilgraph&quot;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>example <span class="ot">&lt;-</span> <span class="fu">read_soil_json</span>(json_path)</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Site ID:&quot;</span>, example<span class="sc">$</span>site_id, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">#&gt; Site ID: pedon-001</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;System:&quot;</span>, example<span class="sc">$</span>classification<span class="sc">$</span>system, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">#&gt; System: Soil Taxonomy</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Taxon:&quot;</span>, example<span class="sc">$</span>classification<span class="sc">$</span>taxon, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="co">#&gt; Taxon: Typic Hapludalf</span></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Horizons:&quot;</span>, <span class="fu">length</span>(example<span class="sc">$</span>horizons), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="co">#&gt; Horizons: 3</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Total depth:&quot;</span>, example<span class="sc">$</span>horizons[[<span class="fu">length</span>(example<span class="sc">$</span>horizons)]]<span class="sc">$</span>bottom, <span class="st">&quot;cm</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a><span class="co">#&gt; Total depth: 95 cm</span></span></code></pre></div>
+</div>
+<div id="round-trip-fidelity" class="section level3">
+<h3>Round-trip fidelity</h3>
+<p>Writing and reading back preserves all fields:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>tmp2 <span class="ot">&lt;-</span> <span class="fu">tempfile</span>(<span class="at">fileext =</span> <span class="st">&quot;.soil.json&quot;</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">write_soil_json</span>(example, tmp2)</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>reloaded <span class="ot">&lt;-</span> <span class="fu">read_soil_json</span>(tmp2)</span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="fu">identical</span>(example<span class="sc">$</span>site_id, reloaded<span class="sc">$</span>site_id)</span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">#&gt; [1] TRUE</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="fu">identical</span>(example<span class="sc">$</span>classification, reloaded<span class="sc">$</span>classification)</span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co">#&gt; [1] TRUE</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="fu">identical</span>(<span class="fu">length</span>(example<span class="sc">$</span>horizons), <span class="fu">length</span>(reloaded<span class="sc">$</span>horizons))</span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
+</div>
+</div>
+<div id="validation" class="section level2">
+<h2>Validation</h2>
+<p><code>validate_soil_profile()</code> checks the following
+constraints:</p>
+<ul>
+<li>The object has <code>soil_profile</code> class.</li>
+<li><code>horizons</code> is a non-empty list of
+<code>soil_horizon</code> objects.</li>
+<li>Top depths are sorted in ascending order (shallow → deep).</li>
+<li>Each horizon’s <code>bottom &gt; top</code>.</li>
+<li>No overlapping horizons.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># Valid profile passes silently</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu">validate_soil_profile</span>(profile)</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co"># Invalid profiles throw informative errors</span></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="fu">tryCatch</span>(</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>  <span class="fu">validate_soil_profile</span>(<span class="fu">list</span>(<span class="at">not =</span> <span class="st">&quot;a profile&quot;</span>)),</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>  <span class="at">error =</span> <span class="cf">function</span>(e) <span class="fu">message</span>(<span class="st">&quot;Error: &quot;</span>, e<span class="sc">$</span>message)</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>)</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a><span class="co">#&gt; Error: `profile` must be a `soil_profile`.</span></span></code></pre></div>
+</div>
+<div id="key-usda-terminology" class="section level2">
+<h2>Key USDA terminology</h2>
+<p>Some key terms from the USDA Soil Survey Manual used throughout
+soilgraph:</p>
+<ul>
+<li><strong>Horizon</strong>: A layer of soil approximately parallel to
+the soil surface, differing from adjacent layers in physical or chemical
+properties.</li>
+<li><strong>Boundary grade (distinctness)</strong>: How sharply one
+horizon transitions to the next — abrupt (&lt; 2 cm), clear (2–5 cm),
+gradual (5–15 cm), diffuse (&gt; 15 cm).</li>
+<li><strong>Boundary shape (topography)</strong>: The spatial pattern of
+the boundary — smooth, wavy, irregular, broken, or discontinuous.</li>
+<li><strong>Coarse fragments</strong>: Rock or mineral particles &gt; 2
+mm diameter. Classified by size, shape, and degree of weathering
+(cementation grade).</li>
+<li><strong>Texture class</strong>: The relative proportion of sand,
+silt, and clay (e.g. “silt loam” = mostly silt with some sand and
+clay).</li>
+</ul>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

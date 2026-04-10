@@ -30,6 +30,24 @@ them to JSON, and generating profile visualizations. A typical workflow is:
 4. Export to the `.soil.json` format for archival and exchange.
 
 ```{r load-library}
+if (!requireNamespace("soilgraph", quietly = TRUE)) {
+  if (!requireNamespace("devtools", quietly = TRUE)) {
+    stop(
+      "Package 'soilgraph' is not installed. Install it, or install 'devtools' ",
+      "and render from the repository so the package can be loaded from source."
+    )
+  }
+
+  pkg_root_candidates <- c(".", "..")
+  pkg_root <- pkg_root_candidates[file.exists(file.path(pkg_root_candidates, "DESCRIPTION"))][1]
+
+  if (is.na(pkg_root)) {
+    stop("Could not find package root containing DESCRIPTION.")
+  }
+
+  devtools::load_all(path = pkg_root, quiet = TRUE)
+}
+
 library(soilgraph)
 ```
 
